@@ -1,0 +1,6 @@
+{
+  "name": "my-blog",
+  "dependencies": {
+    "bootstrap": "^3.3.5"
+  }
+}
