@@ -1,11 +1,9 @@
-var Router = require('react');
+var React = require('react');
 
 var ArticleList = React.createClass({
 	render: function() {
 		return (
-			<div>
-			  asdasdasd
-			<div>
+			<div>I am ArticleList.</div>
 		);
 	}
 });

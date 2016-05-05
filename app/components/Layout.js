@@ -1,12 +1,12 @@
-var Router = require('react');
+var React = require('react');
 
 var Layout = React.createClass({
 	render: function() {
 		return (
 			<div>
-				<span>test</span>
+				<span>I am Layout.</span>
 				{this.props.children}
-			<div>
+			</div>
 		);
 	}
 });

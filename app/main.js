@@ -1,8 +1,9 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
-var Router = require('react-router');
-var createBrowserHistory = require('history/lib/createBrowserHistory');
-var routes = require('./routes');
+var React = require('react'),
+		ReactDOM = require('react-dom'),
+		ReactRouter = require('react-router'),
+		createBrowserHistory = require('history/lib/createBrowserHistory'),
+		routes = require('./routes');
 
+var Router = ReactRouter.Router;
 var history = createBrowserHistory();
 ReactDOM.render(<Router history={history}>{routes}</Router>, document.getElementById('app'));
