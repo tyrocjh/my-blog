@@ -3,19 +3,17 @@ var gulp = require("gulp"),
     reactify = require('reactify'),
     source = require('vinyl-source-stream');
 
-var dependencies = [
-  'react',
-  'react-dom',
-  'react-router'
-];
-
 gulp.task('browserify', function() {
   browserify('app/main.js')
-    .require(dependencies)
     .transform(reactify)
     .bundle()
     .pipe(source('bundle.js'))
     .pipe(gulp.dest('public/js'));
 });
 
+gulp.task('watch', function() {
+  gulp.watch('app/**/*.js', ['browserify']);
+});
+
+gulp.task('default', ['browserify', 'watch']);
 gulp.task('build', ['browserify']);
