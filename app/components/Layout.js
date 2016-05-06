@@ -1,11 +1,14 @@
-var React = require('react');
+var React = require('react'),
+		Header = require('./Header'),
+		Footer = require('./Footer');
 
 var Layout = React.createClass({
 	render: function() {
 		return (
 			<div>
-				<span>I am Layout.</span>
+				<Header />
 				{this.props.children}
+				<Footer />
 			</div>
 		);
 	}
