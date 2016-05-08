@@ -1,3 +1,40 @@
+@import "variables";
+
 header {
-	border-bottom: 1px solid red;
+  height: 60px;
+  line-height: 60px;
+	border-bottom: 2px solid $blue;
+	.container {
+		h1 {
+			float: left;
+			margin: 0;
+			a {
+				padding: 0 35px;
+		    display: inline-block;
+		    color: $white;
+		    background-color: $blue;
+		    height: 60px;
+    		line-height: 60px;
+		    &:hover {
+		    	text-decoration: none;
+		    }
+			}
+		}
+		nav {
+			float: right;
+			a {
+				font-size: 16px;
+		    height: 60px;
+		    line-height: 60px;
+		    display: inline-block;
+		    padding: 0 20px;
+		    border-bottom: 2px solid transparent;
+		    &:hover {
+		    	text-decoration: none;
+		    	color: $red;
+		    	border-bottom-color: $red;
+		    }
+			}
+		}
+	}
 }

@@ -5,7 +5,7 @@ var Header = React.createClass({
 		return (
 			<header>
 				<div className="container">
-				  <h1>My Blog</h1>
+				  <h1><a href="#">My Blog</a></h1>
 				  <nav>
 				  	<a href="#">主页</a>
 				  	<a href="#">Web</a>

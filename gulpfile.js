@@ -38,6 +38,4 @@ gulp.task('watch', function() {
   gulp.watch('app/stylesheets/**/*.scss', ['sass']);
 });
 
-gulp.task('build', ['browserify', 'sass', 'vender']);
-
-gulp.task('default', ['clean', 'build']);
+gulp.task('default', ['browserify', 'sass', 'vender']);
