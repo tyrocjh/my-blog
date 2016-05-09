@@ -4,18 +4,25 @@ var gulp = require("gulp"),
     source = require('vinyl-source-stream'),
     sass = require('gulp-sass'),
     concat = require('gulp-concat'),
-    clean = require('gulp-clean');
+    clean = require('gulp-clean'),
+    plumber = require('gulp-plumber');
 
-gulp.task('browserify', function() {
-  browserify('app/main.js')
-    .transform(reactify)
-    .bundle()
-    .pipe(source('bundle.js'))
-    .pipe(gulp.dest('public/js'));
+gulp.task("browserify", function () {
+  var b = browserify({entries: "app/main.js"});
+
+  return b.transform(reactify)
+      .bundle()
+      .on('error', function (err) {
+        console.log(err.toString());
+        this.emit("end");
+      })
+      .pipe(source("bundle.js"))
+      .pipe(gulp.dest('public/js'));
 });
 
 gulp.task('sass', function () {
   gulp.src('app/stylesheets/**/*.scss')
+      .pipe(plumber())
       .pipe(sass())
       .pipe(concat('main.css'))
       .pipe(gulp.dest('public/css'));
