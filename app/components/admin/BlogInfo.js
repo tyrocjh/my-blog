@@ -6,11 +6,11 @@ var BlogInfo = React.createClass({
 		e.preventDefault();
 		data = FormValidation(this, [{
 				name: 'title',
-				rule: ['isRequired'],
+				rules: ['isRequired'],
 				msg: '标题不能为空！'
 			}, {
 				name: 'keywords',
-				rule: ['isRequired'],
+				rules: ['isRequired'],
 				msg: '关键词不能为空！'
 			}, {
 				name: 'description',
@@ -18,7 +18,7 @@ var BlogInfo = React.createClass({
 				msg: '描述不能为空！'
 			}, {
 				name: 'copyright',
-				rule: ['isRequired'],
+				rules: ['isRequired'],
 				msg: '版权不能为空！'
 			}
 		]);

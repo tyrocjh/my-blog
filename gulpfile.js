@@ -5,7 +5,8 @@ var gulp = require("gulp"),
     sass = require('gulp-sass'),
     concat = require('gulp-concat'),
     clean = require('gulp-clean'),
-    plumber = require('gulp-plumber');
+    plumber = require('gulp-plumber'),
+    eslint = require('gulp-eslint');
 
 gulp.task("browserify", function () {
   var b = browserify({entries: "app/main.js"});
@@ -18,6 +19,16 @@ gulp.task("browserify", function () {
       })
       .pipe(source("bundle.js"))
       .pipe(gulp.dest('public/js'));
+});
+
+gulp.task('lint', function () {
+  gulp.src('app/**/*.js')
+    .pipe(eslint())
+    .pipe(eslint.format())
+    .pipe(eslint.failOnError())
+    .on('error', function(err) {
+      console.log(err.toString())
+    });
 });
 
 gulp.task('sass', function () {
@@ -41,7 +52,7 @@ gulp.task('clean', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch('app/**/*.js', ['browserify']);
+  gulp.watch('app/**/*.js', ['lint', 'browserify']);
   gulp.watch('app/stylesheets/**/*.scss', ['sass']);
 });
 
