@@ -20,7 +20,7 @@ var BlogInfo = React.createClass({
 				msg: '关键词不能为空！'
 			}, {
 				name: 'description',
-				rule: ['isRequired'],
+				rules: ['isRequired'],
 				msg: '描述不能为空！'
 			}, {
 				name: 'copyright',
@@ -28,6 +28,12 @@ var BlogInfo = React.createClass({
 				msg: '版权不能为空！'
 			}
 		]);
+
+		if(data) {
+			console.info(data);
+		} else {
+			console.info('nothing happen....');
+		}
 	},
 
 	render: function() {
@@ -55,6 +61,7 @@ var BlogInfo = React.createClass({
 				<div className="form-group">
 					<div className="col-sm-10 col-sm-offset-2">
 						<button type="submit" className="btn btn-default">确定</button>
+						<span className="errMsg">{this.state.validateMsg}</span>
 					</div>
 				</div>
 			</form>
