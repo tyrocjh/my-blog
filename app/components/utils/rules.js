@@ -1,5 +1,5 @@
 module.exports = {
 	isRequired: function(val) {
-		return val !== ''
+		return val.trim() !== ''
 	}
 }

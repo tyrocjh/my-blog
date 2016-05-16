@@ -2,6 +2,12 @@ var React = require('react');
 var FormValidation = require('../utils/formValidation');
 
 var BlogInfo = React.createClass({
+	getInitialState: function() {
+		return {
+			validateMsg: null
+		}
+	},
+
 	handleSubmit: function(e) {
 		e.preventDefault();
 		data = FormValidation(this, [{
