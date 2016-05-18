@@ -5,6 +5,8 @@ var BlogInfo = new mongoose.Schema({
 	description: String,
 	keywords: String,
 	copyright: String
+}, {
+	timestamps: true
 });
 
 module.exports = mongoose.model('BlogInfo', BlogInfo);
