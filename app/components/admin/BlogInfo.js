@@ -8,6 +8,23 @@ var BlogInfo = React.createClass({
 		}
 	},
 
+	componentDidMount: function() {
+		fetch('/admin/blog_info')
+		  .then(function(response) {
+		    return response.json();
+		  }).then(function(json) {
+		    this.setState({
+		    	id: json.data._id,
+		    	title: json.data.title,
+		    	keywords: json.data.keywords,
+		    	description: json.data.description,
+		    	copyright: json.data.copyright
+		    });
+		  }.bind(this)).catch(function(ex) {
+		    console.log('parsing failed', ex);
+		  });
+	},
+
 	handleSubmit: function(e) {
 		e.preventDefault();
 		data = FormValidation(this, [{
@@ -30,9 +47,16 @@ var BlogInfo = React.createClass({
 		]);
 
 		if(data) {
-			console.info(data);
-		} else {
-			console.info('nothing happen....');
+			// console.info(data);
+			if(this.state.id) {
+				console.info('yes');
+				fetch('/admin/blog_info', {
+				  method: 'PUT',
+				  body: data
+				})
+			} else {
+				console.info('no');
+			}
 		}
 	},
 
@@ -44,19 +68,19 @@ var BlogInfo = React.createClass({
 				</div>
 				<div className="form-group">
 					<label htmlFor="title" className="col-sm-2 control-label">标题：</label>
-					<div className="col-sm-10"><input type="text" ref="title" id="title" className="form-control" /></div>
+					<div className="col-sm-10"><input type="text" ref="title" id="title" className="form-control" value={this.state.title} /></div>
 				</div>
 				<div className="form-group">
 					<label htmlFor="keywords" className="col-sm-2 control-label">关键词：</label>
-					<div className="col-sm-10"><textarea ref="keywords" id="keywords" className="form-control"></textarea></div>
+					<div className="col-sm-10"><textarea ref="keywords" id="keywords" className="form-control" value={this.state.keywords}></textarea></div>
 				</div>
 				<div className="form-group">
 					<label htmlFor="description" className="col-sm-2 control-label">描述：</label>
-					<div className="col-sm-10"><textarea ref="description" id="description" className="form-control"></textarea></div>
+					<div className="col-sm-10"><textarea ref="description" id="description" className="form-control" value={this.state.description}></textarea></div>
 				</div>
 				<div className="form-group">
 					<label htmlFor="copyright" className="col-sm-2 control-label">版权：</label>
-					<div className="col-sm-10"><textarea ref="copyright" id="copyright" className="form-control"></textarea></div>
+					<div className="col-sm-10"><textarea ref="copyright" id="copyright" className="form-control" value={this.state.copyright}></textarea></div>
 				</div>
 				<div className="form-group">
 					<div className="col-sm-10 col-sm-offset-2">

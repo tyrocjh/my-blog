@@ -1,6 +1,7 @@
 {
   "name": "my-blog",
   "dependencies": {
-    "bootstrap": "^3.3.5"
+    "bootstrap": "^3.3.5",
+    "fetch": "^1.0.0"
   }
 }
