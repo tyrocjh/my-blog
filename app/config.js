@@ -1,3 +1,3 @@
 module.exports = {
-  adminPath: '/admin/'
+  adminPath: '/admin'
 };

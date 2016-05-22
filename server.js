@@ -24,7 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 require('./router')(app);
 
 app.get('*', function(req, res) {
-  res.sendfile(__dirname + '/public/index.html');
+  res.sendFile(__dirname + '/public/index.html');
 });
 
 app.use(function(err, req, res, next) {

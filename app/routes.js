@@ -6,7 +6,10 @@ var React = require('react'),
 		AdminLayout = require('./components/admin/Layout'),
 		AdminWelcome = require('./components/admin/Welcome'),
 		AdminBlogInfo = require('./components/admin/BlogInfo'),
-		NotFound = require('./components/NotFound');
+		AdminArticleTag = require('./components/admin/ArticleTag'),
+		AdminArticleTagList = require('./components/admin/ArticleTagList'),
+		NotFound = require('./components/NotFound'),
+		AdminPath = require('./config').adminPath;
 
 var	Router = ReactRouter.Router,
 		Route = ReactRouter.Route,
@@ -17,9 +20,11 @@ module.exports = (
 		<Route path="/" component={Layout}>
 			<IndexRoute component={ArticleList} />
 		</Route>
-		<Route path="/admin" component={AdminLayout}>
+		<Route path={AdminPath} component={AdminLayout}>
 			<IndexRoute component={AdminWelcome} />
 			<Route path="blogInfo" component={AdminBlogInfo} />
+			<Route path="articleTag" component={AdminArticleTag} />
+			<Route path="articleTagList" component={AdminArticleTagList} />
 		</Route>
 		<Route path="*" component={NotFound} status={404} />
 	</Router>

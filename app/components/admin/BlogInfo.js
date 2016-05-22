@@ -1,10 +1,15 @@
-var React = require('react');
-var FormValidation = require('../utils/formValidation');
+var React = require('react'),
+		FormValidation = require('../utils/formValidation');
 
 var BlogInfo = React.createClass({
 	getInitialState: function() {
 		return {
-			validateMsg: null
+			validateMsg: null,
+			id: '',
+			title: '',
+			keywords: '',
+			description: '',
+			copyright: ''
 		}
 	},
 
@@ -54,7 +59,6 @@ var BlogInfo = React.createClass({
 
 		if(data) {
 			if(this.state.id) {
-				console.info('PUT');
 				data['_id'] = this.state.id;
 				fetch('/admin/blog_info', {
 				  method: 'PUT',
@@ -64,17 +68,34 @@ var BlogInfo = React.createClass({
 				  },
 				  body: JSON.stringify(data)
 				}).then(function(response) {
-					console.info(response);
-				});
+					return response.json();
+				}).then(function(json) {
+					this.setState({
+						validateMsg: json.msg
+					});
+				}.bind(this));
 			} else {
-				console.info('POST');
+				fetch('/admin/blog_info', {
+				  method: 'POST',
+				  headers: {
+				    'Accept': 'application/json',
+				    'Content-Type': 'application/json'
+				  },
+				  body: JSON.stringify(data)
+				}).then(function(response) {
+					return response.json();
+				}).then(function(json) {
+					this.setState({
+						validateMsg: json.msg
+					});
+				}.bind(this));
 			}
 		}
 	},
 
 	render: function() {
 		return (
-			<form ref="bloginfoForm" className="form-horizontal col-sm-6" onSubmit={this.handleSubmit}>
+			<form className="form-horizontal col-sm-6" onSubmit={this.handleSubmit}>
 				<div className="form-group">
 					<div className="col-sm-10 col-sm-offset-2"><h3>博客信息管理</h3></div>
 				</div>
@@ -105,7 +126,7 @@ var BlogInfo = React.createClass({
 				<div className="form-group">
 					<div className="col-sm-10 col-sm-offset-2">
 						<button type="submit" className="btn btn-default">确定</button>
-						<span className="errMsg">{this.state.validateMsg}</span>
+						<span className="validateMsg">{this.state.validateMsg}</span>
 					</div>
 				</div>
 			</form>
