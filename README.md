@@ -4,7 +4,7 @@ https://github.com/mhbseal/blog
 https://github.com/tyrocjh/my-blog-demo
 
 technology:
-gulp, react, react-router, express, mooogoose
+gulp, react, react-router,fetch, express, mooogoose
 
 gulp:
 http://www.dbpoo.com/getting-started-with-gulp/
@@ -14,23 +14,17 @@ http://www.dbpoo.com/getting-started-with-gulp/
 =====================================
 API的身份认证应该使用OAuth 2.0框架
 
-ADMINPATH daxie
+http://www.runoob.com/bootstrap/bootstrap-tables.html
 
-ReactRouter = require('react-router'),
-var	Link = ReactRouter.Link;
-<Link to={AdminPath + '/blogInfo'}>博客信息</Link>
 <Link to={`/users/${user.id}`} activeClassName="active">{user.name}</Link>
 // 变成它们其中一个依赖在 History 上，当这个 route 是
 // 激活状态的
 <a href="/users/123" class="active">Michael</a>
 <a href="#/users/123">Michael</a>
-
 // 修改 activeClassName
 <Link to={`/users/${user.id}`} activeClassName="current">{user.name}</Link>
-
 // 当链接激活时，修改它的样式
 <Link to="/users" style={{color: 'white'}} activeStyle={{color: 'red'}}>Users</Link>
-
 
 
 https://example.org/api/
