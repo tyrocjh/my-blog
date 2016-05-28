@@ -4,11 +4,35 @@ var React = require('react'),
 var ArticleTag = React.createClass({
 	getInitialState: function() {
 		return {
-			validateMsg: null,
+			validateMsg: '',
 			id: '',
 			name: '',
 			path: ''
 		};
+	},
+
+	componentDidMount: function() {
+		var id = location.search.substring(1).split('=')[1];
+		if(id) {
+			fetch('/admin/article_tag/' + id)
+				.then(function(response) {
+					return response.json();
+				}).then(function(json) {
+					this.setState({
+						id: json.data._id,
+						name: json.data.name,
+						path: json.data.path
+					});
+				}.bind(this)).catch(function(ex) {
+					console.log('parsing failed', ex);
+				});
+		}
+	},
+
+	changeField: function(field, e) {
+		var change = {};
+		change[field] = e.target.value;
+		this.setState(change);
 	},
 
 	handleSubmit: function(e) {
@@ -25,7 +49,23 @@ var ArticleTag = React.createClass({
 
 		if(data) {
 			if(this.state.id) {
-				console.info('has id...');
+				fetch('/admin/article_tag/' + this.state.id, {
+				  method: 'PUT',
+				  headers: {
+				    'Accept': 'application/json',
+				    'Content-Type': 'application/json'
+				  },
+				  body: JSON.stringify(data)
+				}).then(function(response) {
+					return response.json();
+				}).then(function(json) {
+					this.setState({
+						validateMsg: json.msg
+					});
+					setTimeout(function() {
+						this.props.history.pushState(null, '/admin/articleTagList')
+					}.bind(this), 500);
+				}.bind(this));
 			} else {
 				fetch('/admin/article_tag', {
 				  method: 'POST',
@@ -40,6 +80,9 @@ var ArticleTag = React.createClass({
 					this.setState({
 						validateMsg: json.msg
 					});
+					setTimeout(function() {
+						this.props.history.pushState(null, '/admin/articleTagList')
+					}.bind(this), 500);
 				}.bind(this));
 			}
 		}
@@ -49,18 +92,18 @@ var ArticleTag = React.createClass({
 		return (
 			<form className="form-horizontal col-sm-5" onSubmit={this.handleSubmit}>
 				<div className="form-group">
-					<div className="col-sm-10 col-sm-offset-2"><h3>新增标签</h3></div>
+					<div className="col-sm-10 col-sm-offset-2"><h3>{this.state.id ? '修改' : '新增'}标签</h3></div>
 				</div>
 				<div className="form-group">
 					<label htmlFor="name" className="col-sm-2 control-label">名称：</label>
 					<div className="col-sm-10">
-						<input type="text" ref="name" id="name" className="form-control" />
+						<input type="text" ref="name" id="name" className="form-control" value={this.state.name} onChange={this.changeField.bind(this, 'name')} />
 					</div>
 				</div>
 				<div className="form-group">
 					<label htmlFor="path" className="col-sm-2 control-label">路径：</label>
 					<div className="col-sm-10">
-						<input type="text" ref="path" id="path" className="form-control" />
+						<input type="text" ref="path" id="path" className="form-control" value={this.state.path} onChange={this.changeField.bind(this, 'path')} />
 					</div>
 				</div>
 				<div className="form-group">

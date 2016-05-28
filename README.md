@@ -10,7 +10,14 @@ gulp:
 http://www.dbpoo.com/getting-started-with-gulp/
 
 
-
+Q:
+1.this.props.history.pushState(null, '/ADMINPATH/articleTagList')
+	字符串变量
+	null作用
+2.mongoose delete remove
+3.underscore vs lodash
+4.articleTagList remove tag from collection
+5.<PageList {...pageList} /> ...什么意思
 =====================================
 API的身份认证应该使用OAuth 2.0框架
 
