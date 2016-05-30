@@ -1,6 +1,7 @@
 var _ = require('lodash'),
 		React = require('react'),
 		ReactRouter = require('react-router'),
+		PageList = require('../PageList');
 		FormValidation = require('../utils/formValidation'),
 		ADMINPATH = require('../../config').adminPath;
 
@@ -14,7 +15,7 @@ var ArticleTagList = React.createClass({
 	},
 
 	componentDidMount: function() {
-		fetch('/admin/article_tag')
+		fetch(ADMINPATH + '/article_tag')
 			.then(function(response) {
 				return response.json();
 			}).then(function(json) {
@@ -28,7 +29,7 @@ var ArticleTagList = React.createClass({
 
 	handleDelete: function(id, e) {
 		e.preventDefault();
-		fetch('/admin/article_tag/' + id, {
+		fetch(ADMINPATH + '/article_tag/' + id, {
 		  method: 'DELETE'
 		}).then(function(response) {
 			return response.json();
@@ -67,6 +68,7 @@ var ArticleTagList = React.createClass({
 						{articleTagList}
 					</tbody>
 				</table>
+				<PageList path={ADMINPATH + '/articleTagList'} />
 			</section>
 		);
 	}

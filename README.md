@@ -11,6 +11,29 @@ http://www.dbpoo.com/getting-started-with-gulp/
 
 
 Q:
+https://fetch.spec.whatwg.org/#fetch-api
+
+var url = new URL("https://geo.example.org/api"),
+    params = {lat:35.696233, long:139.570431}
+Object.keys(params).forEach(key => url.searchParams.append(key, params[key]))
+fetch(url).then(/* … */)
+
+var url = new URL("https://example.org/api"),
+    params = { first: "x", second: "y" }
+Object.keys(params).forEach((key, value) => { url.searchParams.append(key, value) })
+fetch(url).then(/* ... */)
+
+function urlWithParams(urlString, params={}) {
+  var url = new URL(urlString);
+  var searchParams = new URLSearchParams();
+  Object.keys(params).forEach((key) => {
+    searchParams.append(key, params[key]);
+  });
+  url.search = searchParams.toString();
+  return url.toString();
+}
+
+
 shixian.com
 =====================================
 API的身份认证应该使用OAuth 2.0框架
