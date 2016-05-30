@@ -1,4 +1,5 @@
-var React = require('react'),
+var _ = require('lodash'),
+		React = require('react'),
 		ReactRouter = require('react-router'),
 		FormValidation = require('../utils/formValidation'),
 		ADMINPATH = require('../../config').adminPath;
@@ -32,10 +33,11 @@ var ArticleTagList = React.createClass({
 		}).then(function(response) {
 			return response.json();
 		}).then(function(json) {
-			debugger
-			// this.setState({
-			// 	articleTagList: json.data
-			// });
+			var arr = this.state.articleTagList;
+			_.remove(arr, {_id: id})
+			this.setState({
+				articleTagList: arr
+			});
 		}.bind(this));
 	},
 

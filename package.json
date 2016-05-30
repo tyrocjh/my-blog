@@ -14,12 +14,13 @@
   "dependencies": {
     "body-parser": "^1.14.1",
     "express": "^4.13.3",
+    "history": "^1.13.0",
+    "lodash": "^4.13.1",
     "mongoose": "^4.2.5",
     "morgan": "^1.6.1",
     "react": "^0.14.2",
     "react-dom": "^0.14.2",
-    "react-router": "^1.0.0",
-    "history": "^1.13.0"
+    "react-router": "^1.0.0"
   },
   "devDependencies": {
     "babel-preset-react": "^6.5.0",
