@@ -10,14 +10,21 @@ gulp:
 http://www.dbpoo.com/getting-started-with-gulp/
 
 
-Q:
-https://fetch.spec.whatwg.org/#fetch-api
 
-var url = new URL("https://geo.example.org/api"),
-    params = {lat:35.696233, long:139.570431}
-Object.keys(params).forEach(key => url.searchParams.append(key, params[key]))
-fetch(url).then(/* … */)
+--------------------------------------
+kankan:
+https://uptodate.frontendrescue.org/zh/
+https://www.awesomes.cn/
 
+chrome plugin:
+https://wappalyzer.com/
+
+nodemon: [restart]
+https://github.com/remy/nodemon
+
+--------------------------------------
+fetch-api get method with params:
+[https://fetch.spec.whatwg.org/#fetch-api]
 var url = new URL("https://example.org/api"),
     params = { first: "x", second: "y" }
 Object.keys(params).forEach((key, value) => { url.searchParams.append(key, value) })
@@ -32,14 +39,9 @@ function urlWithParams(urlString, params={}) {
   url.search = searchParams.toString();
   return url.toString();
 }
+--------------------------------------
 
-
-shixian.com
-=====================================
-API的身份认证应该使用OAuth 2.0框架
-
-http://www.runoob.com/bootstrap/bootstrap-tables.html
-
+--------------------------------------
 <Link to={`/users/${user.id}`} activeClassName="active">{user.name}</Link>
 // 变成它们其中一个依赖在 History 上，当这个 route 是
 // 激活状态的
@@ -49,9 +51,10 @@ http://www.runoob.com/bootstrap/bootstrap-tables.html
 <Link to={`/users/${user.id}`} activeClassName="current">{user.name}</Link>
 // 当链接激活时，修改它的样式
 <Link to="/users" style={{color: 'white'}} activeStyle={{color: 'red'}}>Users</Link>
+--------------------------------------
 
-
-https://example.org/api/
+--------------------------------------
+api应该加/api前缀
 
 路径（Endpoint）
 路径又称"终点"（endpoint），表示API的具体网址。
@@ -100,6 +103,18 @@ POST /tickets/12/messages - Creates a new message in ticket #12
 PUT /tickets/12/messages/5 - Updates message #5 for ticket #12
 PATCH /tickets/12/messages/5 - Partially updates message #5 for ticket #12
 DELETE /tickets/12/messages/5 - Deletes message #5 for ticket #12
+--------------------------------------
 
+--------------------------------------
+API的身份认证应该使用OAuth 2.0框架
+--------------------------------------
 
+--------------------------------------
+wall
 https://github.com/getlantern/lantern
+--------------------------------------
+
+--------------------------------------
+项目
+shixian.com
+--------------------------------------
