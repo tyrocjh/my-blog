@@ -12,10 +12,6 @@ http://www.dbpoo.com/getting-started-with-gulp/
 
 
 --------------------------------------
-update tyro-note
-
-chrome plugin:
-https://wappalyzer.com/
 
 --------------------------------------
 fetch-api get method with params:
