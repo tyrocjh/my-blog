@@ -10,7 +10,13 @@ var	Link = ReactRouter.Link;
 var ArticleTagList = React.createClass({
 	getInitialState: function() {
 		return {
-			articleTagList: []
+			articleTagList: [],
+			pageList: {
+				rowCount: 100,
+				currentPage: 5,
+				pageCount: 10,
+				pageRange: 3
+			}
 		}
 	},
 
@@ -68,7 +74,11 @@ var ArticleTagList = React.createClass({
 						{articleTagList}
 					</tbody>
 				</table>
-				<PageList path={ADMINPATH + '/articleTagList'} />
+				<PageList rowCount={this.state.pageList.rowCount} 
+									currentPage={this.state.pageList.currentPage} 
+									pageCount={this.state.pageList.pageCount} 
+									pageRange={this.state.pageList.pageRange} 
+									path={ADMINPATH + '/articleTagList'} />
 			</section>
 		);
 	}

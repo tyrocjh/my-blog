@@ -12,15 +12,10 @@ http://www.dbpoo.com/getting-started-with-gulp/
 
 
 --------------------------------------
-kankan:
-https://uptodate.frontendrescue.org/zh/
-https://www.awesomes.cn/
+update tyro-note
 
 chrome plugin:
 https://wappalyzer.com/
-
-nodemon: [restart]
-https://github.com/remy/nodemon
 
 --------------------------------------
 fetch-api get method with params:
