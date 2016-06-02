@@ -9,23 +9,10 @@ var ArticleTag = require('../../../models/articleTag');
 	}
 */
 
-router.get('/', function (req, res) {
-	ArticleTag.find({}, function(err, models) {
-		if(err) {
-			console.info(err);
-			res.json({
-				status: 'fail',
-				msg: '查询失败！'
-			});
-		} else {
-			res.json({
-				status: 'success',
-				msg: '查询成功！',
-				data: models
-			});
-		}
-	});
-});
+router.get('/', function (req, res, next) {
+	req.model = ArticleTag;
+	next();
+}, require('./list'));
 
 router.post('/', function(req, res) {
 	var params = req.body;

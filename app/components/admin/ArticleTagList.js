@@ -1,32 +1,28 @@
 var _ = require('lodash'),
 		React = require('react'),
 		ReactRouter = require('react-router'),
+		Link = ReactRouter.Link,
 		PageList = require('../PageList');
 		FormValidation = require('../utils/formValidation'),
 		ADMINPATH = require('../../config').adminPath;
-
-var	Link = ReactRouter.Link;
 
 var ArticleTagList = React.createClass({
 	getInitialState: function() {
 		return {
 			articleTagList: [],
-			pageList: {
-				rowCount: 100,
-				currentPage: 5,
-				pageCount: 10,
-				pageRange: 3
-			}
+			pageList: {}
 		}
 	},
 
 	componentDidMount: function() {
-		fetch(ADMINPATH + '/article_tag')
+		console.info('componentDidMount....');
+		fetch(ADMINPATH + '/article_tag' + location.search)
 			.then(function(response) {
 				return response.json();
 			}).then(function(json) {
 				this.setState({
-					articleTagList: json.data
+					articleTagList: json.data.dataList,
+					pageList: json.data.pageList
 				});
 			}.bind(this)).catch(function(ex) {
 				console.log('parsing failed', ex);

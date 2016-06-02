@@ -12,6 +12,8 @@ http://www.dbpoo.com/getting-started-with-gulp/
 
 
 --------------------------------------
+xiezishijian
+update tyro-note
 
 --------------------------------------
 fetch-api get method with params:
