@@ -15,7 +15,20 @@ var ArticleTagList = React.createClass({
 	},
 
 	componentDidMount: function() {
-		console.info('componentDidMount....');
+		fetch(ADMINPATH + '/article_tag' + location.search)
+			.then(function(response) {
+				return response.json();
+			}).then(function(json) {
+				this.setState({
+					articleTagList: json.data.dataList,
+					pageList: json.data.pageList
+				});
+			}.bind(this)).catch(function(ex) {
+				console.log('parsing failed', ex);
+			});
+	},
+
+	componentWillReceiveProps: function() {
 		fetch(ADMINPATH + '/article_tag' + location.search)
 			.then(function(response) {
 				return response.json();
@@ -45,10 +58,16 @@ var ArticleTagList = React.createClass({
 	},
 
 	render: function() {
+		var rowCount = this.state.pageList.rowCount;
+		var currentPage = this.state.pageList.currentPage;
+		var pageCount = this.state.pageList.pageCount;
+		var pageRange = this.state.pageList.pageRange;
+		var pageSize = this.state.pageList.pageSize;
+
 		var articleTagList = this.state.articleTagList.map(function(articleTag, index) {
 			return (
 				<tr key={index}>
-					<td>{index + 1}</td>
+					<td>{(currentPage - 1) * pageSize + index + 1}</td>
 					<td>{articleTag.name}</td>
 					<td>{articleTag.path}</td>
 					<td>
@@ -70,11 +89,7 @@ var ArticleTagList = React.createClass({
 						{articleTagList}
 					</tbody>
 				</table>
-				<PageList rowCount={this.state.pageList.rowCount} 
-									currentPage={this.state.pageList.currentPage} 
-									pageCount={this.state.pageList.pageCount} 
-									pageRange={this.state.pageList.pageRange} 
-									path={ADMINPATH + '/articleTagList'} />
+				<PageList rowCount={rowCount} currentPage={currentPage} pageCount={pageCount} pageRange={pageRange} path={ADMINPATH + '/articleTagList'} />
 			</section>
 		);
 	}

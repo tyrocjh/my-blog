@@ -40,8 +40,8 @@ var PageList = React.createClass({
 				pageListComponent.push(<span key="page-next" className="page-next">›</span>);
 				pageListComponent.push(<span key="page-end" className="page-end">»</span>);
 			} else {
-				pageListComponent.push(<Link key="page-next" className="page-next" to={path} query={{page: 1}}>›</Link>);
-				pageListComponent.push(<Link key="page-end" className="page-end" to={path} query={{page: currentPage - 1}}>»</Link>);
+				pageListComponent.push(<Link key="page-next" className="page-next" to={path} query={{page: currentPage + 1}}>›</Link>);
+				pageListComponent.push(<Link key="page-end" className="page-end" to={path} query={{page: pageCount}}>»</Link>);
 			}
 
 			pageListComponent.push(<span key="total" className="page-total">{rowCount}条/共{pageCount}页</span>);
