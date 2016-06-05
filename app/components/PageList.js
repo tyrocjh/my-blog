@@ -44,7 +44,7 @@ var PageList = React.createClass({
 				pageListComponent.push(<Link key="page-end" className="page-end" to={path} query={{page: pageCount}}>»</Link>);
 			}
 
-			pageListComponent.push(<span key="total" className="page-total">{rowCount}条/共{pageCount}页</span>);
+			pageListComponent.push(<span key="total" className="page-total">{rowCount + '条/共' + pageCount + '页'}</span>);
 
 		} else {
 			pageListComponent.push(<span key="none">暂无记录</span>);

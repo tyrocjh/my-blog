@@ -1,0 +1,36 @@
+@import "variables";
+
+.page-list {
+	a, span {
+		display: inline-block;
+    width: 25px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-right: 0;
+	}
+
+	a {
+		color: $blue;
+	}
+
+	span {
+		cursor: not-allowed;
+	}
+
+	.page-current {
+		background: #428bca;
+    color: white;
+	}
+
+	.page-end {
+		border: 1px solid #ccc;
+	}
+
+	.page-total {
+		width: auto;
+		float: right;
+    border: 0;
+	}
+}
