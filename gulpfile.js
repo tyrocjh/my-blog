@@ -1,12 +1,14 @@
 var gulp = require("gulp"),
     browserify = require('browserify'),
     reactify = require('reactify'),
+    buffer = require('vinyl-buffer'),
     source = require('vinyl-source-stream'),
     sass = require('gulp-sass'),
     concat = require('gulp-concat'),
     clean = require('gulp-clean'),
     plumber = require('gulp-plumber'),
-    eslint = require('gulp-eslint');
+    eslint = require('gulp-eslint'),
+    sourcemaps = require('gulp-sourcemaps');
 
 gulp.task("browserify", function () {
   var b = browserify({entries: "app/main.js"});
@@ -36,6 +38,9 @@ gulp.task('sass', function () {
       .pipe(plumber())
       .pipe(sass())
       .pipe(concat('main.css'))
+      .pipe(buffer())
+      .pipe(sourcemaps.init({ loadMaps: true }))
+      .pipe(sourcemaps.write('.'))
       .pipe(gulp.dest('public/css'));
 });
 

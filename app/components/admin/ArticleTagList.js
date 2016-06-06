@@ -4,42 +4,18 @@ var _ = require('lodash'),
 		Link = ReactRouter.Link,
 		PageList = require('../PageList');
 		FormValidation = require('../utils/formValidation'),
+		ListFetchMixin = require('../mixins/ListFetchMixin');
 		ADMINPATH = require('../../config').adminPath;
 
 var ArticleTagList = React.createClass({
+	mixins: [ListFetchMixin],
+
 	getInitialState: function() {
 		return {
-			articleTagList: [],
+			url: ADMINPATH + '/article_tag',
+			dataList: [],
 			pageList: {}
 		}
-	},
-
-	componentDidMount: function() {
-		fetch(ADMINPATH + '/article_tag' + location.search)
-			.then(function(response) {
-				return response.json();
-			}).then(function(json) {
-				this.setState({
-					articleTagList: json.data.dataList,
-					pageList: json.data.pageList
-				});
-			}.bind(this)).catch(function(ex) {
-				console.log('parsing failed', ex);
-			});
-	},
-
-	componentWillReceiveProps: function() {
-		fetch(ADMINPATH + '/article_tag' + location.search)
-			.then(function(response) {
-				return response.json();
-			}).then(function(json) {
-				this.setState({
-					articleTagList: json.data.dataList,
-					pageList: json.data.pageList
-				});
-			}.bind(this)).catch(function(ex) {
-				console.log('parsing failed', ex);
-			});
 	},
 
 	handleDelete: function(id, e) {
@@ -49,10 +25,10 @@ var ArticleTagList = React.createClass({
 		}).then(function(response) {
 			return response.json();
 		}).then(function(json) {
-			var arr = this.state.articleTagList;
+			var arr = this.state.dataList;
 			_.remove(arr, {_id: id})
 			this.setState({
-				articleTagList: arr
+				dataList: arr
 			});
 		}.bind(this));
 	},
@@ -64,7 +40,7 @@ var ArticleTagList = React.createClass({
 		var pageRange = this.state.pageList.pageRange;
 		var pageSize = this.state.pageList.pageSize;
 
-		var articleTagList = this.state.articleTagList.map(function(articleTag, index) {
+		var articleTagList = this.state.dataList.map(function(articleTag, index) {
 			return (
 				<tr key={index}>
 					<td>{(currentPage - 1) * pageSize + index + 1}</td>

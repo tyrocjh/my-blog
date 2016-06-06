@@ -13,7 +13,6 @@ http://www.dbpoo.com/getting-started-with-gulp/
 
 --------------------------------------
 css.map
-mixin
 
 --------------------------------------
 fetch-api get method with params:
