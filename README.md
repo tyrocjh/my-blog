@@ -13,6 +13,9 @@ http://www.dbpoo.com/getting-started-with-gulp/
 
 --------------------------------------
 css.map
+ckeditor
+http://sdk.ckeditor.com/samples/uilanguages.html
+http://docs.ckeditor.com/#!/guide/dev_package_managers
 
 --------------------------------------
 fetch-api get method with params:

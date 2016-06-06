@@ -1,6 +1,6 @@
 var express = require('express');
-var router = express.Router();
-var BlogInfo = require('../../../models/blogInfo');
+		router = express.Router(),
+		BlogInfo = require('../../../models/blogInfo');
 
 /*
 	{
