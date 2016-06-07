@@ -8,3 +8,6 @@ bower_components
 # Compiled files
 public/css/*
 public/js/*
+
+# upload files
+public/upload/*

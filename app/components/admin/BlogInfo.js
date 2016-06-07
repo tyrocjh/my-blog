@@ -25,9 +25,27 @@ var BlogInfo = React.createClass({
 		    	description: json.data.description,
 		    	copyright: json.data.copyright
 		    });
+		    // CKEDITOR.instances.copyright.setData(this.state.copyright);
 		  }.bind(this)).catch(function(ex) {
 		    console.log('parsing failed', ex);
 		  });
+
+		// CKEDITOR.replace('copyright', {
+		//   filebrowserImageUploadUrl: '/admin/upload',
+
+		//   extraPlugins: 'uploadimage,image2',
+		// 	height: 300,
+
+		// 	stylesSet: [
+		// 		{ name: 'Narrow image', type: 'widget', widget: 'image', attributes: { 'class': 'image-narrow' } },
+		// 		{ name: 'Wide image', type: 'widget', widget: 'image', attributes: { 'class': 'image-wide' } }
+		// 	],
+
+		// 	contentsCss: [ CKEDITOR.basePath + 'contents.css', 'http://sdk.ckeditor.com/samples/assets/css/widgetstyles.css' ],
+
+		// 	image2_alignClasses: [ 'image-align-left', 'image-align-center', 'image-align-right' ],
+		// 	image2_disableResizer: true
+		// });
 	},
 
 	changeField: function(field, e) {
@@ -53,11 +71,12 @@ var BlogInfo = React.createClass({
 			}, {
 				name: 'copyright',
 				rules: ['isRequired'],
-				msg: '版权不能为空！'
+				msg: '描述不能为空！'
 			}
 		]);
 
 		if(data) {
+			// data['copyright'] = CKEDITOR.instances.copyright.getData();
 			if(this.state.id) {
 				data['_id'] = this.state.id;
 				fetch('/admin/blog_info', {
