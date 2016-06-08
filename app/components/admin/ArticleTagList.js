@@ -2,9 +2,8 @@ var _ = require('lodash'),
 		React = require('react'),
 		ReactRouter = require('react-router'),
 		Link = ReactRouter.Link,
-		PageList = require('../PageList');
-		FormValidation = require('../utils/formValidation'),
-		ListFetchMixin = require('../mixins/ListFetchMixin');
+		PageList = require('../PageList'),
+		ListFetchMixin = require('../mixins/ListFetchMixin'),
 		ADMINPATH = require('../../config').adminPath;
 
 var ArticleTagList = React.createClass({
@@ -41,9 +40,10 @@ var ArticleTagList = React.createClass({
 		var pageSize = this.state.pageList.pageSize;
 
 		var articleTagList = this.state.dataList.map(function(articleTag, index) {
+			var num = (currentPage - 1) * pageSize + index + 1;
 			return (
-				<tr key={index}>
-					<td>{(currentPage - 1) * pageSize + index + 1}</td>
+				<tr key={num}>
+					<td>{num}</td>
 					<td>{articleTag.name}</td>
 					<td>{articleTag.path}</td>
 					<td>

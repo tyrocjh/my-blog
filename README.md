@@ -12,16 +12,36 @@ http://www.dbpoo.com/getting-started-with-gulp/
 
 
 --------------------------------------
+upload.js / model article.js / component admin article.js
+
 css.map
 
 ckeditor:
 http://sdk.ckeditor.com/samples/fileupload.html
 
-user login
+http://localhost:3001/admin/article?id=5757e8cb574557a907a0730e 直接跳到json？
+
+list page 删除一条数据后，需要重新发送请求，渲染页面吗
+
+编辑的时候可以传值，不用再call一次api？
+
+list page (article list / articletag list) abstract
 
 bloginfo abstract
 
+router controller crud/err abstract
+
+abstract anything can be abstract
+
+user login
+
 <script src="http://cdn.ckeditor.com/4.5.9/standard-all/ckeditor.js"></script>
+
+
+--------------------------------------
+next prj:
+front-end first(data mock): react-redux(redux-devtools), ant-design, webpack+gulp
+--------------------------------------
 
 --------------------------------------
 fetch-api get method with params:
