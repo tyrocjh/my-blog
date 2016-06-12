@@ -1,13 +1,14 @@
 var express = require('express'),
 		router = express.Router(),
-		Article = require('../../../../models/article');
+		Article = require('../../../../models/article'),
+		ArticleType = require('../../../../models/articleType');
 
 /*
 	{
     "title": "my title",
     "author": "my author",
-    "type": "my type",
-    "tags": "my tags",
+    "type": ObjectId,
+    "tags": [ObjectId],
     "introduction": "my introduction",
     "content": "my content"
 	}
@@ -38,6 +39,7 @@ router.post('/', function(req, res) {
 
 router.get('/:id', function(req, res) {
 	var id = req.params['id'];
+	if()
 	Article.findOne({ _id: id }, function(err, model) {
 		if(err) {
 			console.info(err);
@@ -46,11 +48,14 @@ router.get('/:id', function(req, res) {
 				msg: '查询失败！'
 			});
 		} else {
-			res.json({
-				status: 'success',
-				msg: '查询成功！',
-				data: model
-			});
+			ArticleType.find({ published: true }, function(err, types) {
+				debugger
+				// res.json({
+				// 	status: 'success',
+				// 	msg: '查询成功！',
+				// 	data: model
+				// });
+			})
 		}
 	});
 });

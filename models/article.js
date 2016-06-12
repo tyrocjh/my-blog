@@ -8,7 +8,9 @@ var Article = new mongoose.Schema({
 		type: Number,
 		default: 0
 	},
-	type: String,
+	type: {
+		type: ObjectId
+	},
 	tags: String,
 	published: Boolean,
 	introduction: String,

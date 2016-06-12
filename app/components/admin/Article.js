@@ -11,27 +11,23 @@ var Article = React.createClass({
 
 	componentDidMount: function() {
 		var id = location.search.substring(1).split('=')[1];
-		if(id) {
-			fetch(ADMINPATH + '/api/article/' + id)
-				.then(function(response) {
-					return response.json();
-				}).then(function(json) {
-					this.setState({
-						id: json.data._id,
-						title: json.data.title,
-						author: json.data.author,
-						published: json.data.published,
-						introduction: json.data.introduction,
-						content: json.data.content
-					});
-
-					this.useCKeditor();
-				}.bind(this)).catch(function(ex) {
-					console.log('parsing failed', ex);
+		fetch(ADMINPATH + '/api/article/' + id)
+			.then(function(response) {
+				return response.json();
+			}).then(function(json) {
+				this.setState({
+					id: json.data._id,
+					title: json.data.title,
+					author: json.data.author,
+					published: json.data.published,
+					introduction: json.data.introduction,
+					content: json.data.content
 				});
-		} else {
-			this.useCKeditor();
-		}
+
+				this.useCKeditor();
+			}.bind(this)).catch(function(ex) {
+				console.log('parsing failed', ex);
+			});
 	},
 
 	useCKeditor: function() {
