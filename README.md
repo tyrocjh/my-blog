@@ -37,7 +37,7 @@ user login
 
 --------------------------------------
 next prj:
-front-end first(data mock): react-redux(redux-devtools), ant-design, webpack+gulp
+front-end first(data mock): es6 react-redux(redux-devtools), ant-design, webpack+gulp
 --------------------------------------
 
 --------------------------------------

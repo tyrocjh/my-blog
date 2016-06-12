@@ -5,8 +5,10 @@ var React = require('react'),
 		ArticleList = require('./components/ArticleList'),
 		AdminLayout = require('./components/admin/Layout'),
 		AdminWelcome = require('./components/admin/Welcome'),
-		AdminArticle = require('./components/admin/Article');
-		AdminArticleList = require('./components/admin/ArticleList');
+		AdminArticle = require('./components/admin/Article'),
+		AdminArticleList = require('./components/admin/ArticleList'),
+		AdminArticleType = require('./components/admin/ArticleType'),
+		AdminArticleTypeList = require('./components/admin/ArticleTypeList'),
 		AdminArticleTag = require('./components/admin/ArticleTag'),
 		AdminArticleTagList = require('./components/admin/ArticleTagList'),
 		AdminBlogInfo = require('./components/admin/BlogInfo'),
@@ -27,6 +29,8 @@ module.exports = (
 			<Route path="blogInfo" component={AdminBlogInfo} />
 			<Route path="article" component={AdminArticle} />
 			<Route path="articleList" component={AdminArticleList} />
+			<Route path="articleType" component={AdminArticleType} />
+			<Route path="articleTypeList" component={AdminArticleTypeList} />
 			<Route path="articleTag" component={AdminArticleTag} />
 			<Route path="articleTagList" component={AdminArticleTagList} />
 		</Route>

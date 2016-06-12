@@ -6,12 +6,12 @@ var _ = require('lodash'),
 		ListFetchMixin = require('../mixins/ListFetchMixin'),
 		ADMINPATH = require('../../config').adminPath;
 
-var ArticleTagList = React.createClass({
+var ArticleTypeList = React.createClass({
 	mixins: [ListFetchMixin],
 
 	getInitialState: function() {
 		return {
-			url: ADMINPATH + '/api/article_tag',
+			url: ADMINPATH + '/api/article_type',
 			dataList: [],
 			pageList: {}
 		}
@@ -19,7 +19,7 @@ var ArticleTagList = React.createClass({
 
 	handleDelete: function(id, e) {
 		e.preventDefault();
-		fetch(ADMINPATH + '/api/article_tag/' + id, {
+		fetch(ADMINPATH + '/api/article_type/' + id, {
 		  method: 'DELETE'
 		}).then(function(response) {
 			return response.json();
@@ -40,30 +40,31 @@ var ArticleTagList = React.createClass({
 				pageRange = pageList.pageRange,
 				pageSize = pageList.pageSize;
 
-		var articleTagList = this.state.dataList.map(function(articleTag, index) {
+		var articleTypeList = this.state.dataList.map(function(articleType, index){
 			var num = (currentPage - 1) * pageSize + index + 1;
 			return (
 				<tr key={num}>
 					<td>{num}</td>
-					<td>{articleTag.name}</td>
-					<td>{articleTag.path}</td>
+					<td>{articleType.name}</td>
+					<td>{articleType.path}</td>
+					<td>{articleType.enabled ? '是' : '否'}</td>
 					<td>
-						<Link to={ADMINPATH + "/articleTag"} query={{id: articleTag._id}}>编辑</Link>&nbsp;&nbsp;
-						<a href="#" onClick={this.handleDelete.bind(this, articleTag._id)}>删除</a>
+						<Link to={ADMINPATH + "/articleType"} query={{id: articleType._id}}>编辑</Link>&nbsp;&nbsp;
+						<a href="#" onClick={this.handleDelete.bind(this, articleType._id)}>删除</a>
 					</td>
 				</tr>
 			)
 		}.bind(this));
 
 		return (
-			<section className="article-tag-list">
-				<Link to={ADMINPATH + "/articleTag"} className="btn btn-default">新增</Link>
+			<section className="article-type-list">
+				<Link to={ADMINPATH + "/articleType"} className="btn btn-default">新增</Link>
 				<table className="table">
 					<thead>
-						<tr><th>序号</th><th>名称</th><th>路径</th><th>操作</th></tr>
+						<tr><th>序号</th><th>名称</th><th>路径</th><th>是否启用</th><th>操作</th></tr>
 					</thead>
 					<tbody>
-						{articleTagList}
+						{articleTypeList}
 					</tbody>
 				</table>
 				<PageList rowCount={rowCount} currentPage={currentPage} pageCount={pageCount} pageRange={pageRange} path={ADMINPATH + '/articleTagList'} />
@@ -72,4 +73,4 @@ var ArticleTagList = React.createClass({
 	}
 });
 
-module.exports = ArticleTagList;
+module.exports = ArticleTypeList;

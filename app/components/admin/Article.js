@@ -66,6 +66,7 @@ var Article = React.createClass({
 		}]);
 
 		if(data) {
+			data.published = this.refs.published.value;
 			data.introduction = CKEDITOR.instances.introduction.getData();
 			data.content = CKEDITOR.instances.content.getData();
 
@@ -125,6 +126,15 @@ var Article = React.createClass({
 					<label htmlFor="author" className="col-sm-2 control-label">作者：</label>
 					<div className="col-sm-10">
 						<input type="text" ref="author" id="author" className="form-control" value={this.state.author} onChange={this.changeField.bind(this, 'author')} />
+					</div>
+				</div>
+				<div className="form-group">
+					<label className="col-sm-2 control-label">是否启用：</label>
+					<div className="col-sm-10">
+						<select className="form-control" ref="published" value={this.state.published} onChange={this.changeField.bind(this, 'published')}>
+							<option value={true}>是</option>
+							<option value={false}>否</option>
+						</select>
 					</div>
 				</div>
 				<div className="form-group">
