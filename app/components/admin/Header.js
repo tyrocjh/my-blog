@@ -10,7 +10,7 @@ var Header = React.createClass({
 			<header>
 				<div className="container">
 				  <h1>
-				  	<Link to={ADMINPATH}>My Blog 后台管理</Link>
+				  	<Link to={ADMINPATH}></Link>
 				  </h1>
 				  <nav>
 				  	<Link to={ADMINPATH + '/blogInfo'}>博客信息</Link>

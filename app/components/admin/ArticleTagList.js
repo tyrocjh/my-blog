@@ -11,7 +11,7 @@ var ArticleTagList = React.createClass({
 
 	getInitialState: function() {
 		return {
-			url: ADMINPATH + '/article_tag',
+			url: ADMINPATH + '/api/article_tag',
 			dataList: [],
 			pageList: {}
 		}
@@ -19,7 +19,7 @@ var ArticleTagList = React.createClass({
 
 	handleDelete: function(id, e) {
 		e.preventDefault();
-		fetch(ADMINPATH + '/article_tag/' + id, {
+		fetch(ADMINPATH + '/api/article_tag/' + id, {
 		  method: 'DELETE'
 		}).then(function(response) {
 			return response.json();

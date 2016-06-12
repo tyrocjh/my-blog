@@ -1,6 +1,6 @@
 module.exports = function (app) {
-	app.use('/admin/blog_info', require('./routes/admin/blogInfo'));
-  app.use('/admin/article', require('./routes/admin/article'));
-  app.use('/admin/article_tag', require('./routes/admin/articleTag'));
-  app.use('/admin/upload', require('./routes/admin/upload'));
+	app.use('/admin/api/blog_info', require('./routes/admin/api/blogInfo'));
+  app.use('/admin/api/article', require('./routes/admin/api/article'));
+  app.use('/admin/api/article_tag', require('./routes/admin/api/articleTag'));
+  app.use('/admin/api/upload', require('./routes/admin/api/upload'));
 };

@@ -1,6 +1,6 @@
 var express = require('express');
 		router = express.Router();
-		ArticleTag = require('../../../models/articleTag');
+		ArticleTag = require('../../../../models/articleTag');
 
 /*
 	{

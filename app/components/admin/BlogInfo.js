@@ -1,5 +1,6 @@
 var React = require('react'),
-		FormValidation = require('../utils/formValidation');
+		FormValidation = require('../utils/formValidation'),
+		ADMINPATH = require('../../config').adminPath;
 
 var BlogInfo = React.createClass({
 	getInitialState: function() {
@@ -14,7 +15,7 @@ var BlogInfo = React.createClass({
 	},
 
 	componentDidMount: function() {
-		fetch('/admin/blog_info')
+		fetch(ADMINPATH + '/api/blog_info')
 		  .then(function(response) {
 		    return response.json();
 		  }).then(function(json) {
@@ -60,7 +61,7 @@ var BlogInfo = React.createClass({
 		if(data) {
 			if(this.state.id) {
 				data['_id'] = this.state.id;
-				fetch('/admin/blog_info', {
+				fetch(ADMINPATH + '/api/blog_info', {
 				  method: 'PUT',
 				  headers: {
 				    'Accept': 'application/json',
@@ -75,7 +76,7 @@ var BlogInfo = React.createClass({
 					});
 				}.bind(this));
 			} else {
-				fetch('/admin/blog_info', {
+				fetch(ADMINPATH + '/api/blog_info', {
 				  method: 'POST',
 				  headers: {
 				    'Accept': 'application/json',

@@ -12,7 +12,7 @@ var Article = React.createClass({
 	componentDidMount: function() {
 		var id = location.search.substring(1).split('=')[1];
 		if(id) {
-			fetch(ADMINPATH + '/article/' + id)
+			fetch(ADMINPATH + '/api/article/' + id)
 				.then(function(response) {
 					return response.json();
 				}).then(function(json) {
@@ -24,47 +24,27 @@ var Article = React.createClass({
 						introduction: json.data.introduction,
 						content: json.data.content
 					});
-					// CKEDITOR.instances.introduction.setData(this.state.introduction);
-					// CKEDITOR.instances.content.setData(this.state.content);
 
-					CKEDITOR.replace('introduction', {
-					  filebrowserImageUploadUrl: '/admin/upload',
-
-					  extraPlugins: 'uploadimage,image2',
-						height: 300,
-
-						stylesSet: [
-							{ name: 'Narrow image', type: 'widget', widget: 'image', attributes: { 'class': 'image-narrow' } },
-							{ name: 'Wide image', type: 'widget', widget: 'image', attributes: { 'class': 'image-wide' } }
-						],
-
-						contentsCss: [ CKEDITOR.basePath + 'contents.css', 'http://sdk.ckeditor.com/samples/assets/css/widgetstyles.css' ],
-
-						image2_alignClasses: [ 'image-align-left', 'image-align-center', 'image-align-right' ],
-						image2_disableResizer: true
-					}).setData(this.state.introduction);
-
-					CKEDITOR.replace('content', {
-					  filebrowserImageUploadUrl: '/admin/upload',
-
-					  extraPlugins: 'uploadimage,image2',
-						height: 300,
-
-						stylesSet: [
-							{ name: 'Narrow image', type: 'widget', widget: 'image', attributes: { 'class': 'image-narrow' } },
-							{ name: 'Wide image', type: 'widget', widget: 'image', attributes: { 'class': 'image-wide' } }
-						],
-
-						contentsCss: [ CKEDITOR.basePath + 'contents.css', 'http://sdk.ckeditor.com/samples/assets/css/widgetstyles.css' ],
-
-						image2_alignClasses: [ 'image-align-left', 'image-align-center', 'image-align-right' ],
-						image2_disableResizer: true
-					}).setData(this.state.content);
-					
+					this.useCKeditor();
 				}.bind(this)).catch(function(ex) {
 					console.log('parsing failed', ex);
 				});
+		} else {
+			this.useCKeditor();
 		}
+	},
+
+	useCKeditor: function() {
+		this.triggerCKeditor('introduction');
+		this.triggerCKeditor('content');
+	},
+
+	triggerCKeditor: function(field) {
+		CKEDITOR.replace(field, {
+		  filebrowserImageUploadUrl: ADMINPATH + '/api/upload',
+		  extraPlugins: 'image2',
+			height: 300
+		}).setData(this.state[field]);
 	},
 
 	changeField: function(field, e) {
@@ -90,7 +70,7 @@ var Article = React.createClass({
 			data.content = CKEDITOR.instances.content.getData();
 
 			if(this.state.id) {
-				fetch(ADMINPATH + '/article/' + this.state.id, {
+				fetch(ADMINPATH + '/api/article/' + this.state.id, {
 				  method: 'PUT',
 				  headers: {
 				    'Accept': 'application/json',
@@ -108,7 +88,7 @@ var Article = React.createClass({
 					}.bind(this), 500);
 				}.bind(this));
 			} else {
-				fetch(ADMINPATH + '/article', {
+				fetch(ADMINPATH + '/api/article', {
 				  method: 'POST',
 				  headers: {
 				    'Accept': 'application/json',

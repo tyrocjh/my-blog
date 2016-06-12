@@ -15,7 +15,7 @@ var ArticleTag = React.createClass({
 	componentDidMount: function() {
 		var id = location.search.substring(1).split('=')[1];
 		if(id) {
-			fetch(ADMINPATH + '/article_tag/' + id)
+			fetch(ADMINPATH + '/api/article_tag/' + id)
 				.then(function(response) {
 					return response.json();
 				}).then(function(json) {
@@ -50,7 +50,7 @@ var ArticleTag = React.createClass({
 
 		if(data) {
 			if(this.state.id) {
-				fetch(ADMINPATH + '/article_tag/' + this.state.id, {
+				fetch(ADMINPATH + '/api/article_tag/' + this.state.id, {
 				  method: 'PUT',
 				  headers: {
 				    'Accept': 'application/json',
@@ -68,7 +68,7 @@ var ArticleTag = React.createClass({
 					}.bind(this), 500);
 				}.bind(this));
 			} else {
-				fetch(ADMINPATH + '/article_tag', {
+				fetch(ADMINPATH + '/api/article_tag', {
 				  method: 'POST',
 				  headers: {
 				    'Accept': 'application/json',

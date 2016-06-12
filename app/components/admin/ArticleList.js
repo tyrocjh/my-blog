@@ -12,7 +12,7 @@ var ArticleList = React.createClass({
 
 	getInitialState: function() {
 		return {
-			url: ADMINPATH + '/article',
+			url: ADMINPATH + '/api/article',
 			dataList: [],
 			pageList: {}
 		}
@@ -20,7 +20,7 @@ var ArticleList = React.createClass({
 
 	handleDelete: function(id, e) {
 		e.preventDefault();
-		fetch(ADMINPATH + '/article/' + id, {
+		fetch(ADMINPATH + '/api/article/' + id, {
 		  method: 'DELETE'
 		}).then(function(response) {
 			return response.json();

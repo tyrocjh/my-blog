@@ -4,22 +4,19 @@ https://github.com/mhbseal/blog
 https://github.com/tyrocjh/my-blog-demo
 
 technology:
-gulp, react, react-router,fetch, express, mooogoose
+gulp, react, react-router,fetch, express, mooogoose, ckeditor
 
 gulp:
 http://www.dbpoo.com/getting-started-with-gulp/
 
+ckeditor:
+http://sdk.ckeditor.com/samples/fileupload.html
 
 
 --------------------------------------
 upload.js / model article.js / component admin article.js
 
 css.map
-
-ckeditor:
-http://sdk.ckeditor.com/samples/fileupload.html
-
-http://localhost:3001/admin/article?id=5757e8cb574557a907a0730e 直接跳到json？
 
 list page 删除一条数据后，需要重新发送请求，渲染页面吗
 
@@ -75,8 +72,6 @@ function urlWithParams(urlString, params={}) {
 --------------------------------------
 
 --------------------------------------
-api应该加/api前缀
-
 路径（Endpoint）
 路径又称"终点"（endpoint），表示API的具体网址。
 在RESTful架构中，每个网址代表一种资源（resource），所以网址中不能有动词，只能有名词，而且所用的名词往往与数据库的表格名对应。一般来说，数据库中的表都是同种记录的"集合"（collection），所以API中的名词也应该使用复数。
