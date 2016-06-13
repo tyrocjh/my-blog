@@ -5,7 +5,9 @@ var React = require('react'),
 var Article = React.createClass({
 	getInitialState: function() {
 		return {
-			validateMsg: ''
+			validateMsg: '',
+			types: [],
+			tags: []
 		};
 	},
 
@@ -16,12 +18,15 @@ var Article = React.createClass({
 				return response.json();
 			}).then(function(json) {
 				this.setState({
-					id: json.data._id,
-					title: json.data.title,
-					author: json.data.author,
-					published: json.data.published,
-					introduction: json.data.introduction,
-					content: json.data.content
+					id: json.data.model._id,
+					title: json.data.model.title,
+					author: json.data.model.author,
+					_type: json.data.model._type,
+					published: json.data.model.published,
+					introduction: json.data.model.introduction,
+					content: json.data.model.content,
+					types: json.data.types,
+					tags: json.data.tags
 				});
 
 				this.useCKeditor();
@@ -59,10 +64,13 @@ var Article = React.createClass({
 			name: 'author',
 			rules: ['isRequired'],
 			msg: '作者不能为空！'
+		}, {
+			names: 'tags'
 		}]);
 
 		if(data) {
 			data.published = this.refs.published.value;
+			data._type = this.refs.types.value;
 			data.introduction = CKEDITOR.instances.introduction.getData();
 			data.content = CKEDITOR.instances.content.getData();
 
@@ -122,6 +130,32 @@ var Article = React.createClass({
 					<label htmlFor="author" className="col-sm-2 control-label">作者：</label>
 					<div className="col-sm-10">
 						<input type="text" ref="author" id="author" className="form-control" value={this.state.author} onChange={this.changeField.bind(this, 'author')} />
+					</div>
+				</div>
+				<div className="form-group">
+					<label className="col-sm-2 control-label">所属类别：</label>
+					<div className="col-sm-10">
+						<select className="form-control" ref="types" value={this.state._type} onChange={this.changeField.bind(this, '_type')}>
+							{this.state.types.map(function(type, index){
+								return (
+									<option key={index} value={type._id}>{type.name}</option>
+								)
+							})}
+						</select>
+					</div>
+				</div>
+				<div className="form-group">
+					<label className="col-sm-2 control-label">标签：</label>
+					<div className="col-sm-10">
+						<div className="checkbox">
+							{this.state.tags.map(function(tag, index) {
+								return (
+									<label key={index}>
+										<input ref={'tags'+index} type="checkbox" value={tag._id} />{tag.name}
+									</label>
+								);
+							})}
+					  </div>
 					</div>
 				</div>
 				<div className="form-group">

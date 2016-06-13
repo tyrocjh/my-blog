@@ -1,7 +1,8 @@
 var express = require('express'),
 		router = express.Router(),
 		Article = require('../../../../models/article'),
-		ArticleType = require('../../../../models/articleType');
+		ArticleType = require('../../../../models/articleType'),
+		ArticleTag = require('../../../../models/articleTag');
 
 /*
 	{
@@ -14,13 +15,42 @@ var express = require('express'),
 	}
 */
 
-router.get('/', function(req, res, next) {
-	req.model = Article;
-	next()
-}, require('./list'));
+router.get('/', function(req, res) {
+	var condition = req.query;
+	var pageList = {
+		currentPage: +condition.page || 1,
+		pageSize: 5,
+		pageRange: 2
+	};
+
+	Article
+		.find({})
+		.populate('_type', 'name path')
+		.skip((pageList.currentPage - 1) * pageList.pageSize)
+		.limit(pageList.pageSize)
+		.sort({updatedAt: 'desc'})
+		.exec(function(err, models) {
+			Article
+				.count({})
+				.exec(function(err, count) {
+					pageList.rowCount = count;
+					pageList.pageCount = Math.ceil(pageList.rowCount / pageList.pageSize);
+
+					res.json({
+						status: 'success',
+						msg: '查询成功！',
+						data: {
+							dataList: models,
+							pageList: pageList
+						}
+					});
+				});
+		});
+});
 
 router.post('/', function(req, res) {
 	var params = req.body;
+
 	Article.create(params, function(err, model) {
 		if(err) {
 			console.info(err);
@@ -39,24 +69,33 @@ router.post('/', function(req, res) {
 
 router.get('/:id', function(req, res) {
 	var id = req.params['id'];
-	if()
-	Article.findOne({ _id: id }, function(err, model) {
-		if(err) {
-			console.info(err);
-			res.json({
-				status: 'fail',
-				msg: '查询失败！'
-			});
-		} else {
-			ArticleType.find({ published: true }, function(err, types) {
-				debugger
-				// res.json({
-				// 	status: 'success',
-				// 	msg: '查询成功！',
-				// 	data: model
-				// });
-			})
-		}
+
+	ArticleType.find({ enabled: true }, function(err, types) {
+		ArticleTag.find({}, function(err, tags) {
+			if(id !== 'undefined') {
+				Article.findOne({ _id: id }, function(err, model) {
+					res.json({
+						status: 'success',
+						msg: '查询成功！',
+						data: {
+							model: model,
+							types: types,
+							tags: tags
+						}
+					});
+				});
+			} else {
+				res.json({
+					status: 'success',
+					msg: '查询成功！',
+					data: {
+						model: {},
+						types: types,
+						tags: tags
+					}
+				});
+			}
+		});
 	});
 });
 

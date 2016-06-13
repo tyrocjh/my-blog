@@ -1,5 +1,4 @@
-var mongoose = require('mongoose'),
-		ObjectId = mongoose.Schema.Types.ObjectId;
+var mongoose = require('mongoose');
 
 var ArticleType = new mongoose.Schema({
 	name: String,

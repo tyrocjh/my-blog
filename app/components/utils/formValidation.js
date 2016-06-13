@@ -8,29 +8,44 @@ module.exports = function(parent, inputs) {
 
     if(data) {
       var name = inputs[key]['name'];
-      var value = refs[name].value;
-      
-      data[name] = value;
+      var names = inputs[key]['names'];
 
-      if(inputs[key]['rules']) {
-
-        for(var r in inputs[key]['rules']) {
-          var rule = inputs[key]['rules'][r];
-
-          if(!rules[rule](value)) {
-            parent.setState({
-              validateMsg: inputs[key]['msg']
-            });
-
-            data = null;
-            break;
-          } else {
-            parent.setState({
-              validateMsg: null
-            });
+      if(names) {
+        var i = 0, ref;
+        while(ref = refs[names + i]) {
+          i++;
+          if(ref.checked) {
+            if(!data[names]) data[names] = [];
+            data[names].push(ref.value);
           }
         }
       }
+
+      if(name) {
+        var value = refs[name].value;
+        data[name] = value;
+
+        if(inputs[key]['rules']) {
+
+          for(var r in inputs[key]['rules']) {
+            var rule = inputs[key]['rules'][r];
+
+            if(!rules[rule](value)) {
+              parent.setState({
+                validateMsg: inputs[key]['msg']
+              });
+
+              data = null;
+              break;
+            } else {
+              parent.setState({
+                validateMsg: null
+              });
+            }
+          }
+        }
+      }
+
     }
   }
 

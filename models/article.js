@@ -1,5 +1,5 @@
 var mongoose = require('mongoose'),
-		ObjectId = mongoose.Schema.Types.ObjectId;
+		ObjectId = mongoose.Schema.ObjectId;
 
 var Article = new mongoose.Schema({
 	title: String,
@@ -8,10 +8,14 @@ var Article = new mongoose.Schema({
 		type: Number,
 		default: 0
 	},
-	type: {
-		type: ObjectId
+	_type: {
+		type: ObjectId,
+		ref: 'ArticleType'
 	},
-	tags: String,
+	tags: [{
+		type: ObjectId,
+		ref: 'ArticleTag'
+	}],
 	published: Boolean,
 	introduction: String,
 	content: String
@@ -20,12 +24,3 @@ var Article = new mongoose.Schema({
 });
 
 module.exports = mongoose.model('Article', Article);
-
-//     type: {
-//       type: Schema.Types.ObjectId,
-//       ref: 'articleType'
-//     },
-//     tags: [{
-//       type: Schema.Types.ObjectId,
-//       ref: 'articleTag'
-//     }],

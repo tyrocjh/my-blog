@@ -14,9 +14,9 @@ http://sdk.ckeditor.com/samples/fileupload.html
 
 
 --------------------------------------
-upload.js / model article.js / component admin article.js
-
 css.map
+
+upload.js / model article.js / component admin article.js
 
 list page 删除一条数据后，需要重新发送请求，渲染页面吗
 
@@ -37,7 +37,7 @@ user login
 
 --------------------------------------
 next prj:
-front-end first(data mock): es6 react-redux(redux-devtools), ant-design, webpack+gulp
+front-end first(data mock): es6 react-redux(redux-devtools, reducer?), ant-design, webpack+gulp, docker
 --------------------------------------
 
 --------------------------------------

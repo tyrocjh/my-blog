@@ -48,7 +48,7 @@ var ArticleList = React.createClass({
 					<td>{article.title}</td>
 					<td>{article.author}</td>
 					<td>{article.visits}</td>
-					<td>{article.type}</td>
+					<td>{article._type ? article._type.name : ''}</td>
 					<td>{article.tags}</td>
 					<td>comments count...</td>
 					<td>{moment(article.createdAt).format('YYYY-MM-DD HH:mm')}</td>
