@@ -14,9 +14,15 @@ http://sdk.ckeditor.com/samples/fileupload.html
 
 
 --------------------------------------
+https://github.com/wygkzqa/tui
+https://github.com/FongRay/FongRay.github.io
+https://css-tricks.com/examples/ShapesOfCSS/
 licecap
+heroko
 
 css.map
+
+user login
 
 upload.js / model article.js / component admin article.js
 
@@ -32,14 +38,12 @@ router controller crud/err abstract
 
 abstract anything can be abstract
 
-user login
-
 <script src="http://cdn.ckeditor.com/4.5.9/standard-all/ckeditor.js"></script>
 
 
 --------------------------------------
 next prj:
-front-end first(data mock): es6 react-redux(redux-devtools, reducer?), ant-design, webpack+gulp, docker, 评论插件
+front-end first(data mock): es6 react-redux(redux-devtools, reducer?), ant-design, webpack+gulp, docker, comment plugin
 --------------------------------------
 
 --------------------------------------
