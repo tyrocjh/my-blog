@@ -4,7 +4,7 @@ https://github.com/mhbseal/blog
 https://github.com/tyrocjh/my-blog-demo
 
 technology:
-gulp, react, react-router,fetch, express, mooogoose, ckeditor
+gulp, react, react-router, fetch, express, mooogoose, ckeditor
 
 gulp:
 http://www.dbpoo.com/getting-started-with-gulp/
@@ -14,6 +14,8 @@ http://sdk.ckeditor.com/samples/fileupload.html
 
 
 --------------------------------------
+licecap
+
 css.map
 
 upload.js / model article.js / component admin article.js
@@ -37,7 +39,7 @@ user login
 
 --------------------------------------
 next prj:
-front-end first(data mock): es6 react-redux(redux-devtools, reducer?), ant-design, webpack+gulp, docker
+front-end first(data mock): es6 react-redux(redux-devtools, reducer?), ant-design, webpack+gulp, docker, 评论插件
 --------------------------------------
 
 --------------------------------------

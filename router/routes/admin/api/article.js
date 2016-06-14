@@ -24,8 +24,9 @@ router.get('/', function(req, res) {
 	};
 
 	Article
-		.find({})
+		.find()
 		.populate('_type', 'name path')
+		.populate('tags', 'name path')
 		.skip((pageList.currentPage - 1) * pageList.pageSize)
 		.limit(pageList.pageSize)
 		.sort({updatedAt: 'desc'})

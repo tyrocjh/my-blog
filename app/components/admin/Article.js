@@ -6,8 +6,8 @@ var Article = React.createClass({
 	getInitialState: function() {
 		return {
 			validateMsg: '',
-			types: [],
-			tags: []
+			initTypes: [],
+			initTags: []
 		};
 	},
 
@@ -22,11 +22,12 @@ var Article = React.createClass({
 					title: json.data.model.title,
 					author: json.data.model.author,
 					_type: json.data.model._type,
+					tags: json.data.model.tags,
 					published: json.data.model.published,
 					introduction: json.data.model.introduction,
 					content: json.data.model.content,
-					types: json.data.types,
-					tags: json.data.tags
+					initTypes: json.data.types,
+					initTags: json.data.tags
 				});
 
 				this.useCKeditor();
@@ -136,7 +137,7 @@ var Article = React.createClass({
 					<label className="col-sm-2 control-label">所属类别：</label>
 					<div className="col-sm-10">
 						<select className="form-control" ref="types" value={this.state._type} onChange={this.changeField.bind(this, '_type')}>
-							{this.state.types.map(function(type, index){
+							{this.state.initTypes.map(function(type, index){
 								return (
 									<option key={index} value={type._id}>{type.name}</option>
 								)
@@ -148,13 +149,13 @@ var Article = React.createClass({
 					<label className="col-sm-2 control-label">标签：</label>
 					<div className="col-sm-10">
 						<div className="checkbox">
-							{this.state.tags.map(function(tag, index) {
+							{this.state.initTags.map(function(tag, index) {
 								return (
 									<label key={index}>
-										<input ref={'tags'+index} type="checkbox" value={tag._id} />{tag.name}
+										<input ref={'tags'+index} type="checkbox" value={tag._id} defaultChecked={ this.state.tags && ~this.state.tags.indexOf(tag._id) ? true : false} />{tag.name}
 									</label>
 								);
-							})}
+							}.bind(this))}
 					  </div>
 					</div>
 				</div>
