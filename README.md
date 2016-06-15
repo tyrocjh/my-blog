@@ -14,11 +14,8 @@ http://sdk.ckeditor.com/samples/fileupload.html
 
 
 --------------------------------------
+wechat
 https://github.com/wygkzqa/tui
-https://github.com/FongRay/FongRay.github.io
-https://css-tricks.com/examples/ShapesOfCSS/
-licecap
-heroko
 
 css.map
 
@@ -40,6 +37,7 @@ abstract anything can be abstract
 
 <script src="http://cdn.ckeditor.com/4.5.9/standard-all/ckeditor.js"></script>
 
+redis??
 
 --------------------------------------
 next prj:
