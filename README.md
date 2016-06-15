@@ -17,6 +17,11 @@ http://sdk.ckeditor.com/samples/fileupload.html
 wechat
 https://github.com/wygkzqa/tui
 
+https://github.com/reactjs/react-router/blob/master/examples/auth-flow/auth.js
+
+http://vladimirponomarev.com/blog/authentication-in-react-apps-jwt
+https://github.com/vladimirponomarev/authentication-in-react-apps
+
 css.map
 
 user login
