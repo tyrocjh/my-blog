@@ -4,7 +4,7 @@ https://github.com/mhbseal/blog
 https://github.com/tyrocjh/my-blog-demo
 
 technology:
-gulp, react, react-router, fetch, express, mooogoose, ckeditor
+gulp, react, react-router, fetch, express, mooogoose, ckeditor, jwt, bcrypt, passport 
 
 gulp:
 http://www.dbpoo.com/getting-started-with-gulp/
@@ -14,7 +14,6 @@ http://sdk.ckeditor.com/samples/fileupload.html
 
 
 --------------------------------------
-wechat
 https://github.com/wygkzqa/tui
 
 https://github.com/reactjs/react-router/blob/master/examples/auth-flow/auth.js
