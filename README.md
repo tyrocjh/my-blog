@@ -46,6 +46,7 @@ redis??
 --------------------------------------
 next prj:
 front-end first(data mock): es6 react-redux(redux-devtools, reducer?), ant-design, webpack+gulp, docker, comment plugin
+														react-boilerplate?
 --------------------------------------
 
 --------------------------------------
