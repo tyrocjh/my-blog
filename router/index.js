@@ -1,4 +1,5 @@
 module.exports = function (app) {
+	app.use('/admin/api/login', require('./routes/admin/api/login'));
 	app.use('/admin/api/admin', require('./routes/admin/api/admin'));
 	app.use('/admin/api/blog_info', require('./routes/admin/api/blogInfo'));
   app.use('/admin/api/article', require('./routes/admin/api/article'));

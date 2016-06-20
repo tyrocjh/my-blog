@@ -5,6 +5,7 @@ var React = require('react'),
 		ArticleList = require('./components/ArticleList'),
 		AdminLayout = require('./components/admin/Layout'),
 		AdminWelcome = require('./components/admin/Welcome'),
+		AdminLogin = require('./components/admin/Login'),
 		AdminAdmin = require('./components/admin/Admin'),
 		AdminAdminList = require('./components/admin/AdminList'),
 		AdminBlogInfo = require('./components/admin/BlogInfo'),
@@ -30,9 +31,10 @@ module.exports = (
 		</Route>
 		<Route path={ADMINPATH} component={AdminLayout}>
 			<IndexRoute component={AdminWelcome} />
-			<Route path="blogInfo" component={AdminBlogInfo} />
+			<Route path="login" component={AdminLogin} />
 			<Route path="admin" component={AdminAdmin} />
 			<Route path="adminList" component={AdminAdminList} />
+			<Route path="blogInfo" component={AdminBlogInfo} />
 			<Route path="article" component={AdminArticle} />
 			<Route path="articleList" component={AdminArticleList} />
 			<Route path="articleType" component={AdminArticleType} />
