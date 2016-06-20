@@ -1,6 +1,7 @@
-var express = require('express');
-		router = express.Router();
-		Admin = require('../../models/admin');
+var express = require('express'),
+		router = express.Router(),
+		Admin = require('../../models/admin'),
+		passport = require('passport');
 
 /*
 	{
@@ -16,22 +17,22 @@ router.get('/', function (req, res, next) {
 	next();
 }, require('./list'));
 
-router.post('/', function(req, res) {
-	var params = req.body;
-	Admin.create(params, function(err, model) {
-		if(err) {
-			console.info(err);
-			res.json({
-				status: 'fail',
-				msg: '创建失败！'
-			});
-		} else {
-			res.json({
-				status: 'success',
-				msg: '创建成功！'
-			});
-		}
-	});
+router.post('/', function(req, res, next) {
+
+  passport.authenticate('local-signup', function(err) {
+    if (err) {
+      if (err.name === "MongoError" && err.code === 11000) {
+        // the 11000 Mongo code is for duplicate email error
+        // the 409 HTTP status code is for conflict error
+        return res.status(409).json({ status: 'fail', msg: "Check the form for errors.", errors: { email: "This email is already taken." } });
+      }
+
+      return res.status(400).json({ status: 'fail', msg: "Could not process the form." });
+    }
+
+    return res.status(200).json({ status: 'success', msg: '创建成功！' });
+  })(req, res, next);
+  
 });
 
 router.get('/:id', function(req, res) {

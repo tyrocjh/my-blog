@@ -1,5 +1,6 @@
-var express = require('express');
-		router = express.Router();
+var express = require('express'),
+		router = express.Router(),
+		passport = require('passport');
 
 /*
 	{
@@ -8,16 +9,20 @@ var express = require('express');
 	}
 */
 
-router.post('/', function (req, res) {
-	var params = req.body;
-	req.session.admin = {
-		id: '123',
-		name: 'asd'
-	}
-	debugger
-	res.json({
-		status: 'success'
-	});
+router.post('/', function (req, res, next) {
+
+  passport.authenticate('local-login', function(err, token, adminData) {
+    if (err) {
+      if (err.name === "IncorrectCredentialsError") {
+        return res.status(400).json({ success: false, message: err.message });
+      }
+
+      return res.status(400).json({ success: false, message: "Could not process the form." });
+    }
+
+    return res.json({ success: true, message: "You have successfully logged in!", token: token, user: adminData });
+  })(req, res, next);
+  
 });
 
 module.exports = router;

@@ -35,6 +35,7 @@ var Login = React.createClass({
 			}).then(function(response) {
 				return response.json();
 			}).then(function(json) {
+				console.info(json);
 				this.setState({
 					validateMsg: json.msg
 				});

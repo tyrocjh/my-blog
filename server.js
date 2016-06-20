@@ -1,10 +1,7 @@
 var path = require('path');
 var express = require('express');
 var bodyParser = require('body-parser');
-
-var path = require('path');
-var express = require('express');
-var bodyParser = require('body-parser');
+var passport = require('passport');
 var mongoose = require('mongoose');
 
 var config = require('./config');
@@ -19,8 +16,10 @@ mongoose.connection.on('error', function() {
 app.set('port', process.env.PORT || 3001);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(passport.initialize());
 app.use(express.static(path.join(__dirname, 'public')));
 
+require('./server/passport')(config);
 require('./server/routes')(app);
 
 app.get('*', function(req, res) {
