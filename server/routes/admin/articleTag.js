@@ -1,23 +1,22 @@
 var express = require('express');
 		router = express.Router();
-		ArticleType = require('../../../../models/articleType');
+		ArticleTag = require('../../models/articleTag');
 
 /*
 	{
 	  "name": "my name",
-	  "path": "my path",
-	  "enabled": Boolean
+	  "path": "my path"
 	}
 */
 
 router.get('/', function (req, res, next) {
-	req.model = ArticleType;
+	req.model = ArticleTag;
 	next();
 }, require('./list'));
 
 router.post('/', function(req, res) {
 	var params = req.body;
-	ArticleType.create(params, function(err, model) {
+	ArticleTag.create(params, function(err, model) {
 		if(err) {
 			console.info(err);
 			res.json({
@@ -35,7 +34,7 @@ router.post('/', function(req, res) {
 
 router.get('/:id', function(req, res) {
 	var id = req.params['id'];
-	ArticleType.findOne({ _id: id }, function(err, model) {
+	ArticleTag.findOne({ _id: id }, function(err, model) {
 		if(err) {
 			console.info(err);
 			res.json({
@@ -58,7 +57,7 @@ router.put('/:id', function(req, res) {
 	var query = { _id: id };
 	var options = { new: true };
 
-	ArticleType.findOneAndUpdate(query, params, options, function(err, model) {
+	ArticleTag.findOneAndUpdate(query, params, options, function(err, model) {
 		if(err) {
 			console.info(err);
 			res.json({
@@ -77,7 +76,7 @@ router.put('/:id', function(req, res) {
 router.delete('/:id', function(req, res) {
 	var id = req.params['id'];
 
-	ArticleType.remove({ _id: id }, function(err, model) {
+	ArticleTag.remove({ _id: id }, function(err, model) {
 		if(err) {
 			console.info(err);
 			res.json({

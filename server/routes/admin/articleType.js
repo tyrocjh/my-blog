@@ -1,23 +1,23 @@
 var express = require('express');
 		router = express.Router();
-		SinglePage = require('../../../../models/singlePage');
+		ArticleType = require('../../models/articleType');
 
 /*
 	{
 	  "name": "my name",
 	  "path": "my path",
-	  "content": "my content"
+	  "enabled": Boolean
 	}
 */
 
 router.get('/', function (req, res, next) {
-	req.model = SinglePage;
+	req.model = ArticleType;
 	next();
 }, require('./list'));
 
 router.post('/', function(req, res) {
 	var params = req.body;
-	SinglePage.create(params, function(err, model) {
+	ArticleType.create(params, function(err, model) {
 		if(err) {
 			console.info(err);
 			res.json({
@@ -35,7 +35,7 @@ router.post('/', function(req, res) {
 
 router.get('/:id', function(req, res) {
 	var id = req.params['id'];
-	SinglePage.findOne({ _id: id }, function(err, model) {
+	ArticleType.findOne({ _id: id }, function(err, model) {
 		if(err) {
 			console.info(err);
 			res.json({
@@ -58,7 +58,7 @@ router.put('/:id', function(req, res) {
 	var query = { _id: id };
 	var options = { new: true };
 
-	SinglePage.findOneAndUpdate(query, params, options, function(err, model) {
+	ArticleType.findOneAndUpdate(query, params, options, function(err, model) {
 		if(err) {
 			console.info(err);
 			res.json({
@@ -77,7 +77,7 @@ router.put('/:id', function(req, res) {
 router.delete('/:id', function(req, res) {
 	var id = req.params['id'];
 
-	SinglePage.remove({ _id: id }, function(err, model) {
+	ArticleType.remove({ _id: id }, function(err, model) {
 		if(err) {
 			console.info(err);
 			res.json({

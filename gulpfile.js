@@ -11,7 +11,7 @@ var gulp = require("gulp"),
     sourcemaps = require('gulp-sourcemaps');
 
 gulp.task("browserify", function () {
-  var b = browserify({entries: "app/main.js"});
+  var b = browserify({entries: "client/main.js"});
 
   return b.transform(reactify)
       .bundle()
@@ -24,7 +24,7 @@ gulp.task("browserify", function () {
 });
 
 gulp.task('lint', function () {
-  gulp.src('app/**/*.js')
+  gulp.src('client/**/*.js')
     .pipe(eslint())
     .pipe(eslint.format())
     .pipe(eslint.failOnError())
@@ -34,7 +34,7 @@ gulp.task('lint', function () {
 });
 
 gulp.task('sass', function () {
-  gulp.src('app/stylesheets/**/*.scss')
+  gulp.src('client/stylesheets/**/*.scss')
       .pipe(plumber())
       .pipe(sass())
       .pipe(concat('main.css'))
@@ -64,8 +64,8 @@ gulp.task('clean', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch('app/**/*.js', ['lint', 'browserify']);
-  gulp.watch('app/stylesheets/**/*.scss', ['sass']);
+  gulp.watch('client/**/*.js', ['lint', 'browserify']);
+  gulp.watch('client/stylesheets/**/*.scss', ['sass']);
 });
 
 gulp.task('default', ['browserify', 'sass', 'jsvender', 'cssvender']);

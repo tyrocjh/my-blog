@@ -1,6 +1,6 @@
 var express = require('express');
 		router = express.Router();
-		Admin = require('../../../../models/admin');
+		Admin = require('../../models/admin');
 
 /*
 	{

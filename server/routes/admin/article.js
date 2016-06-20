@@ -1,8 +1,8 @@
 var express = require('express'),
 		router = express.Router(),
-		Article = require('../../../../models/article'),
-		ArticleType = require('../../../../models/articleType'),
-		ArticleTag = require('../../../../models/articleTag');
+		Article = require('../../models/article'),
+		ArticleType = require('../../models/articleType'),
+		ArticleTag = require('../../models/articleTag');
 
 /*
 	{
