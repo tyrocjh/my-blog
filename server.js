@@ -20,7 +20,7 @@ app.use(passport.initialize());
 app.use(express.static(path.join(__dirname, 'public')));
 
 require('./server/passport')(config);
-require('./server/routes')(app);
+require('./server/routes')(app, config);
 
 app.get('*', function(req, res) {
   res.sendFile(__dirname + '/public/index.html');

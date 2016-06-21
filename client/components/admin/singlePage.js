@@ -1,5 +1,6 @@
 var React = require('react'),
 		FormValidation = require('../utils/formValidation'),
+		Auth = require('../utils/auth'),
 		ADMINPATH = require('../../config').adminPath;
 
 var SinglePage = React.createClass({
@@ -15,21 +16,27 @@ var SinglePage = React.createClass({
 	componentDidMount: function() {
 		var id = location.search.substring(1).split('=')[1];
 		if(id) {
-			fetch(ADMINPATH + '/api/single_page/' + id)
-				.then(function(response) {
-					return response.json();
-				}).then(function(json) {
-					this.setState({
-						id: json.data._id,
-						title: json.data.title,
-						path: json.data.path,
-						content: json.data.content
-					});
-
-					this.useCKeditor();
-				}.bind(this)).catch(function(ex) {
-					console.log('parsing failed', ex);
+			fetch(ADMINPATH + '/api/single_page/' + id, {
+			  method: 'GET',
+			  headers: {
+			  	'Authorization': Auth.getToken(),
+			    'Accept': 'application/json',
+			    'Content-Type': 'application/json'
+			  }
+			}).then(function(response) {
+				return response.json();
+			}).then(function(json) {
+				this.setState({
+					id: json.data._id,
+					title: json.data.title,
+					path: json.data.path,
+					content: json.data.content
 				});
+
+				this.useCKeditor();
+			}.bind(this)).catch(function(ex) {
+				console.log('parsing failed', ex);
+			});
 		} else {
 			this.useCKeditor();
 		}
@@ -71,6 +78,7 @@ var SinglePage = React.createClass({
 				fetch(ADMINPATH + '/api/single_page/' + this.state.id, {
 				  method: 'PUT',
 				  headers: {
+				  	'Authorization': Auth.getToken(),
 				    'Accept': 'application/json',
 				    'Content-Type': 'application/json'
 				  },
@@ -89,6 +97,7 @@ var SinglePage = React.createClass({
 				fetch(ADMINPATH + '/api/single_page', {
 				  method: 'POST',
 				  headers: {
+				  	'Authorization': Auth.getToken(),
 				    'Accept': 'application/json',
 				    'Content-Type': 'application/json'
 				  },

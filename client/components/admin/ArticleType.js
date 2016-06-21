@@ -1,5 +1,6 @@
 var React = require('react'),
 		FormValidation = require('../utils/formValidation'),
+		Auth = require('../utils/auth'),
 		ADMINPATH = require('../../config').adminPath;
 
 var ArticleType = React.createClass({
@@ -15,19 +16,25 @@ var ArticleType = React.createClass({
 	componentDidMount: function() {
 		var id = location.search.substring(1).split('=')[1];
 		if(id) {
-			fetch(ADMINPATH + '/api/article_type/' + id)
-				.then(function(response) {
-					return response.json();
-				}).then(function(json) {
-					this.setState({
-						id: json.data._id,
-						name: json.data.name,
-						path: json.data.path,
-						enabled: json.data.enabled
-					});
-				}.bind(this)).catch(function(ex) {
-					console.log('parsing failed', ex);
+			fetch(ADMINPATH + '/api/article_type/' + id, {
+			  method: 'GET',
+			  headers: {
+			  	'Authorization': Auth.getToken(),
+			    'Accept': 'application/json',
+			    'Content-Type': 'application/json'
+			  }
+			}).then(function(response) {
+				return response.json();
+			}).then(function(json) {
+				this.setState({
+					id: json.data._id,
+					name: json.data.name,
+					path: json.data.path,
+					enabled: json.data.enabled
 				});
+			}.bind(this)).catch(function(ex) {
+				console.log('parsing failed', ex);
+			});
 		}
 	},
 
@@ -55,6 +62,7 @@ var ArticleType = React.createClass({
 				fetch(ADMINPATH + '/api/article_type/' + this.state.id, {
 				  method: 'PUT',
 				  headers: {
+				  	'Authorization': Auth.getToken(),
 				    'Accept': 'application/json',
 				    'Content-Type': 'application/json'
 				  },
@@ -73,6 +81,7 @@ var ArticleType = React.createClass({
 				fetch(ADMINPATH + '/api/article_type', {
 				  method: 'POST',
 				  headers: {
+				  	'Authorization': Auth.getToken(),
 				    'Accept': 'application/json',
 				    'Content-Type': 'application/json'
 				  },

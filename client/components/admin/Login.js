@@ -1,5 +1,6 @@
 var React = require('react'),
 		FormValidation = require('../utils/formValidation'),
+		Auth = require('../utils/auth'),
 		ADMINPATH = require('../../config').adminPath;
 
 var Login = React.createClass({
@@ -25,7 +26,7 @@ var Login = React.createClass({
 		]);
 
 		if(data) {
-			fetch(ADMINPATH + '/api/login', {
+			fetch(ADMINPATH + '/login', {
 			  method: 'POST',
 			  headers: {
 			    'Accept': 'application/json',
@@ -35,12 +36,22 @@ var Login = React.createClass({
 			}).then(function(response) {
 				return response.json();
 			}).then(function(json) {
-				console.info(json);
+				Auth.authenticateUser(json.token);
+				localStorage.setItem('name', json.user.name);
+				localStorage.setItem('email', json.user.email);
 				this.setState({
 					validateMsg: json.msg
 				});
+				this.redirect();
 			}.bind(this));
 		}
+	},
+
+	redirect: function() {
+		var propState = this.props.location.state;
+		var defaultPrevPath = '/admin'
+		var prevPath = propState && propState.prevPath;
+		this.props.history.replaceState(null, prevPath || defaultPrevPath);
 	},
 
 	render: function() {

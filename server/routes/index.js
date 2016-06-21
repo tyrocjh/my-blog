@@ -1,5 +1,6 @@
-module.exports = function (app) {
-	app.use('/admin/api/login', require('./admin/login'));
+module.exports = function (app, config) {
+	app.use('/admin/api', require('../middlewares/auth-check')(config));
+	app.use('/admin/login', require('./admin/login'));
 	app.use('/admin/api/admin', require('./admin/admin'));
 	app.use('/admin/api/blog_info', require('./admin/blogInfo'));
   app.use('/admin/api/article', require('./admin/article'));

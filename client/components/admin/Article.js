@@ -1,5 +1,6 @@
 var React = require('react'),
 		FormValidation = require('../utils/formValidation'),
+		Auth = require('../utils/auth'),
 		ADMINPATH = require('../../config').adminPath;
 
 var Article = React.createClass({
@@ -13,27 +14,33 @@ var Article = React.createClass({
 
 	componentDidMount: function() {
 		var id = location.search.substring(1).split('=')[1];
-		fetch(ADMINPATH + '/api/article/' + id)
-			.then(function(response) {
-				return response.json();
-			}).then(function(json) {
-				this.setState({
-					id: json.data.model._id,
-					title: json.data.model.title,
-					author: json.data.model.author,
-					_type: json.data.model._type,
-					tags: json.data.model.tags,
-					published: json.data.model.published,
-					introduction: json.data.model.introduction,
-					content: json.data.model.content,
-					initTypes: json.data.types,
-					initTags: json.data.tags
-				});
-
-				this.useCKeditor();
-			}.bind(this)).catch(function(ex) {
-				console.log('parsing failed', ex);
+		fetch(ADMINPATH + '/api/article/' + id, {
+		  method: 'GET',
+		  headers: {
+		  	'Authorization': Auth.getToken(),
+		    'Accept': 'application/json',
+		    'Content-Type': 'application/json'
+		  }
+		}).then(function(response) {
+			return response.json();
+		}).then(function(json) {
+			this.setState({
+				id: json.data.model._id,
+				title: json.data.model.title,
+				author: json.data.model.author,
+				_type: json.data.model._type,
+				tags: json.data.model.tags,
+				published: json.data.model.published,
+				introduction: json.data.model.introduction,
+				content: json.data.model.content,
+				initTypes: json.data.types,
+				initTags: json.data.tags
 			});
+
+			this.useCKeditor();
+		}.bind(this)).catch(function(ex) {
+			console.log('parsing failed', ex);
+		});
 	},
 
 	useCKeditor: function() {
@@ -79,6 +86,7 @@ var Article = React.createClass({
 				fetch(ADMINPATH + '/api/article/' + this.state.id, {
 				  method: 'PUT',
 				  headers: {
+				  	'Authorization': Auth.getToken(),
 				    'Accept': 'application/json',
 				    'Content-Type': 'application/json'
 				  },
@@ -97,6 +105,7 @@ var Article = React.createClass({
 				fetch(ADMINPATH + '/api/article', {
 				  method: 'POST',
 				  headers: {
+				  	'Authorization': Auth.getToken(),
 				    'Accept': 'application/json',
 				    'Content-Type': 'application/json'
 				  },

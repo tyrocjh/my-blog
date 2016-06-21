@@ -1,7 +1,6 @@
-// var bcrypt = require('bcrypt');
-// var jwt = require('jsonwebtoken');
-var Admin = require('../models/admin');
-var passportLocalStrategy = require('passport-local').Strategy;
+var Admin = require('../models/admin'),
+    jwt = require('jsonwebtoken'),
+    passportLocalStrategy = require('passport-local').Strategy;
 
 module.exports = function(config) {
 
@@ -26,42 +25,29 @@ module.exports = function(config) {
         return done(error);
       }
 
-      var result = admin.comparePassword(adminData.password);
+      // check if a hashed admin's password is equal to a value saved in the database
+      admin.comparePassword(adminData.password, function(err, isMatch) {
+        if (err) { return done(err); }
 
-      if(result) {
-        var token = 'test token...';
-        var data = {
+        if (!isMatch) {
+          var error = new Error("Incorrect email or password");
+          error.name = "IncorrectCredentialsError";
+          return done(error);
+        }
+
+        var payload = {
+          sub: admin._id,
+        };
+        // create a token string
+        var token = jwt.sign(payload, config.jwtSecret);
+
+        var adminData = {
+          email: admin.email,
           name: admin.name
         };
-        return done(null, token, data);
-      } else {
-        var error = new Error("Incorrect email or password");
-        error.name = "IncorrectCredentialsError";
-        return done(error);
-      }
 
-      // check if a hashed admin's password is equal to a value saved in the database
-      // Admin.comparePassword(adminData.password, function(err, isMatch) {
-      //   if (err) { return done(err); }
-
-      //   if (!isMatch) {
-      //     var error = new Error("Incorrect email or password");
-      //     error.name = "IncorrectCredentialsError";
-      //     return done(error);
-      //   }
-
-      //   var payload = {
-      //     sub: admin._id,
-      //   };
-      //   // create a token string
-      //   var token = jwt.sign(payload, config.jwtSecret);
-
-      //   var adminData = {
-      //     name: admin.name
-      //   };
-
-      //   return done(null, token, adminData);
-      // });
+        return done(null, token, adminData);
+      });
     });
   });
 

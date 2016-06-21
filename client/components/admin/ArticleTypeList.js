@@ -4,6 +4,7 @@ var _ = require('lodash'),
 		Link = ReactRouter.Link,
 		PageList = require('../PageList'),
 		ListFetchMixin = require('../mixins/ListFetchMixin'),
+		Auth = require('../utils/auth'),
 		ADMINPATH = require('../../config').adminPath;
 
 var ArticleTypeList = React.createClass({
@@ -20,7 +21,12 @@ var ArticleTypeList = React.createClass({
 	handleDelete: function(id, e) {
 		e.preventDefault();
 		fetch(ADMINPATH + '/api/article_type/' + id, {
-		  method: 'DELETE'
+		  method: 'DELETE',
+		  headers: {
+		  	'Authorization': Auth.getToken(),
+		    'Accept': 'application/json',
+		    'Content-Type': 'application/json'
+		  }
 		}).then(function(response) {
 			return response.json();
 		}).then(function(json) {

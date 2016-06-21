@@ -1,5 +1,6 @@
 var React = require('react'),
 		FormValidation = require('../utils/formValidation'),
+		Auth = require('../utils/auth'),
 		ADMINPATH = require('../../config').adminPath;
 
 var Admin = React.createClass({
@@ -15,18 +16,24 @@ var Admin = React.createClass({
 	componentDidMount: function() {
 		var id = location.search.substring(1).split('=')[1];
 		if(id) {
-			fetch(ADMINPATH + '/api/admin/' + id)
-				.then(function(response) {
-					return response.json();
-				}).then(function(json) {
-					this.setState({
-						id: json.data._id,
-						name: json.data.name,
-						email: json.data.email
-					});
-				}.bind(this)).catch(function(ex) {
-					console.log('parsing failed', ex);
+			fetch(ADMINPATH + '/api/admin/' + id, {
+			  method: 'GET',
+			  headers: {
+			  	'Authorization': Auth.getToken(),
+			    'Accept': 'application/json',
+			    'Content-Type': 'application/json'
+			  }
+			}).then(function(response) {
+				return response.json();
+			}).then(function(json) {
+				this.setState({
+					id: json.data._id,
+					name: json.data.name,
+					email: json.data.email
 				});
+			}.bind(this)).catch(function(ex) {
+				console.log('parsing failed', ex);
+			});
 		}
 	},
 
@@ -57,6 +64,7 @@ var Admin = React.createClass({
 				fetch(ADMINPATH + '/api/admin/' + this.state.id, {
 				  method: 'PUT',
 				  headers: {
+				  	'Authorization': Auth.getToken(),
 				    'Accept': 'application/json',
 				    'Content-Type': 'application/json'
 				  },
@@ -75,6 +83,7 @@ var Admin = React.createClass({
 				fetch(ADMINPATH + '/api/admin', {
 				  method: 'POST',
 				  headers: {
+				  	'Authorization': Auth.getToken(),
 				    'Accept': 'application/json',
 				    'Content-Type': 'application/json'
 				  },

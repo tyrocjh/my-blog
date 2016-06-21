@@ -23,8 +23,6 @@ https://github.com/vladimirponomarev/authentication-in-react-apps
 
 css.map
 
-user login
-
 upload.js / model article.js / component admin article.js
 
 list page 删除一条数据后，需要重新发送请求，渲染页面吗
@@ -42,6 +40,8 @@ abstract anything can be abstract
 <script src="http://cdn.ckeditor.com/4.5.9/standard-all/ckeditor.js"></script>
 
 redis??
+
+node task -> spider
 
 --------------------------------------
 next prj:

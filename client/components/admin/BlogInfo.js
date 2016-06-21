@@ -1,5 +1,6 @@
 var React = require('react'),
 		FormValidation = require('../utils/formValidation'),
+		Auth = require('../utils/auth'),
 		ADMINPATH = require('../../config').adminPath;
 
 var BlogInfo = React.createClass({
@@ -15,20 +16,26 @@ var BlogInfo = React.createClass({
 	},
 
 	componentDidMount: function() {
-		fetch(ADMINPATH + '/api/blog_info')
-		  .then(function(response) {
-		    return response.json();
-		  }).then(function(json) {
-		    this.setState({
-		    	id: json.data._id,
-		    	title: json.data.title,
-		    	keywords: json.data.keywords,
-		    	description: json.data.description,
-		    	copyright: json.data.copyright
-		    });
-		  }.bind(this)).catch(function(ex) {
-		    console.log('parsing failed', ex);
-		  });
+		fetch(ADMINPATH + '/api/blog_info', {
+		  method: 'GET',
+		  headers: {
+		  	'Authorization': Auth.getToken(),
+		    'Accept': 'application/json',
+		    'Content-Type': 'application/json'
+		  }
+		}).then(function(response) {
+	    return response.json();
+	  }).then(function(json) {
+	    this.setState({
+	    	id: json.data._id,
+	    	title: json.data.title,
+	    	keywords: json.data.keywords,
+	    	description: json.data.description,
+	    	copyright: json.data.copyright
+	    });
+	  }.bind(this)).catch(function(ex) {
+	    console.log('parsing failed', ex);
+	  });
 	},
 
 	changeField: function(field, e) {
@@ -64,6 +71,7 @@ var BlogInfo = React.createClass({
 				fetch(ADMINPATH + '/api/blog_info', {
 				  method: 'PUT',
 				  headers: {
+				  	'Authorization': Auth.getToken(),
 				    'Accept': 'application/json',
 				    'Content-Type': 'application/json'
 				  },

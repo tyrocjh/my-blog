@@ -18,11 +18,19 @@ var React = require('react'),
 		AdminSinglePage = require('./components/admin/singlePage'),
 		AdminSinglePageList = require('./components/admin/singlePageList'),
 		NotFound = require('./components/NotFound'),
+		Auth = require('./components/utils/auth'),
 		ADMINPATH = require('./config').adminPath;
 
 var	Router = ReactRouter.Router,
 		Route = ReactRouter.Route,
 		IndexRoute = ReactRouter.IndexRoute;
+
+var requireAuth = function(nextState, replaceState) {
+	if(!Auth.isUserAuthenticated()) {
+		var prevPath = nextState.location.pathname;
+		replaceState({prevPath: prevPath}, '/admin/login');
+	}
+}
 
 module.exports = (
 	<Router>
@@ -32,17 +40,17 @@ module.exports = (
 		<Route path={ADMINPATH} component={AdminLayout}>
 			<IndexRoute component={AdminWelcome} />
 			<Route path="login" component={AdminLogin} />
-			<Route path="admin" component={AdminAdmin} />
-			<Route path="adminList" component={AdminAdminList} />
-			<Route path="blogInfo" component={AdminBlogInfo} />
-			<Route path="article" component={AdminArticle} />
-			<Route path="articleList" component={AdminArticleList} />
-			<Route path="articleType" component={AdminArticleType} />
-			<Route path="articleTypeList" component={AdminArticleTypeList} />
-			<Route path="articleTag" component={AdminArticleTag} />
-			<Route path="articleTagList" component={AdminArticleTagList} />
-			<Route path="singlePage" component={AdminSinglePage} />
-			<Route path="singlePageList" component={AdminSinglePageList} />
+			<Route path="admin" component={AdminAdmin} onEnter={requireAuth} />
+			<Route path="adminList" component={AdminAdminList} onEnter={requireAuth} />
+			<Route path="blogInfo" component={AdminBlogInfo} onEnter={requireAuth} />
+			<Route path="article" component={AdminArticle} onEnter={requireAuth} />
+			<Route path="articleList" component={AdminArticleList} onEnter={requireAuth} />
+			<Route path="articleType" component={AdminArticleType} onEnter={requireAuth} />
+			<Route path="articleTypeList" component={AdminArticleTypeList} onEnter={requireAuth} />
+			<Route path="articleTag" component={AdminArticleTag} onEnter={requireAuth} />
+			<Route path="articleTagList" component={AdminArticleTagList} onEnter={requireAuth} />
+			<Route path="singlePage" component={AdminSinglePage} onEnter={requireAuth} />
+			<Route path="singlePageList" component={AdminSinglePageList} onEnter={requireAuth} />
 		</Route>
 		<Route path="*" component={NotFound} status={404} />
 	</Router>

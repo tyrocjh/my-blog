@@ -10,8 +10,8 @@ var Admin = new mongoose.Schema({
 	timestamps: true
 });
 
-Admin.methods.comparePassword = function(password) {
-  // return true;
+Admin.methods.comparePassword = function(password, callback) {
+  bcrypt.compare(password, this.password, callback);
 }
 
 Admin.pre('save', function(next) {
