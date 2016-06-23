@@ -15,8 +15,10 @@ var React = require('react'),
 		AdminArticleTypeList = require('./components/admin/ArticleTypeList'),
 		AdminArticleTag = require('./components/admin/ArticleTag'),
 		AdminArticleTagList = require('./components/admin/ArticleTagList'),
-		AdminSinglePage = require('./components/admin/singlePage'),
-		AdminSinglePageList = require('./components/admin/singlePageList'),
+		AdminSinglePage = require('./components/admin/SinglePage'),
+		AdminSinglePageList = require('./components/admin/SinglePageList'),
+		AdminLink = require('./components/admin/Link'),
+		AdminLinkList = require('./components/admin/LinkList'),
 		NotFound = require('./components/NotFound'),
 		Auth = require('./components/utils/auth'),
 		ADMINPATH = require('./config').adminPath;
@@ -51,6 +53,8 @@ module.exports = (
 			<Route path="articleTagList" component={AdminArticleTagList} onEnter={requireAuth} />
 			<Route path="singlePage" component={AdminSinglePage} onEnter={requireAuth} />
 			<Route path="singlePageList" component={AdminSinglePageList} onEnter={requireAuth} />
+			<Route path="link" component={AdminLink} onEnter={requireAuth} />
+			<Route path="linkList" component={AdminLinkList} onEnter={requireAuth} />
 		</Route>
 		<Route path="*" component={NotFound} status={404} />
 	</Router>

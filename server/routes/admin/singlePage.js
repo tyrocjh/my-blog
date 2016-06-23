@@ -1,10 +1,10 @@
-var express = require('express');
-		router = express.Router();
+var express = require('express'),
+		router = express.Router(),
 		SinglePage = require('../../models/singlePage');
 
 /*
 	{
-	  "name": "my name",
+	  "title": "my title",
 	  "path": "my path",
 	  "content": "my content"
 	}

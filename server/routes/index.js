@@ -7,5 +7,6 @@ module.exports = function (app, config) {
   app.use('/admin/api/article_type', require('./admin/articleType'));
   app.use('/admin/api/article_tag', require('./admin/articleTag'));
   app.use('/admin/api/single_page', require('./admin/singlePage'));
+  app.use('/admin/api/link', require('./admin/link'));
   app.use('/admin/api/upload', require('./admin/upload'));
 };

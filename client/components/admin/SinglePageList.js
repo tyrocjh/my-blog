@@ -53,7 +53,6 @@ var SinglePageList = React.createClass({
 					<td>{num}</td>
 					<td>{singlePage.title}</td>
 					<td>{singlePage.path}</td>
-					<td>{singlePage.enabled ? '是' : '否'}</td>
 					<td>
 						<Link to={ADMINPATH + "/singlePage"} query={{id: singlePage._id}}>编辑</Link>&nbsp;&nbsp;
 						<a href="#" onClick={this.handleDelete.bind(this, singlePage._id)}>删除</a>
@@ -67,7 +66,7 @@ var SinglePageList = React.createClass({
 				<Link to={ADMINPATH + "/singlePage"} className="btn btn-default">新增</Link>
 				<table className="table">
 					<thead>
-						<tr><th>序号</th><th>名称</th><th>路径</th><th>是否启用</th><th>操作</th></tr>
+						<tr><th>序号</th><th>名称</th><th>路径</th><th>操作</th></tr>
 					</thead>
 					<tbody>
 						{singlePageList}
