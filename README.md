@@ -22,7 +22,7 @@ article: {
 
 css.map
 
-upload.js / model article.js / component admin article.js
+upload.js / model article.js / component admin article.js ...
 
 list page 删除一条数据后，需要重新发送请求，渲染页面吗
 
@@ -44,8 +44,7 @@ font-end style improve
 
 --------------------------------------
 next prj:
-front-end first(data mock): es6 react-redux(redux-devtools, reducer?), ant-design, webpack+gulp, docker, comment plugin
-														react-boilerplate?
+front-end first(data mock): es6 react-redux(redux-devtools, reducer?), ant-design, webpack+gulp, docker, comment plugin react-boilerplate?  front-back-end-seperate-use-nginx
 --------------------------------------
 
 --------------------------------------
@@ -65,18 +64,6 @@ function urlWithParams(urlString, params={}) {
   url.search = searchParams.toString();
   return url.toString();
 }
---------------------------------------
-
---------------------------------------
-<Link to={`/users/${user.id}`} activeClassName="active">{user.name}</Link>
-// 变成它们其中一个依赖在 History 上，当这个 route 是
-// 激活状态的
-<a href="/users/123" class="active">Michael</a>
-<a href="#/users/123">Michael</a>
-// 修改 activeClassName
-<Link to={`/users/${user.id}`} activeClassName="current">{user.name}</Link>
-// 当链接激活时，修改它的样式
-<Link to="/users" style={{color: 'white'}} activeStyle={{color: 'red'}}>Users</Link>
 --------------------------------------
 
 --------------------------------------
@@ -139,6 +126,6 @@ https://github.com/getlantern/lantern
 --------------------------------------
 
 --------------------------------------
-项目
+项目网
 shixian.com
 --------------------------------------
