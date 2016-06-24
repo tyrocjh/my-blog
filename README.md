@@ -14,12 +14,11 @@ http://sdk.ckeditor.com/samples/fileupload.html
 
 
 --------------------------------------
-https://github.com/wygkzqa/tui
-
-https://github.com/reactjs/react-router/blob/master/examples/auth-flow/auth.js
-
-http://vladimirponomarev.com/blog/authentication-in-react-apps-jwt
-https://github.com/vladimirponomarev/authentication-in-react-apps
+comment model why use this struct?
+article: {
+  id: Schema.Types.ObjectId,
+  typePath: String
+},
 
 css.map
 
@@ -31,8 +30,6 @@ list page 删除一条数据后，需要重新发送请求，渲染页面吗
 
 list page (article list / articletag list) abstract
 
-bloginfo abstract
-
 router controller crud/err abstract
 
 abstract anything can be abstract
@@ -42,6 +39,8 @@ abstract anything can be abstract
 redis??
 
 node task -> spider
+
+font-end style improve
 
 --------------------------------------
 next prj:
