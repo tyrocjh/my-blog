@@ -1,0 +1,782 @@
+[
+  {
+    "commentCount": 0,
+    "_id": "557134ab4a817000279bb7f0",
+    "title": "Ps Play 移动设计零阻力",
+    "author": "陌",
+    "type": {
+      "_id": "556ffa6e991b07643735d4bd",
+      "name": "Web",
+      "path": "web",
+      "enabled": true,
+      "__v": 0
+    },
+    "enabled": true,
+    "introduction": "<p><img src=\"http://www.mhbseal.com/upload/article/2013-10-28(17-59-37)\" title=\"2013-10-28(15-56-04).jpg\"/></p><p><br/></p><p>前段时间在腾讯isux逛游的时候，突然发一个醒目的标题中有几个字”移动设计零阻力“，然后再一看，是个提高手机端设计效率的终端app，刚好最近公司在做一个新的手机端app，设计也正在如火如荼的进行中，虽然不是UI，但身为一个EF，还是迫不及待的看了一遍，并且下载安装测试，一切都是那么的轻松加愉快，第二天推荐给同事，效果貌似还不错，接下来看看它的具体信息。</p>",
+    "content": "<p style=\"white-space: normal;\"><img src=\"http://www.mhbseal.com/upload/article/2013-10-28(17-59-37)\" title=\"2013-10-28(15-56-04).jpg\"/></p><p style=\"white-space: normal;\"><br/></p><p style=\"white-space: normal;\">前段时间在腾讯isux逛游的时候，突然发一个醒目的标题中有几个字”移动设计零阻力“，然后再一看，是个提高手机端设计效率的终端app，刚好最近公司在做一个新的手机端app，设计也正在如火如荼的进行中，虽然不是UI，但身为一个EF，还是迫不及待的看了一遍，并且下载安装测试，一切都是那么的轻松加愉快，第二天推荐给同事，效果貌似还不错，接下来看看它的具体信息。</p><p style=\"white-space: normal;\"><br/></p><p style=\"white-space: normal;\"><strong>APP名称</strong>：Ps Play</p><p style=\"white-space: normal;\"><br/></p><p style=\"white-space: normal;\"><strong>功能</strong>：Ps Play 可以通过WiFi，实时在终端设备上预览电脑上Photoshop的设计稿，可同步调试及截图保存到移动终端，并可以通过Email、QQ、微信等工具即时分享。</p><p style=\"white-space: normal;\"><br/></p><p style=\"white-space: normal;\"><strong>使用方法</strong>：</p><p style=\"white-space: normal;\">（1）确认您的电脑（Mac/PC均可）与iPhone手机连接是同一个无线Wi-Fi网络；</p><p style=\"white-space: normal;\">（2）在Photoshop菜单[编辑&gt;远程连接]下开启连接，需确定您的Photoshop版本在CS5 （12.0.4）或更高版本才能使用此功能。</p><p style=\"white-space: normal;\">（3）勾选启用远程连接，并设定一个名称和密码来区分你和别人的Photoshop。(设置完成务必点确定，否则无法正常连接)</p><p style=\"white-space: normal;\">（4）在手机Ps Play可用连接菜单中将找到已开启的Photoshop连接，点击连接即可，也可以手工添加IP地址连接Photoshop。</p><p style=\"white-space: normal;\">（5）尽享Ps Play即时预览Photoshop工作画面的愉快体验，同时还能为每个工作阶段快照记录并分享。</p><p style=\"white-space: normal;\"><br/></p><p style=\"white-space: normal;\"><strong>下载地址</strong>：</p><p style=\"white-space: normal;\">（1）<a href=\"https://itunes.apple.com/us/app/ps-play-for-photoshop/id651937919\" target=\"_blank\" textvalue=\"iPhone正式版\">iPhone正式版</a></p><p style=\"white-space: normal;\">（2）<a href=\"http://share.weiyun.com/94fcd5d4fab699e8662834486e288594\" target=\"_blank\">Android公测版</a></p><p style=\"white-space: normal;\">（3）iPad版未发布</p><p style=\"white-space: normal;\"><br/></p><p style=\"white-space: normal;\">更多的信息可以访问&nbsp;<a href=\"http://isux.tencent.com/app/psplay\" target=\"_blank\">Ps Play官网</a></p>",
+    "lastEditTime": "2015-06-05 15:35:22",
+    "createTime": "2013-10-28 15:38:02",
+    "__v": 0,
+    "tags": [
+      {
+        "_id": "557151212c9aa72415669dc4",
+        "name": "工具",
+        "path": "tools",
+        "__v": 0
+      }
+    ],
+    "visits": 612
+  },
+  {
+    "commentCount": 0,
+    "_id": "557134684a817000279bb7ef",
+    "title": "CSS3属性之box-shadow",
+    "author": "陌",
+    "type": {
+      "_id": "556ffa6e991b07643735d4bd",
+      "name": "Web",
+      "path": "web",
+      "enabled": true,
+      "__v": 0
+    },
+    "enabled": true,
+    "introduction": "<p>既border-radius之后的又一个比较简单而又常用的css3属性：box-shadow。猛击<a href=\"/demo/css3/box-shadow-drop-shadow.html\" target=\"_blank\" textvalue=\"这里查看DEMO\"><strong>这里查看DEMO</strong></a>。css3.info上介绍它的标题是Box-shadow, one of CSS3′s best new features，也正因为如此，该属性也是应用的比较普遍的css3属性之一，它可以使你的元素显得低调奢华有内涵，前提是使用的恰当，接下来看看它怎么使用吧。</p>",
+    "content": "<p>既border-radius之后的又一个比较简单而又常用的css3属性：box-shadow。猛击<a href=\"/demo/css3/box-shadow-drop-shadow.html\" target=\"_blank\" textvalue=\"这里查看DEMO\"><strong>这里查看DEMO</strong></a>。css3.info上介绍它的标题是Box-shadow, one of CSS3′s best new features，也正因为如此，该属性也是应用的比较普遍的css3属性之一，它可以使你的元素显得低调奢华有内涵，前提是使用的恰当，接下来看看它怎么使用吧。</p><p style=\"white-space: normal;\"><br/></p><p style=\"white-space: normal;\"><strong>属性名称</strong>：box-shadow</p><p style=\"white-space: normal;\"><strong>取值</strong>：none | &lt;shadow&gt; [ , &lt;shadow&gt; ]* &nbsp; 注：&lt;shadow&gt; = inset? &amp;&amp; [ &lt;length&gt;{2,4} &amp;&amp; &lt;color&gt;? ]</p><p style=\"white-space: normal;\"><strong>说明</strong>：该属性默认值为none，当取值时，可以为1个或者多个shadow，而&lt;shadow&gt;的6个参数具体如下所述：</p><p style=\"white-space: normal;\">1.可选： inset 关键字如果存在，投影为内阴影，如果不存在，投影为外阴影。</p><p style=\"white-space: normal;\">2.必需：第一个 length 是阴影的水平偏移量。正值绘制的阴影向方框的右边偏移，负长度绘制的阴影向左边偏移。</p><p style=\"white-space: normal;\">3.必需：第二个 length 是垂直偏移量。正值将阴影向下偏移，负值将阴影向上偏移。</p><p style=\"white-space: normal;\">4.可选：第三个 length 是模糊距离。不允许为负值。如果模糊值为 0，则阴影的边缘清晰。否则，值越大，阴影的边缘越模糊。</p><p style=\"white-space: normal;\">5.可选：第四个 length 是扩展距离。正值使阴影形状沿所有方向扩展，扩展量为指定的半径。负值使阴影形状收缩。</p><p style=\"white-space: normal;\">6.可选：color 是阴影的颜色，<span style=\"line-height: 1.5;\">如果没有指定，则由浏览器决定——通常是color的值，不过目前Safari取透明，所以建议不要省略次参数。</span></p><p style=\"white-space: normal;\"><span style=\"line-height: 1.5;\"><br/></span></p><p style=\"white-space: normal;\"><strong>兼容性</strong>：（来自<a href=\"http://caniuse.com/\" target=\"_blank\">http://caniuse.com</a>）<br/></p><p style=\"white-space: normal;\"><img src=\"http://www.mhbseal.com/upload/article/2013-10-28(10-46-23)\" title=\"QQ截图20131028104544.png\"/></p><p style=\"white-space: normal;\">从上图看出，在使用该属性时，目前处于兼容性考虑，需要多加一个webkit的私有属性来兼容webkit内核的低版本用户代理。</p><p style=\"white-space: normal;\"><br/></p><p style=\"white-space: normal;\"><strong>w3.org的一段代码</strong>：</p><p style=\"white-space: normal;\"><br/></p><pre>width: 100px\nheight: 100px\nborder: 12px solid blue\nbackground-color: orange\nborder-top-left-radius: 60px 90px\nborder-bottom-right-radius: 60px 90px\nbox-shadow: 64px 64px 12px 40px rgba(0,0,0,0.4), 12px 12px 0px 8px rgba(0,0,0,0.4) inset</pre><p style=\"white-space: normal;\"><br/></p><p style=\"white-space: normal;\">效果如下：</p><p style=\"white-space: normal;\"><img src=\"/upload/article/2013-10-28(11-11-06)\" title=\"QQ截图20131028111048.png\"/></p><p style=\"white-space: normal;\">从此图能得到一些信息，就我看出来的2点如下（当然有些没能发现^_^）：</p><p style=\"white-space: normal;\">1.一个元素可以有多个shadow。</p><p style=\"white-space: normal;\">2.border-radius也同样作用于shadow。</p><p style=\"white-space: normal;\">3.其中属性的层级关系：边框&gt;内阴影&gt;背景颜色&gt;外阴影。</p><p style=\"white-space: normal;\"><br/></p><p style=\"white-space: normal;\"><strong>列出一些DEMO，帮助大家更深刻的理解box-shadow属性(demo中不加任何私有属性，实际应用中看具体属性，加相应的私有属性)</strong>：</p><p style=\"white-space: normal;\"><br/></p><p style=\"white-space: normal;\">1. &nbsp;外阴影的一些demo：</p><pre>[class*=&quot;example&quot;]\n  width: 100px\n  height: 50px\n  background: green\n  text-align: center\n  line-height: 50px\n  color: #fff\n.example_a\n  box-shadow: -5px -5px red\n.example_b\n  box-shadow: -5px -5px 5px red\n.example_c\n  box-shadow: -5px -5px 0 5px red\n.example_d\n  box-shadow: -5px -5px 5px 5px red\n.example_e\n  box-shadow: 0 0 5px red\n.example_f\n  box-shadow: 0 0 5px 5px red</pre><p style=\"white-space: normal;\"><br/></p><p style=\"white-space: normal;\">效果如下：</p><p style=\"white-space: normal;\"><img src=\"/upload/article/2013-10-28(11-46-02)\" title=\"QQ截图20131028114548.png\"/></p><p style=\"white-space: normal;\">2. &nbsp;&nbsp;内阴影的一些demo：</p><pre>[class*=&quot;example&quot;]\n  width: 100px\n  height: 50px\n  background: green\n  text-align: center\n  line-height: 50px\n  color: #fff\n.example_a\n  box-shadow: inset -5px -5px black\n.example_b\n  box-shadow: inset -5px -5px 5px black\n.example_c\n  box-shadow: inset -5px -5px 0 5px black\n.example_d\n  box-shadow: inset -5px -5px 5px 5px black\n.example_e\n  box-shadow: inset 0 0 5px black\n.example_f\n  box-shadow: inset 0 0 5px 5px black</pre><p style=\"white-space: normal;\"><br/></p><p style=\"white-space: normal;\">效果如下：</p><p style=\"white-space: normal;\"><img src=\"/upload/article/2013-10-28(11-54-29)\" title=\"QQ截图20131028115413.png\"/></p><p style=\"white-space: normal;\">3. &nbsp; 多个阴影的一个demo：</p><pre>.example  \n  width: 100px\n  height: 50px\n  background: green\n  box-shadow: 0 0 10px 5px black, 40px -30px lime, 40px 30px 50px red, -40px 30px yellow, -40px -30px 50px blue</pre><p style=\"white-space: normal;\"><br/></p><p style=\"white-space: normal;\">效果如下：</p><p style=\"white-space: normal;\"><img src=\"/upload/article/2013-10-28(12-46-22)\" title=\"QQ截图20131028124609.png\"/></p><p style=\"white-space: normal;\">说明：box-shadow允许有多个值，并且层级关系是从前到后依次减小。</p><p style=\"white-space: normal;\"><br/></p><p style=\"white-space: normal;\">4. img元素遇见box-shadow的inset时，茫然了，没效果。可以借鉴border-radius中hack table的思路，加一个父元素，然后设置box-shadow，再降低img的层级，可达到同样效果。</p><p style=\"white-space: normal;\"><br/></p><p style=\"white-space: normal;\">html代码：</p><pre class=\"brush:html;toolbar:false\">&lt;div class=&quot;img_shadow&quot;&gt;\n  &lt;img src=&quot;/upload/article/2013-10-26(12-19-40)&quot; /&gt;\n&lt;/div&gt;</pre><p style=\"white-space: normal;\"><span style=\"line-height: 1.5; background-color: rgb(248, 248, 248);\">&nbsp;&nbsp;</span><br/></p><p style=\"white-space: normal;\">css代码：</p><pre>.img_shadow\n  width: 400px\n  box-shadow: inset 0 0 10px 0 red\nimg\n  position: relative\n  width: 400px\n  z-index: -1</pre><p style=\"white-space: normal;\"><br/></p><p style=\"white-space: normal;\">效果如下：</p><p style=\"white-space: normal;\"><img src=\"/upload/article/2013-10-28(13-12-11)\" title=\"QQ截图20131028131048.png\"/></p><p style=\"white-space: normal;\"><br/></p><p style=\"white-space: normal;\"><strong>some Known issues</strong>（来自<a href=\"http://caniuse.com/\" target=\"_blank\">http://caniuse.com</a>）</p><p style=\"white-space: normal;\"><br/></p><p style=\"white-space: normal;\">1.&nbsp;<span style=\"line-height: 1.5;\">Safari on iOS (including 6) can not apply box-shadow to input elements. (Solution: Add -webkit-appearance: none; to the input elements.)</span></p><p style=\"white-space: normal;\">2. Android 2.3 default browser doesn&#39;t seem to appreciate 0px values. e.g. -webkit-box-shadow: 5px 1px 0px #f04e29; doesn&#39;t work, but -webkit-box-shadow: 5px 1px 1px #f04e29 does!</p>",
+    "lastEditTime": "2015-06-05 17:43:40",
+    "createTime": "2013-10-26 17:12:03",
+    "__v": 0,
+    "tags": [
+      {
+        "_id": "556ffa1f991b07643735d4b9",
+        "name": "css",
+        "path": "css",
+        "__v": 0
+      },
+      {
+        "_id": "556ffa24991b07643735d4ba",
+        "name": "css3",
+        "path": "css3",
+        "__v": 0
+      }
+    ],
+    "visits": 504
+  },
+  {
+    "commentCount": 0,
+    "_id": "55702e9631b49b6c0f1f1a81",
+    "title": "CSS3属性之border-radius",
+    "author": "陌",
+    "type": {
+      "_id": "556ffa6e991b07643735d4bd",
+      "name": "Web",
+      "path": "web",
+      "enabled": true,
+      "__v": 0
+    },
+    "enabled": true,
+    "introduction": "<p>\n    无论CSS那个版本，对于CSS制作圆角，想必大家都不会陌生，不过在CSS3到来之前，为了制作圆角是一件很麻烦的事情，记得曾经的一个方法是制作4个空标签并设置圆角背景，最后分别定位到相应的位置，还有一种不需要图片的方法是，用多个一像素的块级元素叠加，然后设置不同宽度或者高度形成圆角，这种方法相比第一种更加麻烦，但是没有图片。border-radius来了，小伙伴们惊呆了，各种犀利的圆角效果竟能如此简单的写出来，不用图片，不用冗余的代码。猛击&nbsp;<a href=\"/demo/css3/border-radius-aywh.html\" target=\"_blank\" textvalue=\"这里查看DEMO\"><strong>这里看奥运五环DEMO</strong></a>\n</p>",
+    "content": "<p>\n    无论CSS那个版本，对于CSS制作圆角，想必大家都不会陌生，不过在CSS3到来之前，为了制作圆角是一件很麻烦的事情，记得曾经的一个方法是制作4个空标签并设置圆角背景，最后分别定位到相应的位置，还有一种不需要图片的方法是，用多个一像素的块级元素叠加，然后设置不同宽度或者高度形成圆角，这种方法相比第一种更加麻烦，但是没有图片。border-radius来了，小伙伴们惊呆了，各种犀利的圆角效果竟能如此简单的写出来，不用图片，不用冗余的代码。猛击&nbsp;<a href=\"/demo/css3/border-radius-aywh.html\" target=\"_blank\" textvalue=\"这里查看DEMO\"><strong>这里看奥运五环DEMO</strong></a>\n</p>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    <strong>属性名称</strong>：border-radius\n</p>\n<p style=\"white-space: normal;\">\n    <strong>取值</strong>：[ &lt;length&gt; | &lt;percentage&gt; ]{1,4} [ / [ &lt;length&gt; | &lt;percentage&gt; ]{1,4} ]?\n    <length>\n        <percentage></percentage>\n    </length>\n</p>\n<p style=\"white-space: normal;\">\n    <strong>说明</strong>：<span style=\"line-height: 1.5;\">&nbsp;border-radius是一种缩写的方法。如果“/”存在，则前面为水平半径，后面为垂直半径，如果没有，则水平垂直半径相等。</span><span style=\"line-height: 1.5;\">如果只有一个值，则按照top-left、top-right、bottom-right、bottom-left的顺序排列；有两个值，则top-left和bottom-right取第一个值，top-right和bottom-left取第二个值；有三个值，则top-left取第一个值，top-right和bottom-left取第二个值，bottom-right取第三个值；有四个值，则全部相等。</span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\"><br/></span>\n</p>\n<p style=\"white-space: normal;\">\n    <strong><span style=\"line-height: 1.5;\">相关属性</span></strong><span style=\"line-height: 1.5;\">：</span><span style=\"line-height: 1.5;\">border-top-left-radius、border-top-right-radius、border-bottom-right-radius、border-bottom-left-radius</span>\n</p>\n<p style=\"white-space: normal;\">\n    <strong><span style=\"line-height: 1.5;\">取值</span></strong><span style=\"line-height: 1.5;\">：[ &lt;length&gt; | &lt;percentage&gt; ] [ &lt;length&gt; | &lt;percentage&gt; ]?\n    <length>\n        <percentage>\n            <length>\n                <percentage></percentage>\n            </length>\n        </percentage>\n    </length></span>\n</p>\n<p style=\"white-space: normal;\">\n    <strong><span style=\"line-height: 1.5;\">说明</span></strong><span style=\"line-height: 1.5;\">：</span><span style=\"line-height: 1.5;\">第一个为水平半径，第二个为垂直半径，如果第二个省略则水平垂直半径相等。如果其中一个为0，则垂直无圆角效果。如果值为百分比，则取值相对于盒模型，水平半径取值相对于</span><span style=\"line-height: 1.5;\">盒模型</span><span style=\"line-height: 1.5;\">的宽度，垂直半径相对于</span><span style=\"line-height: 1.5;\">盒模型</span><span style=\"line-height: 1.5;\">的高度。</span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\"><br/></span>\n</p>\n<p style=\"white-space: normal;\">\n    <strong>兼容性</strong>：（来自<a href=\"http://caniuse.com/\" target=\"_blank\">http://caniuse.com</a>）<br/>\n</p>\n<p style=\"white-space: normal;\">\n    <img src=\"http://www.mhbseal.com/upload/article/2013-10-25(21-55-42)\" title=\"QQ截图20131025215242.png\"/>\n</p>\n<p style=\"white-space: normal;\">\n    这里要特别说下，现在网上还有些资料说是要加浏览器的私有属性，可能那些资料有些陈旧，可能有些是直接copy别人的，个人觉得，css3中的border-radius属性就写这篇文章时，已经完全没必要加各种私有属性，并且把bootstrap3.0转sass的过程中，发现bt也是这么做的。\n</p>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    <strong>一些代码</strong>：\n</p>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<pre>border-radius: 10px\n\n等价于：\nborder-top-left-radius: 10px\nborder-top-right-radius: 10px\nborder-bottom-left-radius: 10px\nborder-bottom-right-radius: 10px</pre>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<pre>border-radius: 10px 20px 5px / 30px 15px\n\n等价于：\nborder-top-left-radius: 10px 30px\nborder-top-right-radius: 20px 15px\nborder-bottom-left-radius: 5px 30px\nborder-bottom-right-radius: 20px 15px</pre>\n<p style=\"white-space: normal;\">\n    <strong><br/></strong>\n</p>\n<p style=\"white-space: normal;\">\n    <strong>一些DEMO</strong>：\n</p>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    1. 当radius的值大于作于元素的宽度或者高度时，则radius取元素的宽度或者高度。\n</p>\n<pre>width: 100px\nheight: 100px\nbackground: green\nborder-top-right-radius: 150px\n\n等价于：\nwidth: 100px\nheight: 100px\nbackground: green\nborder-top-right-radius: 100px</pre>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    效果如下：\n</p>\n<p style=\"white-space: normal;\">\n    <img src=\"/upload/article/2013-10-25(21-38-24)\" title=\"QQ截图20131025213700.png\" style=\"text-align: center; line-height: 1.5;\"/>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\">2. 当存在border时，如果radius的值小于或者等于border的width值，只有border会有圆角效果</span>\n</p>\n<pre>width: 100px\nheight: 100px\nbackground: green\nborder: 30px solid blue\nborder-radius: 30px</pre>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    效果如下（边框内的区域四个角无圆角效果）：\n</p>\n<p style=\"white-space: normal;\">\n    <img src=\"/upload/article/2013-10-25(13-55-44)\" title=\"QQ截图20131025135023.png\" style=\"text-align: center; line-height: 1.5;\"/>\n</p>\n<p style=\"white-space: normal;\">\n    如果radius的值大于border的width值时\n</p>\n<pre>width: 100px\nheight: 100px\nbackground: green\nborder: 30px solid blue\nborder-radius: 40px</pre>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    效果如下：\n</p>\n<p style=\"white-space: normal;\">\n    <img src=\"/upload/article/2013-10-25(13-56-21)\" title=\"QQ截图20131025135023.png\" style=\"text-align: center; line-height: 1.5;\"/>\n</p>\n<p style=\"white-space: normal;\">\n    4. 当适用于table元素时，table的border-collapse属性为collapse时并且border的width不为0时，radius对border没有效果，而对table的border区域以内的部分有效果，th、td效果同table\n</p>\n<pre>.table_1\n  background: green\n  width: 300px\n  height: 100px\n  border-radius: 50px\n  border: 5px solid blue\n  text-align: center\n    \n.table_2\n  width: 300px\n  height: 100px\n  text-align: center\n  td\n    background: green\n    border-radius: 50px\n    border: 5px solid blue</pre>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    效果如下：\n</p>\n<p style=\"white-space: normal;\">\n    <img src=\"/upload/article/2013-10-25(15-43-33)\" title=\"QQ截图20131025154213.png\" style=\"text-align: center; line-height: 1.5;\"/>\n</p>\n<p style=\"white-space: normal;\">\n    在一般情况下，table的border-collapse属性一般都会在reset.css中被置为collapse，那如果需要table有边框并且有圆角怎么办呢？ 可以把table的border设置为0并且给之外面加一层div.table_radius，然后设置radius就可以了，这个值针对table哦，td及th无法解决。\n</p>\n<pre>.table_radius\n  width: 300px\n  height: 100px\n  border: 5px solid blue\n  border-radius: 50px\n  text-align: center\n  line-height: 100px\n  overflow: hidden\n.table_1\n  width: 100%\n  height: 100%\n  background: green</pre>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    效果如下：\n</p>\n<p style=\"white-space: normal;\">\n    <img src=\"/upload/article/2013-10-25(16-00-52)\" title=\"QQ截图20131025160020.png\" style=\"text-align: center; line-height: 1.5;\"/>\n</p>\n<p style=\"white-space: normal;\">\n    <strong>some Known issues</strong>（来自<a href=\"http://caniuse.com/\" target=\"_blank\">http://caniuse.com</a>）\n</p>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    1. Android Browser 2.3 does not support % value for border-radius.（做手机端的时候这个bug亲身经历过，目前安卓2.3还有一定的比例，所以建议别用%）\n</p>\n<p style=\"white-space: normal;\">\n    2. Border-radius does not work on fieldset elements in IE9.\n</p>\n<p style=\"white-space: normal;\">\n    3. The stock browser on the Samsung Galaxy S4 with Android 4.2 does not support the &quot;border-radius&quot; shorthand property but does support the long-hand properties for each corner like &quot;border-top-left-radius&quot;.\n</p>",
+    "lastEditTime": "2015-06-05 17:46:24",
+    "createTime": "2013-10-23 17:14:41",
+    "__v": 63,
+    "tags": [
+      {
+        "_id": "556ffa1f991b07643735d4b9",
+        "name": "css",
+        "path": "css",
+        "__v": 0
+      },
+      {
+        "_id": "556ffa24991b07643735d4ba",
+        "name": "css3",
+        "path": "css3",
+        "__v": 0
+      }
+    ],
+    "visits": 520
+  },
+  {
+    "commentCount": 0,
+    "_id": "556fffc7fef9df4c37241131",
+    "title": "Mo'blog",
+    "author": "陌",
+    "type": {
+      "_id": "556ffa6e991b07643735d4bd",
+      "name": "Web",
+      "path": "web",
+      "enabled": true,
+      "__v": 0
+    },
+    "enabled": true,
+    "introduction": "<p>\n    小站于2013-10-15正式上线啦！\n</p>\n<p>\n    <img src=\"http://www.mhbseal.com/upload/article/2013-10-26(12-19-40)\" title=\"responsive.jpg\"/>\n</p>",
+    "content": "<p>\n    小站于2013-10-15正式上线啦！\n</p>\n<p>\n    <img src=\"http://www.mhbseal.com/upload/article/2013-10-26(12-19-40)\" title=\"responsive.jpg\"/>\n</p>",
+    "lastEditTime": "2015-06-05 15:00:06",
+    "createTime": "2013-10-15 09:30:47",
+    "__v": 0,
+    "tags": [
+      {
+        "_id": "557145334a817000279bb802",
+        "name": "web",
+        "path": "web",
+        "__v": 0
+      }
+    ],
+    "visits": 419
+  },
+  {
+    "commentCount": 0,
+    "_id": "55d18bae9a6686a15246f44c",
+    "title": "html5图片压缩",
+    "author": "陌",
+    "type": {
+      "_id": "556ffa6e991b07643735d4bd",
+      "name": "Web",
+      "path": "web",
+      "enabled": true,
+      "__v": 0
+    },
+    "enabled": true,
+    "introduction": "<p><strong><a href=\"http://mhbseal.com/demo/html5/html5ImgCompress/demo/index.html\" target=\"_blank\">DEMO</a></strong></p><p><span>支持pc，ios，android，multiple(非android)</span></p><p><span><br/></span></p><p><span><strong>源码</strong></span></p><p><span><a href=\"https://github.com/mhbseal/html5ImgCompress\" target=\"_blank\">https://github.com/mhbseal/html5ImgCompress</a></span></p><p><strong><br/></strong></p><p><strong>技术栈</strong></p><p>HTMLCanvasElement <br/>涉及：getContext, rotate, drawImage, toDataURL <br/>参考：<a href=\"https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement\" target=\"_blank\">https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement</a></p><p>URL <br/>涉及：createObjectURL, revokeObjectURL <br/>参考：<a href=\"https://developer.mozilla.org/en-US/docs/Web/API/URL\" target=\"_blank\">https://developer.mozilla.org/en-US/docs/Web/API/URL</a></p><p><strong><br/></strong></p><p><strong>引入第三方库 </strong><br/><a href=\"https://github.com/exif-js/exif-js\" target=\"_blank\">exif.js</a> 图片方向矫正 <br/><a href=\"https://github.com/stomita/ios-imagefile-megapixel\" target=\"_blank\">megapix-image.js</a> IOS6/7图像扭曲的问题 <br/><a href=\"https://github.com/owencm/javascript-jpeg-encoder\" target=\"_blank\">jpeg_encoder_basic.js</a> 解决安卓微信下无压缩的问题</p>",
+    "content": "<p><strong><a href=\"http://mhbseal.com/demo/html5/html5ImgCompress/demo/index.html\" target=\"_blank\">DEMO</a></strong></p><p><span>支持pc，ios，android，multiple(非android)</span></p><p><span><br/></span></p><p><span><strong>源码</strong></span></p><p><span><a href=\"https://github.com/mhbseal/html5ImgCompress\" target=\"_blank\">https://github.com/mhbseal/html5ImgCompress</a></span></p><p><strong><br/></strong></p><p><strong>技术栈</strong></p><p>HTMLCanvasElement <br/>涉及：getContext, rotate, drawImage, toDataURL <br/>参考：<a href=\"https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement\" target=\"_blank\">https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement</a></p><p>URL <br/>涉及：createObjectURL, revokeObjectURL <br/>参考：<a href=\"https://developer.mozilla.org/en-US/docs/Web/API/URL\" target=\"_blank\">https://developer.mozilla.org/en-US/docs/Web/API/URL</a></p><p><strong><br/></strong></p><p><strong>引入第三方库 </strong><br/><a href=\"https://github.com/exif-js/exif-js\" target=\"_blank\">exif.js</a> 图片方向矫正 <br/><a href=\"https://github.com/stomita/ios-imagefile-megapixel\" target=\"_blank\">megapix-image.js</a> IOS6/7图像扭曲的问题 <br/><a href=\"https://github.com/owencm/javascript-jpeg-encoder\" target=\"_blank\">jpeg_encoder_basic.js</a> 解决安卓微信下无压缩的问题</p>",
+    "lastEditTime": "2015-08-27 09:15:46",
+    "createTime": "2015-08-17 03:22:22",
+    "__v": 0,
+    "tags": [
+      {
+        "_id": "556ffa18991b07643735d4b8",
+        "name": "html",
+        "path": "html",
+        "__v": 0
+      },
+      {
+        "_id": "556ffa2d991b07643735d4bb",
+        "name": "html5",
+        "path": "html5",
+        "__v": 0
+      },
+      {
+        "_id": "55717b8e7956ea1825dab78e",
+        "name": "javascript",
+        "path": "javascript",
+        "__v": 0
+      },
+      {
+        "_id": "5577fd14ce0598602f1b2a54",
+        "name": "mobile",
+        "path": "mobile",
+        "__v": 0
+      }
+    ],
+    "visits": 1256
+  },
+  {
+    "commentCount": 1,
+    "_id": "558b5520c968dd7663e31e2a",
+    "title": "linux下从零开始部署nodejs、mongodb、nginx、git、pm2",
+    "author": "陌",
+    "type": {
+      "_id": "556ffa6e991b07643735d4bd",
+      "name": "Web",
+      "path": "web",
+      "enabled": true,
+      "__v": 0
+    },
+    "enabled": true,
+    "introduction": "<p><a href=\"https://github.com/mhbseal/blog\" target=\"_blank\" title=\"blog\">Blog</a>从bae迁移到<a href=\"https://www.digitalocean.com/?refcode=858f12b5ee2c\" target=\"_blank\" title=\"digitalocean\">digitalocean</a>的VPS，没有了bae的各种限制、服务的各种挂（刚开始内测的时候就开始用，不过现在已经比较好了），迁移最根本的原因是nodejs的版本，这边需要0.11+开启harmony模式，bae的版本不支持，VPS上的各种环境需要自己部署，部署的时候遇到了一些问题，不过查查资料基本都能搞定，具体部署...</p>",
+    "content": "<p><span style=\"line-height: 1.5; white-space: nowrap; font-family: sans-serif;\">废话不多说，直接干货。假设</span><span style=\"font-family: sans-serif; line-height: 1.5; white-space: nowrap;\">当前用户为root，root下目录分别为</span></p><p><span style=\"white-space: nowrap;\">program 程序目录</span></p><p><span style=\"white-space: nowrap;\">website 站点目录</span></p><p><span style=\"white-space: nowrap;\">repository git仓库</span></p><p><span style=\"white-space: nowrap;\"><br/></span></p><p><span style=\"white-space: nowrap;\"><strong>nodejs</strong></span></p><p><span style=\"white-space: nowrap;\">安装 nodejs</span></p><pre>cd /root/program\nwget http://nodejs.org/dist/v0.12.5/node-v0.12.5-linux-x64.tar.gz\ntar -zxvf node-v0.12.5-linux-x64.tar.gz</pre><p><span style=\"white-space: nowrap;\">设置软连接，类似于wins的快捷方式，这里为了全局使用node、npm</span></p><p><span style=\"white-space: nowrap;\"></span></p><pre>ln -s /root/program/node-v0.12.5-linux-x64/bin/node /usr/local/bin/node\nln -s /root/program/node-v0.12.5-linux-x64/bin/npm /usr/local/bin/npm</pre><p><span style=\"white-space: nowrap;\"></span></p><p><span style=\"white-space: nowrap;\"><strong><br/></strong></span></p><p><span style=\"white-space: nowrap;\"><strong>mongodb</strong></span></p><p><span style=\"white-space: nowrap;\">安装 mongodb</span></p><pre>cd /root/program\nwget https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1404-3.0.3.tgz\ntar -zxvf mongodb-linux-x86_64-ubuntu1404-3.0.3.tgz</pre><p><span style=\"white-space: nowrap;\">设置数据和日志目录</span></p><pre>mkdir data\nmkdir logs</pre><p><span style=\"white-space: nowrap;\">启动mongodb</span></p><pre>./mongod --dbpath=&quot;/root/program/mongodb-linux-x86_64-ubuntu1404-3.0.3/data&quot; --logpath=&quot;/root/program/mongodb-linux-x86_64-ubuntu1404-3.0.3/logs/mongodb.log&quot;</pre><p><span style=\"white-space: nowrap;\"><br/></span></p><p><span style=\"white-space: nowrap;\"><strong>nginx</strong> 反向代理服务</span></p><p><span style=\"white-space: nowrap;\">安装依赖库PCRE</span></p><pre>wget ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.36.tar.gz\ntar -zxvf pcre-8.36.tar.gz\ncd pcre-8.36\n./configure\nmake\nmake install</pre><p><span style=\"white-space: nowrap;\">安装依赖库zlib</span></p><pre>cd /root/program\nwget http://zlib.net/zlib-1.2.8.tar.gz\ntar -zxvf zlib-1.2.8.tar.gz\ncd zlib-1.2.8\n./configure\nmake\nmake install</pre><p><span style=\"white-space: nowrap;\">安装nginx</span></p><pre>cd /root/program\nwget http://nginx.org/download/nginx-1.8.0.tar.gz\ntar -zxvf nginx-1.8.0.tar.gz\ncd nginx-1.8.0\n./configure\nmake\nmake install</pre><p><span style=\"white-space: nowrap;\">配置nginx</span></p><pre>cd /usr/local/nginx\n增加nodejs站群配置\nvi conf/nginx.conf\nvi编辑配置文件，在http{..}中新增’include node.js;’,然后新建node.js\nvi node.js\nvi 编辑内容如下（多个站点配置多个server）\nserver { \n    listen 80; \n    server_name mhbseal.com www.mhbseal.com;\n    location / { \n        proxy_pass http://localhost:3000; \n    }\n}</pre><p><span style=\"white-space: nowrap;\">启动nginx</span></p><pre>sbin/nginx</pre><p><span style=\"white-space: nowrap;\">如果再次修改配置可重启</span></p><pre>sbin/nginx -s reload</pre><p><span style=\"white-space: nowrap;\"><br/></span></p><p><span style=\"white-space: nowrap;\"><strong>git&nbsp;</strong></span><span style=\"white-space: nowrap; font-family: sans-serif; line-height: 1.5;\">版本控制</span></p><p><span style=\"white-space: nowrap; font-family: sans-serif; line-height: 1.5;\">安装git</span></p><pre>apt-get install git</pre><p>把开发人员的SSH公钥加入到服务</p><pre>cd /root/.ssh\nvi authorized_keys2\n把类似ssh-rsa … local 这样的公钥加入到authorized_keys2的最后一行</pre><p><span style=\"white-space: nowrap;\">新建git仓库</span></p><pre>cd /root/repository\ngit init —-bare blog.git\ncd blog.git</pre><p><span style=\"white-space: nowrap;\">新建自动更新hook</span></p><pre>vi hooks/post-receive\n内容如下\n#!/bin/sh\nGIT_WORK_TREE=/root/website/blog git checkout -f\n然后添加执行权限\nchmod +x hooks/post-receive</pre><p><span style=\"white-space: nowrap;\">新建website/blog</span></p><pre>cd /root/website\ngit clone /root/repository/blog.git</pre><p><span style=\"white-space: nowrap;\">客户端</span></p><pre>git clone root@127.0.0.1:/root/repository/blog.git\nclone下仓库之后就可以pull push代码了，并且服务端的website/blog也会自动更新</pre><p><span style=\"white-space: nowrap;\"><br/></span></p><p><span style=\"white-space: nowrap;\"><strong>pm2</strong> Node App 进程管理器</span></p><p><span style=\"white-space: nowrap;\">安装pm2</span></p><pre>npm install -g pm2</pre><p><span style=\"white-space: nowrap;\">启动app</span></p><p><span style=\"white-space: nowrap;\"></span></p><pre>NODE_ENV=production pm2 start app.js --name blog --node-args=&quot;--harmony&quot; --watch</pre><p><span style=\"white-space: nowrap;\">重新启动app</span></p><pre>NODE_ENV=production pm2 reload app.js --name blog --node-args=&quot;--harmony&quot; --watch</pre><p><span style=\"white-space: nowrap;\"><br/></span></p><p><span style=\"white-space: nowrap;\">于是乎最简单的生产环境部署好了...</span></p>",
+    "lastEditTime": "2016-01-20 19:32:57",
+    "createTime": "2015-06-24 21:10:56",
+    "__v": 0,
+    "tags": [
+      {
+        "_id": "557145334a817000279bb802",
+        "name": "web",
+        "path": "web",
+        "__v": 0
+      }
+    ],
+    "visits": 1706
+  },
+  {
+    "commentCount": 3,
+    "_id": "5571770874e267002715093d",
+    "title": "js中json和string的转换",
+    "author": "陌",
+    "type": {
+      "_id": "556ffa6e991b07643735d4bd",
+      "name": "Web",
+      "path": "web",
+      "enabled": true,
+      "__v": 0
+    },
+    "enabled": true,
+    "introduction": "<p>js中把jsonA（string类型）转化为jsonB（object类型）是经常碰到的情况，例如后台返回给前台页面一个简单的jsonA，需要在前台页面中访问json中的某个属性，就需要把jsonA转化为jsonB，而经常处理的方法也有以下几种...</p>",
+    "content": "<p><strong>string --&gt; json</strong></p><p><br/></p><p>1.简单粗暴的eval（有安全隐患）</p><pre class=\"brush:js;toolbar:false\">&lt;script&gt;\n  var strJson = &#39;{&quot;name&quot;: &quot;mo&quot;, &quot;job&quot;: &quot;Front End Developer&quot;}&#39;\n    , objJson = eval(&#39;(&#39;+strJson+&#39;)&#39;);\n  console.log(objJson.name + &#39; is a &#39; + objJson.job);\n&lt;/script&gt;\n// output:\n// mo is a Front End Developer</pre><p><br/></p><p>2.浏览器原生的JSON.parse(text [, reviver])，具体API可<a href=\"http://technet.microsoft.com/zh-cn/sysinternals/cc836466(v=vs.85)\" target=\"_blank\">参照这里</a>，ie8+支持</p><pre class=\"brush:js;toolbar:false\">&lt;script&gt;\n  var strJson = &#39;{&quot;name&quot;: &quot;mo&quot;, &quot;job&quot;: &quot;Front End Developer&quot;}&#39;\n    , objJson = JSON.parse(strJson);\n  console.log(objJson.name + &#39; is a &#39; + objJson.job);\n&lt;/script&gt;\n// output:\n// mo is a Front End Developer</pre><p><br/></p><p>3.第三方js库，如json.js、json2.js、json_parse_state.js、json_parse_state.js等，可<a href=\"https://github.com/douglascrockford/JSON-js\" target=\"_blank\">查看这里</a></p><pre class=\"brush:js;toolbar:false\">&lt;script type=&quot;text/javascript&quot; src=&quot;json2.js&quot;&gt;&lt;/script&gt;\n&lt;script&gt;\n  var strJson = &#39;{&quot;name&quot;: &quot;mo&quot;, &quot;job&quot;: &quot;Front End Developer&quot;}&#39;\n    , objJson = JSON.parse(strJson);\n  console.log(objJson.name + &#39; is a &#39; + objJson.job);\n&lt;/script&gt;\n// output:\n// mo is a Front End Developer</pre><p><br/></p><p>4.如果页面中引用前端类库例如jquery等，可调用他们封装好的方法，例如：</p><pre class=\"brush:js;toolbar:false\">&lt;script type=&quot;text/javascript&quot; src=&quot;jquery-1.10.2.min.js&quot;&gt;&lt;/script&gt;\n&lt;script&gt;\n  var strJson = &#39;{&quot;name&quot;: &quot;mo&quot;, &quot;job&quot;: &quot;Front End Developer&quot;}&#39;\n    , objJson = jQuery.parseJSON(strJson);\n  console.log(objJson.name + &#39; is a &#39; + objJson.job);\n&lt;/script&gt;\n// output:\n// mo is a Front End Developer</pre><p><br/></p><p><strong>json --&gt; <strong style=\"white-space: normal;\">string</strong></strong></p><p><br/></p><p>1.浏览器原生的JSON.stringify(value [, replacer] [, space])，具体API可<a href=\"http://technet.microsoft.com/zh-cn/sysinternals/cc836459(v=vs.85)\" target=\"_blank\">参照这里</a>，ie8+支持</p><pre class=\"brush:js;toolbar:false\">&lt;script&gt;\n  var objJson = {&quot;name&quot;: &quot;mo&quot;, &quot;job&quot;: &quot;Front End Developer&quot;}\n    , strJson = JSON.stringify(objJson);\n  console.log(typeof(strJson));\n&lt;/script&gt;\n// output:\n// string</pre><p><br/></p><p>2.第三方js库，如json.js、json2.js等，可<a href=\"https://github.com/douglascrockford/JSON-js\" target=\"_blank\" style=\"white-space: normal;\">查看这里</a></p><pre class=\"brush:js;toolbar:false\">&lt;script type=&quot;text/javascript&quot; src=&quot;json_parse_state.js&quot;&gt;&lt;/script&gt;\n&lt;script&gt;\n  var objJson = {&quot;name&quot;: &quot;mo&quot;, &quot;job&quot;: &quot;Front End Developer&quot;}\n    , strJson = JSON.stringify(objJson);\n  console.log(typeof(strJson));\n&lt;/script&gt;\n// output:\n// string</pre>",
+    "lastEditTime": "2015-06-14 18:19:28",
+    "createTime": "2014-01-03 15:14:56",
+    "__v": 0,
+    "tags": [
+      {
+        "_id": "55717b8e7956ea1825dab78e",
+        "name": "javascript",
+        "path": "javascript",
+        "__v": 0
+      }
+    ],
+    "visits": 996
+  },
+  {
+    "commentCount": 0,
+    "_id": "557139144a817000279bb801",
+    "title": "CSS3属性之Animations",
+    "author": "陌",
+    "type": {
+      "_id": "556ffa6e991b07643735d4bd",
+      "name": "Web",
+      "path": "web",
+      "enabled": true,
+      "__v": 0
+    },
+    "enabled": true,
+    "introduction": "<p>CSS3的Animations属性出现之前，如果需要动画效果，首先想到的是javascript，偷个懒直接jQuery，不过现在Animations来了，可以通过纯css实现动画了，直戳&nbsp;<strong><a href=\"/demo/css3/animations.html\" target=\"_blank\" title=\"animations\" textvalue=\"demo\">DEMO</a></strong>（demo中加了webkit的私有属性，所以需要在webkit内核的浏览器打开，实际应用中需要根据实际情况加需要兼容的浏览器相对应的私有属性)...</p>",
+    "content": "<p><strong><span style=\"line-height: 1.5;\">名称：animation</span></strong><br/></p><p>语法：animation: &lt;single-animation&gt; [ , &lt;single-animation&gt; ]*</p><p>取值：</p><p>&lt;single-animation&gt; = [ animation-name ] || [ animation-duration ] || [ animation-timing-<span style=\"line-height: 1.5;\">function ] || [ animation-delay ] || [ animation-iteration-count ] || [ animation-</span><span style=\"line-height: 1.5;\">direction ] || [ single-animation-fill-mode ] || [ single-animation-play-state ]</span></p><p>取值说明：</p><p>[ animation-name ]：对象所应用的动画名称</p><p>[ animation-duration ]：对象动画的持续时间</p><p>[ animation-timing-function ]：对象动画的过渡类型</p><p>[ animation-delay ]：对象动画延迟的时间</p><p>[ animation-iteration-count ]：对象动画的循环次数</p><p>[ animation-direction ]：对象动画在循环中的运动方向</p><p>[ animation-play-state ]：对象动画的状态</p><p>[ single-animation-fill-mode ]：对象动画时间之外的状态</p><p>说明：复合属性，对象所应用的动画特效。</p><p><br/></p><p><strong>名称：animation-name</strong></p><p>语法：animation-name: none | &lt;IDENT&gt; [ , none | &lt;IDENT&gt; ]*</p><p>取值说明：</p><p>none：没有动画效果，默认值</p><p>&lt;IDENT&gt;：动画名称</p><p>说明：对象所应用的动画名称，必须与规则@keyframes配合使用，因为动画名称由@keyframes定义，<span style=\"line-height: 1.5;\">如果提供多个属性值，以逗号进行分隔。</span></p><p><br/></p><p><strong>名称：animation-duration</strong></p><p>语法：animation-duration: &lt;time&gt; [ , &lt;time&gt; ]*</p><p>取值说明：</p><p>&lt;time&gt;：动画的持续时间</p><p>说明：对象动画的持续时间，默认值为0，多个取值用逗号分隔。</p><p><br/></p><p><br/></p><p><strong>名称：animation-timing-function</strong></p><p>语法：animation-timing-function: &lt;single-timing-function&gt; [ , &lt;single-timing-function&gt; ]*</p><p>取值：</p><p>&lt;single-timing-function&gt; = ease | linear | ease-in | ease-out | ease-in-out | step-start |&nbsp;<span style=\"line-height: 1.5;\">step-end | steps(&lt;integer&gt;[, [ start | end ] ]?) | cubic-bezier(&lt;number&gt;, &lt;number&gt;,&nbsp;</span><span style=\"line-height: 1.5;\">&lt;number&gt;, &lt;number&gt;)</span></p><p>取值说明：</p><p>linear：匀速。等同于贝塞尔曲线(0.0, 0.0, 1.0, 1.0)</p><p>ease：逐渐变慢。等同于贝塞尔曲线(0.25, 0.1, 0.25, 1.0)</p><p>ease-in：加速。等同于贝塞尔曲线(0.42, 0, 1.0, 1.0)</p><p>ease-out：减速。等同于贝塞尔曲线(0, 0, 0.58, 1.0)</p><p>ease-in-out：加速然后减速。等同于贝塞尔曲线(0.42, 0, 0.58, 1.0)</p><p>step-start：等同于steps(1, start)</p><p>step-end：等同于steps(1, end)</p><p>steps(&lt;integer&gt;[, [ start | end ] ]?)：参数&lt;integer&gt;表示分为几步完成过渡，取值正整数，另外<span style=\"line-height: 1.5;\">一个参数可选，取值 start 或者 end，指定时间间隔内值发生变化的点，不取值则默认为 end</span></p><p><span style=\"line-height: 1.5;\">cubic-bezier(&lt;number&gt;, &lt;number&gt;, &lt;number&gt;, &lt;number&gt;)：特定的贝塞尔曲线类型，4个数值需在[0,&nbsp;</span><span style=\"line-height: 1.5;\">1]区间内</span></p><p>说明：对象动画的过渡类型，默认值ease，多个取值用逗号分隔。</p><p><br/></p><p><strong>名称：animation-delay</strong></p><p>语法：animation-delay: &lt;time&gt; [, &lt;time&gt;]*</p><p>说明：对象动画的延迟时间，默认值为0，多个取值用逗号分隔。</p><p><br/></p><p><strong>名称：animation-iteration-count</strong></p><p>语法：animation-iteration-count: infinite | &lt;number&gt; [ , infinite | &lt;number&gt; ]*</p><p>取值说明：</p><p>infinite：无限循环</p><p>&lt;number&gt;：动画的循环次数</p><p>说明：对象动画的循环次数，默认值为1，多个取值用逗号分隔。</p><p><br/></p><p><strong>名称：animation-direction</strong></p><p>语法：animation-direction: normal | alternate [, normal | alternate]*</p><p>取值说明：</p><p>normal：正常方向</p><p>alternate：正反方向交替，应用时需要设置运动循环次数，不然动画只执行一次，何谈反复的正反方向交替</p><p>说明：对象动画在循环中的运动方向，默认值为normal，多个取值用逗号分隔。</p><p><br/></p><p><strong>名称：animation-play-state</strong></p><p>语法：animation-play-state: running | paused [, running | paused]*</p><p>取值说明：</p><p>running：运动</p><p>paused：暂停</p><p>说明：对象动画的状态，默认值为running，多个取值用逗号分隔。</p><p><br/></p><p><strong>名称：animation-fill-mode</strong></p><p>语法：animation-fill-mode: none | forwards | backwards | both [ , none | forwards |&nbsp;<span style=\"line-height: 1.5;\">backwards | both ]*</span></p><p>取值说明：</p><p>none：默认值，不设置对象动画之外的状态</p><p>forwards：设置对象动画之外的状态为动画结束时的状态</p><p>backwards：设置对象动画之外的状态为动画开始时的状态</p><p>both：设置对象动画之外的状态为动画结束或开始的状态</p><p>说明：对象动画时间之外的状态，多个取值用逗号分隔。</p><p><br/></p><p><span style=\"color: rgb(255, 0, 0);\">注释：对象所应用的动画特效，可以通过 animation 缩写的方式指定，也可以分别对 animation-name&nbsp;<span style=\"line-height: 1.5;\">、animation-duration、animation-timing-function、animation-delay、animation-iteration-count、animation-direction、single-animation-fill-mode、single-animation-play-state 对其分别设置，例如下面的书写方式是一样的：</span></span></p><p><br/></p><p style=\"white-space: normal;\">代码片段 1：</p><pre class=\"brush:css;toolbar:false\">animation: move 3s linear 0.5s;</pre><p style=\"white-space: normal;\"><br/></p><p style=\"white-space: normal;\">代码片段 2：</p><pre class=\"brush:css;toolbar:false\">animation-name：move;\nanimation-duration：3s;\nanimation-timing-function：linear;\nanimation-delay：0.5s;</pre><p style=\"white-space: normal;\"><strong><br/></strong></p><p style=\"white-space: normal;\"><strong>兼容性</strong>：<span style=\"line-height: 1.5;\">（来自</span><a href=\"http://caniuse.com/\" target=\"_blank\" style=\"line-height: 1.5;\">http://caniuse.com</a><span style=\"line-height: 1.5;\">）</span></p><p style=\"white-space: normal;\"><img src=\"http://www.mhbseal.com/upload/article/2013-12-18(10-40-58)\" title=\"QQ截图20131218104029.png\"/></p><p style=\"white-space: normal;\"><span style=\"color: rgb(255, 0, 0);\">为了兼容各种浏览器，该属性目前需要加各种私有属性，包括-moz-，-webkit-， -o-。</span></p>",
+    "lastEditTime": "2015-06-05 17:26:12",
+    "createTime": "2013-12-18 10:47:53",
+    "__v": 0,
+    "tags": [
+      {
+        "_id": "556ffa1f991b07643735d4b9",
+        "name": "css",
+        "path": "css",
+        "__v": 0
+      },
+      {
+        "_id": "556ffa24991b07643735d4ba",
+        "name": "css3",
+        "path": "css3",
+        "__v": 0
+      }
+    ],
+    "visits": 895
+  },
+  {
+    "commentCount": 0,
+    "_id": "557138fb4a817000279bb800",
+    "title": "CSS3属性之Transitions",
+    "author": "陌",
+    "type": {
+      "_id": "556ffa6e991b07643735d4bd",
+      "name": "Web",
+      "path": "web",
+      "enabled": true,
+      "__v": 0
+    },
+    "enabled": true,
+    "introduction": "<p>CSS3属性之Transitions允许Web开发人员定义指定的时间内改变CSS属性值，而不是像传统的方式一样瞬间改变CSS属性的值，比如我们经常使用的 :hover, :focus效果都会在瞬间改变效果，以往这种过渡效果都需要使用JavaScript以动画的形式实现，如今使用transition就可以轻松加愉快的实现，直戳&nbsp;<strong><a href=\"/demo/css3/transitions.html\" target=\"_blank\" title=\"transitions\">DEMO</a></strong>（demo中没有加各种私有属性，实际应用中需要根据实际情况加需要兼容的浏览器相对应的私有属性）...</p>",
+    "content": "<p><strong><span style=\"line-height: 1.5;\">名称：transition</span></strong></p><p>语法：transition：[ transition-property ] || [ transition-duration ] || [ transition-<span style=\"line-height: 1.5;\">timing-function ] || [ transition-delay ]</span></p><p>取值说明：</p><p>[ transition-property ]：对象过渡的css属性</p><p>[ transition-duration ]：对象过渡的持续时间</p><p>[ transition-timing-function ]：对象过渡的动画类型</p><p>[ transition-delay ]：对象延迟过渡的时间</p><p>说明：复合属性，对象的过渡效果。</p><p><br/></p><p><strong>名称：transition-property</strong></p><p>语法：transition-property ： none | all | [ &lt;IDENT&gt; ] [,&nbsp;&lt;IDENT&gt; ]*</p><p>取值说明：</p><p>all：所有可以进行过渡的css属性</p><p>none：不指定过渡的css属性</p><p>&lt;IDENT&gt;：指定要进行过渡的css属性</p><p>说明：对象过渡的css属性，默认值为all，多个&lt;IDENT&gt;用逗号分隔。</p><p><br/></p><p><strong>名称：transition-duration</strong></p><p>语法：transition-duration: &lt;time&gt; [, &lt;time&gt;]*</p><p>说明：对象过渡的持续时间，默认值为0，多个取值用逗号分隔。</p><p><br/></p><p><strong>名称：transition-timing-function</strong></p><p>语法：<span style=\"line-height: 1.5;\">transition-timing-function: &lt;single-transition-timing-function&gt; [,&nbsp;&lt;single-</span><span style=\"line-height: 1.5;\">transition-timing-function&gt; ]*</span></p><p>取值：</p><p>&lt;single-transition-timing-function&gt; = ease | linear | ease-in | ease-out | ease-in-out |&nbsp;<span style=\"line-height: 1.5;\">step-start | step-end | steps(&lt;integer&gt;[, [ start | end ] ]?) | cubic-bezier(&lt;number&gt;,&nbsp;</span><span style=\"line-height: 1.5;\">&lt;number&gt;, &lt;number&gt;, &lt;number&gt;)</span></p><p>取值说明：</p><p>linear：匀速。等同于贝塞尔曲线(0.0, 0.0, 1.0, 1.0)</p><p>ease：逐渐变慢。等同于贝塞尔曲线(0.25, 0.1, 0.25, 1.0)</p><p>ease-in：加速。等同于贝塞尔曲线(0.42, 0, 1.0, 1.0)</p><p>ease-out：减速。等同于贝塞尔曲线(0, 0, 0.58, 1.0)</p><p>ease-in-out：加速然后减速。等同于贝塞尔曲线(0.42, 0, 0.58, 1.0)</p><p>step-start：等同于<span style=\"line-height: 1.5;\">steps(1, start)</span></p><p><span style=\"line-height: 1.5;\">step-end：等同于<span style=\"line-height: 1.5;\">steps(1, end)</span></span></p><p>steps(&lt;integer&gt;[, [ start | end ] ]?)：参数&lt;integer&gt;表示分为几步完成过渡，取值正整数，另外一个参数可选，取值 start 或者 end，指定时间间隔内值发生变化的点，不取值则默认为 end</p><p>cubic-bezier(&lt;number&gt;, &lt;number&gt;, &lt;number&gt;, &lt;number&gt;)：特定的贝塞尔曲线类型，4个数值需在[0,&nbsp;<span style=\"line-height: 1.5;\">1]区间内</span></p><p>说明：对象过渡的动画类型，默认值ease，多个取值用逗号分隔。</p><p><br/></p><p><strong>名称：transition-delay</strong></p><p>语法：transition-delay: &lt;time&gt; [, &lt;time&gt;]*</p><p>说明：对象延迟过渡的时间，默认值为0，多个取值用逗号分隔。</p><p><br/></p><p><span style=\"color: rgb(255, 0, 0);\">注释：对象的过度效果，可以通过 transition 缩写的方式指定，也可以分别对 transition-property、transition-duration、transition-timing-function、transition-delay对其分别设置，例如下面的书写方式是一样的：</span></p><p><span style=\"color: rgb(255, 0, 0);\"><br/></span></p><p>代码片段 1：</p><pre class=\"brush:css;toolbar:false\">transition: all 5s ease 2s;</pre><p><br/></p><p>代码片段 2：</p><pre class=\"brush:css;toolbar:false\">transition-property: all;\ntransition-duration: 5s;\ntransition-timing-function: ease;\ntransition-delay: 2s;</pre><p><strong style=\"white-space: normal;\"><br/></strong></p><p><strong style=\"white-space: normal;\">兼容性</strong>：<span style=\"line-height: 1.5;\">（来自</span><a href=\"http://caniuse.com/\" target=\"_blank\" style=\"line-height: 1.5; white-space: normal;\">http://caniuse.com</a><span style=\"line-height: 1.5;\">）</span></p><p><span style=\"line-height: 1.5;\"><img src=\"http://www.mhbseal.com/upload/article/2013-12-17(13-19-57)\" title=\"QQ截图20131217131913.png\"/></span></p><p><span style=\"color: rgb(255, 0, 0);\">为了兼容各种浏览器，该属性目前需要加各种私有属性，包括-moz-，-webkit-， -o-</span></p>",
+    "lastEditTime": "2015-06-05 17:26:26",
+    "createTime": "2013-12-17 13:20:55",
+    "__v": 0,
+    "tags": [
+      {
+        "_id": "556ffa1f991b07643735d4b9",
+        "name": "css",
+        "path": "css",
+        "__v": 0
+      },
+      {
+        "_id": "556ffa24991b07643735d4ba",
+        "name": "css3",
+        "path": "css3",
+        "__v": 0
+      }
+    ],
+    "visits": 822
+  },
+  {
+    "commentCount": 0,
+    "_id": "557138e44a817000279bb7ff",
+    "title": "CSS3属性之Transform 2D",
+    "author": "陌",
+    "type": {
+      "_id": "556ffa6e991b07643735d4bd",
+      "name": "Web",
+      "path": "web",
+      "enabled": true,
+      "__v": 0
+    },
+    "enabled": true,
+    "introduction": "<p>在CSS3中，可以用Transform 2D属性实现文字或图像的旋转、缩放、倾斜、移动等2D效果....</p>",
+    "content": "<p>\n    <strong><span style=\"line-height: 1.5;\">名称</span></strong><span style=\"line-height: 1.5;\">：transform</span>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <strong>语法</strong>：transform: none | &lt;transform-list&gt;\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    &lt;transform-list&gt;包括以下一个或多个参数(如有多个变换则用空格隔开，非逗号)：\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    matrix(&lt;number&gt;,&lt;number&gt;,&lt;number&gt;,&lt;number&gt;,&lt;number&gt;,&lt;number&gt;)：以一个含六值的(a,b,c,d,e,f)变换矩阵的形式指定一个2D变换，相当于直接应用一个[a,b,c,d,e,f]变换矩阵\n</p>\n<p>\n    translate(&lt;length&gt;[, &lt;length&gt;])：指定对象的2D translation（2D平移）。第一个参数对应X轴，第二个参数对应Y轴。如果第二个参数未提供，则默认值为0\n</p>\n<p>\n    translateX(&lt;length&gt;)：指定对象X轴（水平方向）的平移\n</p>\n<p>\n    translateY(&lt;length&gt;)：指定对象Y轴（垂直方向）的平移\n</p>\n<p>\n    rotate(&lt;angle&gt;)：指定对象的2D rotation（2D旋转）\n</p>\n<p>\n    scale(&lt;number&gt;[, &lt;number&gt;])：指定对象的2D scale（2D缩放）。第一个参数对应X轴，第二个参数对应Y轴。如果第二个参数未提供，则默认取第一个参数的值\n</p>\n<p>\n    scaleX(&lt;number&gt;)：指定对象X轴的（水平方向）缩放\n</p>\n<p>\n    scaleY(&lt;number&gt;)：指定对象Y轴的（垂直方向）缩放\n</p>\n<p>\n    skew(&lt;angle&gt; [, &lt;angle&gt;])：指定对象skew transformation（斜切扭曲）。第一个参数对应X轴，第二个参数对应Y轴。如果第二个参数未提供，则默认值为0\n</p>\n<p>\n    skewX(&lt;angle&gt;)：指定对象X轴的（水平方向）扭曲\n</p>\n<p>\n    skewY(&lt;angle&gt;)：指定对象Y轴的（垂直方向）扭曲\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <strong>名称</strong>：transform-origin\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <strong>语法</strong>：<span style=\"line-height: 1.5;\">transform-origin：[ &lt;percentage&gt; | &lt;length&gt; | left | center | right ] [ &lt;percentage&gt; | &lt;length&gt; | top | center | bottom ]?</span>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <strong>说明</strong>：该属性用来设置对象进行转换的基点，该属性提供2个参数值。如果提供两个，第一个用于横坐标，第二个用于纵坐标。如果只提供一个，该值将用于横坐标，纵坐标将为默认值50%，另外不设置transform-origin的情况下默认为设置对象的中心位置，及默认取值<span style=\"line-height: 1.5;\">50%, 50%。</span>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <strong style=\"white-space: normal;\">兼容性</strong>：<span style=\"line-height: 1.5;\">（来自</span><a href=\"http://caniuse.com/\" target=\"_blank\" style=\"line-height: 1.5; white-space: normal;\">http://caniuse.com</a><span style=\"line-height: 1.5;\">）</span>\n</p>\n<p>\n    <img src=\"http://www.mhbseal.com/upload/article/2013-12-17(10-35-46)\" title=\"QQ截图20131217103506.png\"/>\n</p>\n<p>\n    <span style=\"color: rgb(255, 0, 0);\">为了兼容各种浏览器，该属性目前需要加各种私有属性，包括-ms-，-moz-，-webkit-， -o-。</span>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <strong>一些DEMO</strong>：\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    html代码\n</p>\n<pre class=\"brush:html;toolbar:false\">&lt;ul&gt;\n  &lt;li&gt;&lt;p class=&quot;transform1&quot;&gt;translateY(5px)&lt;/p&gt;&lt;/li&gt;\n  &lt;li&gt;&lt;p class=&quot;transform2&quot;&gt;translate(5px, 5px)&lt;/p&gt;&lt;/li&gt;\n  &lt;li&gt;&lt;p class=&quot;transform3&quot;&gt;translate(5px)&lt;/p&gt;&lt;/li&gt;\n  &lt;li&gt;&lt;p class=&quot;transform4&quot;&gt;rotate(10deg)&lt;/p&gt;&lt;/li&gt;\n  &lt;li&gt;&lt;p class=&quot;transform5&quot;&gt;scale(0.8)&lt;/p&gt;&lt;/li&gt;\n  &lt;li&gt;&lt;p class=&quot;transform6&quot;&gt;scale(1.1, 0.8)&lt;/p&gt;&lt;/li&gt;\n  &lt;li&gt;&lt;p class=&quot;transform7&quot;&gt;skew(10deg)&lt;/p&gt;&lt;/li&gt;\n  &lt;li&gt;&lt;p class=&quot;transform8&quot;&gt;skew(10deg, 10deg)&lt;/p&gt;&lt;/li&gt;\n  &lt;li&gt;&lt;p class=&quot;transform9&quot;&gt;matrix(1,-0.1,0.1,1,3,0)&lt;/p&gt;&lt;/li&gt;\n  &lt;li&gt;&lt;p class=&quot;transform4 transform-origin&quot;&gt;以左上为基点rotate(10deg)&lt;/p&gt;&lt;/li&gt;\n&lt;/ul&gt;</pre>\n<p>\n    <br/>\n</p>\n<p>\n    css代码\n</p>\n<pre class=\"brush:css;toolbar:false\">ul {\n  width: 364px;\n  list-style: none;\n}\nul li {\n  float: left;\n  border: 1px solid black;\n  margin: 10px;\n}\nul li p {\n  width: 160px;\n  height: 80px;\n  background: green;\n  text-align: center;\n  line-height: 80px;\n  color: white;\n  font-size: 12px;\n}\n.transform1 {\n  transform: translateY(5px);\n}\n.transform2 {\n  transform: translate(5px, 5px);\n}\n.transform3 {\n  transform: translate(5px);\n}\n.transform4 {\n  transform: rotate(10deg);\n}\n.transform5 {\n  transform: scale(0.8);\n}\n.transform6 {\n  transform: scale(1.1, 0.8);\n}\n.transform7 {\n  transform: skewX(10deg);\n}\n.transform8 {\n  transform: skew(10deg, 10deg);\n}\n.transform9 {\n  transform: matrix(1, -0.1, 0.1, 1, 3, 0);\n}\n.transform-origin {\n  transform-origin: left top;\n}</pre>\n<p>\n    <br/>\n</p>\n<p>\n    效果：\n</p>\n<p>\n    <img src=\"/upload/article/2013-12-17(11-00-10)\" title=\"QQ截图20131217105852.png\"/>\n</p>",
+    "lastEditTime": "2015-06-05 15:31:39",
+    "createTime": "2013-12-16 17:08:57",
+    "__v": 0,
+    "tags": [
+      {
+        "_id": "556ffa1f991b07643735d4b9",
+        "name": "css",
+        "path": "css",
+        "__v": 0
+      },
+      {
+        "_id": "556ffa24991b07643735d4ba",
+        "name": "css3",
+        "path": "css3",
+        "__v": 0
+      }
+    ],
+    "visits": 847
+  },
+  {
+    "commentCount": 0,
+    "_id": "557138cf4a817000279bb7fe",
+    "title": "CSS3属性之线性渐变",
+    "author": "陌",
+    "type": {
+      "_id": "556ffa6e991b07643735d4bd",
+      "name": "Web",
+      "path": "web",
+      "enabled": true,
+      "__v": 0
+    },
+    "enabled": true,
+    "introduction": "<p>渐变是网页设计中最常见的图形元素之一，CSS2中要实现一个元素背景的线性渐变只有用图片来平铺，<span style=\"line-height: 1.5;\">而CSS3中通过的linear-gradient属性就可以很方便的实现元素的线性渐变...</span></p>",
+    "content": "<p>\n    <strong><span style=\"line-height: 1.5;\">名称</span></strong><span style=\"line-height: 1.5;\">：linear-gradient</span><br/>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <strong>语法如下</strong>：\n</p>\n<p>\n    -webkit-gradien(&lt;type&gt;,&lt;point&gt;[,&lt;radius&gt;]?,&lt;point&gt;[,&lt;radius&gt;]?[,&lt;stop&gt;]*) &nbsp;// webkit老式语<span style=\"line-height: 1.5;\">法</span>\n</p>\n<p>\n    -webkit-linear-gradient([&lt;point&gt;||&lt;angle&gt;,]?&lt;stop&gt;,&lt;stop&gt;[,&lt;stop&gt;]*) &nbsp;// webkit语法\n</p>\n<p>\n    -moz-linear-gradient([&lt;point&gt;||&lt;angle&gt;,]?&lt;stop&gt;,&lt;stop&gt;[,&lt;stop&gt;]*) &nbsp;// Gecko语法\n</p>\n<p>\n    -o-linear-gradient([&lt;point&gt;||&lt;angle&gt;,]?&lt;stop&gt;,&lt;stop&gt;[,&lt;stop&gt;]*) &nbsp;// Presto语法\n</p>\n<p>\n    linear-gradient([[&lt;angle&gt; | to &lt;side-or-corner&gt; ],]?&lt;color-stop&gt;[,&lt;color-stop&gt;]+) &nbsp;// W3C<span style=\"line-height: 1.5;\">语法</span>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <strong>说明</strong>：语法基本划分3种，一种是webkit的老式语法，一种是Webkit、webkit、Presto的语法<span style=\"line-height: 1.5;\">(加上各自的私有属性，语法都一样)、一种是W3C的语法（目前个各浏览器最新版基本都支持），虽然</span><span style=\"line-height: 1.5;\">语法不一致，但包括的参数基本一致，如渐变的方向以及渐变断点的位置及颜色。</span>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <strong>一些demo</strong>：<br/>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    html代码：\n</p>\n<pre class=\"brush:html;toolbar:false\">&lt;div class=&quot;linear-gradient1&quot;&gt;从左到右&lt;/div&gt;\n&lt;div class=&quot;linear-gradient2&quot;&gt;从右到左&lt;/div&gt;\n&lt;div class=&quot;linear-gradient3&quot;&gt;从上到下&lt;/div&gt;\n&lt;div class=&quot;linear-gradient4&quot;&gt;从下到上&lt;/div&gt;\n&lt;div class=&quot;linear-gradient5&quot;&gt;从左到右,多色渐变&lt;/div&gt;\n&lt;div class=&quot;linear-gradient6&quot;&gt;多色渐变,指定颜色范围&lt;/div&gt;\n&lt;div class=&quot;linear-gradient7&quot;&gt;重复渐变-1&lt;/div&gt;\n&lt;div class=&quot;linear-gradient8&quot;&gt;重复渐变-2&lt;/div&gt;</pre>\n<p>\n    <br/>\n</p>\n<p>\n    css代码：\n</p>\n<pre class=\"brush:css;toolbar:false\">div {\n  width: 160px;\n  height: 80px;\n  margin: 10px;\n  border: 1px solid black;\n  line-height: 80px;\n  text-align: center;\n  font-size: 12px;\n}\n.linear-gradient1 {\n  background-image: -webkit-gradient(linear, left center, right center, color-stop(0%, red), color-stop(100%, white));\n  background-image: -webkit-linear-gradient(left, red, white);\n  background-image: -moz-linear-gradient(left, red, white);\n  background-image: -o-linear-gradient(left, red, white);\n  background-image: linear-gradient(to right, red, white);\n}\n.linear-gradient2 {\n  background-image: -webkit-gradient(linear, right center, left center, color-stop(0%, red), color-stop(100%, white));\n  background-image: -webkit-linear-gradient(right, red, white);\n  background-image: -moz-linear-gradient(right, red, white);\n  background-image: -o-linear-gradient(right, red, white);\n  background-image: linear-gradient(to left, red, white);\n}\n.linear-gradient3 {\n  background-image: -webkit-gradient(linear, center top, center bottom, color-stop(0%, red), color-stop(100%, white));\n  background-image: -webkit-linear-gradient(top, red, white);\n  background-image: -moz-linear-gradient(top, red, white);\n  background-image: -o-linear-gradient(top, red, white);\n  background-image: linear-gradient(to bottom, red, white);\n}\n.linear-gradient4 {\n  background-image: -webkit-gradient(linear, center bottom, center top, color-stop(0%, red), color-stop(100%, white));\n  background-image: -webkit-linear-gradient(bottom, red, white);\n  background-image: -moz-linear-gradient(bottom, red, white);\n  background-image: -o-linear-gradient(bottom, red, white);\n  background-image: linear-gradient(to top, red, white);\n}\n.linear-gradient5 {\n  background-image: -webkit-gradient(linear, left center, right center, color-stop(0%, red), color-stop(25%, green), color-stop(50%, blue), color-stop(75%, orange), color-stop(100%, white));\n  background-image: -webkit-linear-gradient(left, red, green, blue, orange, white);\n  background-image: -moz-linear-gradient(left, red, green, blue, orange, white);\n  background-image: -o-linear-gradient(left, red, green, blue, orange, white);\n  background-image: linear-gradient(to right, red, green, blue, orange, white);\n}\n.linear-gradient6 {\n  background-image: -webkit-gradient(linear, left center, right center, color-stop(0%, red), color-stop(40%, green), color-stop(50%, blue), color-stop(60%, orange), color-stop(100%, white));\n  background-image: -webkit-linear-gradient(left, red 0%, green 40%, blue 50%, orange 60%, white 100%);\n  background-image: -moz-linear-gradient(left, red 0%, green 40%, blue 50%, orange 60%, white 100%);\n  background-image: -o-linear-gradient(left, red 0%, green 40%, blue 50%, orange 60%, white 100%);\n  background-image: linear-gradient(to right, red 0%, green 40%, blue 50%, orange 60%, white 100%);\n}\n.linear-gradient7 {\n  background-image: -webkit-repeating-linear-gradient(left, red 0, red 14px, white 15px, white 29px);\n  background-image: -moz-repeating-linear-gradient(left, red 0, red 14px, white 15px, white 29px);\n  background-image: -o-repeating-linear-gradient(left, red 0, red 14px, white 15px, white 29px);\n  background-image: repeating-linear-gradient(to right, red 0, red 14px, white 15px, white 29px);\n}\n.linear-gradient8 {\n  background-image: -webkit-repeating-linear-gradient(45deg, red 0, red 14px, white 15px, white 29px);\n  background-image: -moz-repeating-linear-gradient(45deg, red 0, red 14px, white 15px, white 29px);\n  background-image: -o-repeating-linear-gradient(45deg, red 0, red 14px, white 15px, white 29px);\n  background-image: repeating-linear-gradient(45deg, red 0, red 14px, white 15px, white 29px);\n}</pre>\n<p>\n    <br/>\n</p>\n<p>\n    效果：\n</p>\n<p>\n    <img src=\"http://www.mhbseal.com/upload/article/2013-12-16(15-20-55)\" title=\"QQ截图20131216151913.png\"/>\n</p>\n<p>\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    <strong>兼容性</strong>：<span style=\"line-height: 1.5;\">（来自</span><a href=\"http://caniuse.com/\" target=\"_blank\" style=\"line-height: 1.5;\">http://caniuse.com</a><span style=\"line-height: 1.5;\">）</span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\"><br/></span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\">1.</span><span style=\"line-height: 1.5;\">Gradients</span>\n</p>\n<p style=\"white-space: normal;\">\n    <img src=\"/upload/article/2013-12-16(14-36-43)\" title=\"QQ截图20131216143550.png\" style=\"line-height: 1.5;\"/>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    2.<span style=\"line-height: 1.5;\">Repeating Gradients</span>\n</p>\n<p>\n    <span style=\"line-height: 1.5;\"><img src=\"/upload/article/2013-12-16(15-23-08)\" title=\"QQ截图20131216152209.png\"/></span>\n</p>\n<p>\n    <span style=\"line-height: 1.5;\"><br/></span>\n</p>\n<p>\n    <span style=\"color: rgb(255, 0, 0);\">注：在实际测试的过程中发现，对于有些角度的理解，W3C和各浏览器有些差异，例如30deg，但是对于常用的45deg、90deg等是一样的；webkit的老式语法不支持重复渐变；</span>\n</p>",
+    "lastEditTime": "2015-06-05 15:32:13",
+    "createTime": "2013-12-13 17:02:10",
+    "__v": 0,
+    "tags": [
+      {
+        "_id": "556ffa1f991b07643735d4b9",
+        "name": "css",
+        "path": "css",
+        "__v": 0
+      },
+      {
+        "_id": "556ffa24991b07643735d4ba",
+        "name": "css3",
+        "path": "css3",
+        "__v": 0
+      }
+    ],
+    "visits": 764
+  },
+  {
+    "commentCount": 0,
+    "_id": "557138b74a817000279bb7fd",
+    "title": "CSS3属性之Media Queries",
+    "author": "陌",
+    "type": {
+      "_id": "556ffa6e991b07643735d4bd",
+      "name": "Web",
+      "path": "web",
+      "enabled": true,
+      "__v": 0
+    },
+    "enabled": true,
+    "introduction": "<p>\n    Media Queries属性在做响应式布局的时候功不可没，如果做过响应式，对下面的写法一定很熟悉：\n</p>\n<p>\n    <br/>\n</p>\n<pre class=\"brush:css;toolbar:false\">@media screen and (min-width: 320px) { … }</pre>\n<p>\n    <span style=\"line-height: 1.5;\"><br/></span>\n</p>\n<p>\n    <span style=\"line-height: 1.5;\">其中包含了媒体的引入方式、逻辑操作符、媒体类型（Media Type）、媒体特性（Media Query）等...</span><br/>\n</p>",
+    "content": "<p style=\"white-space: normal;\">\n    Media Queries属性在做响应式布局的时候功不可没，如果做过响应式，对下面的写法一定很熟悉：\n</p>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<pre class=\"brush:css;toolbar:false\">@media screen and (min-width: 320px) { … }</pre>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    其中包含了媒体的引入方式、逻辑操作符、媒体类型（Media Type）、媒体特性（Media Query）等，下面来详细的看下这些属性。\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <strong>媒体的引入方式：</strong>\n</p>\n<p>\n    <strong><br/></strong>\n</p>\n<p>\n    1)link方法引入(html文件head中)\n</p>\n<p>\n    <br/>\n</p>\n<pre class=\"brush:html;toolbar:false\">&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; media=&quot;screen and (min-width: 320px)&quot; /&gt;</pre>\n<p>\n    <br/>\n</p>\n<p>\n    2)@media引入(css代码中)\n</p>\n<p>\n    <br/>\n</p>\n<pre class=\"brush:css;toolbar:false\">@media screen and (min-width: 320px) { … }</pre>\n<p>\n    <br/>\n</p>\n<p>\n    3)xml方式引入(xml文件中)\n</p>\n<p>\n    <br/>\n</p>\n<pre class=\"brush:xml;toolbar:false\">&lt;?xml-stylesheet rel=&quot;stylesheet&quot; href=&quot;style.css&quot; media=&quot;screen and (min-width: 320px)&quot; ?&gt;</pre>\n<p>\n    <span style=\"line-height: 1.5;\"></span>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    4)@import方式引入(css代码中)\n</p>\n<p>\n    <br/>\n</p>\n<pre class=\"brush:css;toolbar:false\">@import url(style.css) screen and (min-width: 320px);</pre>\n<p>\n    <br/>\n</p>\n<p>\n    <span style=\"color: rgb(255, 0, 0);\">注：其中1-2是工作中经常用到的，另外如果以引入文件的形式引入css，即使媒体查询返回假，css<span style=\"line-height: 1.5;\">仍会被加载。</span></span>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <strong>逻辑操作符</strong>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    操作符 and &#39;,&#39; only not 可以用来构建复杂的媒体查询，具体如下：\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    and 操作符用来把多个媒体属性组合起来，合并到同一条媒体查询中，只有当每个属性都为真时，这条<span style=\"line-height: 1.5;\">查询的结果才为真。</span>\n</p>\n<p>\n    <span style=\"line-height: 1.5;\"><br/></span>\n</p>\n<pre class=\"brush:css;toolbar:false\">@media srccen and (min-width: 320px) and (max-width: 480px) { … }</pre>\n<p>\n    <br/>\n</p>\n<p>\n    &#39;,&#39; 操作符将多个媒体查询以逗号分隔放在一起，只要其中任何一个为真，整个媒体语句就返回真。相<span style=\"line-height: 1.5;\">当于 or 操作符。</span>\n</p>\n<p>\n    <span style=\"line-height: 1.5;\"><br/></span>\n</p>\n<pre class=\"brush:css;toolbar:false\">@media (min-width: 700px), handheld and (orientation: landscape) { ... }</pre>\n<p>\n    <br/>\n</p>\n<p>\n    not 操作符用来对一条媒体查询的结果进行取反。\n</p>\n<p>\n    <br/>\n</p>\n<pre class=\"brush:css;toolbar:false\">@media not screen and (color), print and (color)</pre>\n<p>\n    <br/>\n</p>\n<pre class=\"brush:css;toolbar:false\">@media (not (screen and (color))), print and (color)  /* 等同上一行代码 */</pre>\n<p>\n    <br/>\n</p>\n<p>\n    only 操作符表示仅在媒体查询匹配成功的情况下应用指定样式。可以通过它让选中的样式在老式浏览<span style=\"line-height: 1.5;\">器中不被应用。例如以下代码，在不支持Media Query的浏览器中则不会引入example.css。</span>\n</p>\n<p>\n    <span style=\"line-height: 1.5;\"><br/></span>\n</p>\n<pre class=\"brush:html;toolbar:false\">&lt;link rel=&quot;stylesheet&quot; media=&quot;only screen and (color)&quot; href=&quot;example.css&quot; /&gt;</pre>\n<p>\n    <br/>\n</p>\n<p>\n    <span style=\"color: rgb(255, 0, 0);\">注：若使用了 not 或 only 操作符，必须明确指定一个媒体类型。</span>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <strong>媒体类型（Media Type）</strong>\n</p>\n<p>\n    <br/>\n</p>\n<table class=\"t1\">\n    <thead>\n        <tr>\n            <th>\n                媒体类型\n            </th>\n            <th>\n                版本\n            </th>\n            <th>\n                兼容性\n            </th>\n            <th>\n                简介\n            </th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>\n                all\n            </td>\n            <td>\n                CSS2\n            </td>\n            <td>\n                所有浏览器\n            </td>\n            <td>\n                用于所有媒体设备类型\n            </td>\n        </tr>\n        <tr>\n            <td>\n                aural\n            </td>\n            <td>\n                CSS2\n            </td>\n            <td>\n                Opera\n            </td>\n            <td>\n                用于语音和音乐合成器\n            </td>\n        </tr>\n        <tr>\n            <td>\n                braille\n            </td>\n            <td>\n                CSS2\n            </td>\n            <td>\n                Opera\n            </td>\n            <td>\n                用于触觉反馈设备\n            </td>\n        </tr>\n        <tr>\n            <td>\n                handheld\n            </td>\n            <td>\n                CSS2\n            </td>\n            <td>\n                Chrome,Safari,Opera\n            </td>\n            <td>\n                用于小型或手持设备\n            </td>\n        </tr>\n        <tr>\n            <td>\n                print\n            </td>\n            <td>\n                CSS2\n            </td>\n            <td>\n                所有浏览器\n            </td>\n            <td>\n                用于打印机\n            </td>\n        </tr>\n        <tr>\n            <td>\n                projection\n            </td>\n            <td>\n                CSS2\n            </td>\n            <td>\n                Opera\n            </td>\n            <td>\n                用于投影图像，如幻灯片\n            </td>\n        </tr>\n        <tr>\n            <td>\n                screen\n            </td>\n            <td>\n                CSS2\n            </td>\n            <td>\n                所有浏览器\n            </td>\n            <td>\n                用于计算机显示器\n            </td>\n        </tr>\n        <tr>\n            <td>\n                tty\n            </td>\n            <td>\n                CSS2\n            </td>\n            <td>\n                Opera\n            </td>\n            <td>\n                用于使用固定间距字符格的设备。如电传打字机和终端\n            </td>\n        </tr>\n        <tr>\n            <td>\n                tv\n            </td>\n            <td>\n                CSS2\n            </td>\n            <td>\n                Opera\n            </td>\n            <td>\n                用于电视类设备\n            </td>\n        </tr>\n        <tr>\n            <td>\n                embossed\n            </td>\n            <td>\n                CSS2\n            </td>\n            <td>\n                Opera\n            </td>\n            <td>\n                用于凸点字符（盲文）印刷设备\n            </td>\n        </tr>\n    </tbody>\n</table>\n<p>\n    <br/>\n</p>\n<p>\n    <span style=\"color: rgb(255, 0, 0); line-height: 1.5;\">注：W3C规定了10中媒体类型，但是大部分浏览器实现的和我们经常用的为all、screen、print三种</span><span style=\"color: rgb(255, 0, 0); line-height: 1.5;\">。</span><br/>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <strong>媒体特性（Media Query）</strong>\n</p>\n<p>\n    <br/>\n</p>\n<table class=\"t1\">\n    <thead>\n        <tr>\n            <th>\n                媒体特性\n            </th>\n            <th>\n                取值\n            </th>\n            <th>\n                接受min/max\n            </th>\n            <th>\n                简介\n            </th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>\n                width\n            </td>\n            <td>\n                &lt;length&gt;\n            </td>\n            <td>\n                yes\n            </td>\n            <td>\n                定义输出设备中的页面可见区域宽度\n            </td>\n        </tr>\n        <tr>\n            <td>\n                height\n            </td>\n            <td>\n                &lt;length&gt;\n            </td>\n            <td>\n                yes\n            </td>\n            <td style=\"word-break: break-all;\">\n                定义输出设备中的页面可见区域高度\n            </td>\n        </tr>\n        <tr>\n            <td>\n                device-width\n            </td>\n            <td>\n                &lt;length&gt;\n            </td>\n            <td>\n                yes\n            </td>\n            <td>\n                定义输出设备的屏幕可见宽度\n            </td>\n        </tr>\n        <tr>\n            <td>\n                device-height\n            </td>\n            <td>\n                &lt;length&gt;\n            </td>\n            <td>\n                yes\n            </td>\n            <td>\n                定义输出设备的屏幕可见高度\n            </td>\n        </tr>\n        <tr>\n            <td>\n                orientation\n            </td>\n            <td>\n                portrait | landscape\n            </td>\n            <td>\n                no\n            </td>\n            <td>\n                定义&#39;height&#39;是否大于或等于&#39;width&#39;。值portrait代表是，landscape代表否\n            </td>\n        </tr>\n        <tr>\n            <td>\n                aspect-ratio\n            </td>\n            <td>\n                &lt;ratio&gt;\n            </td>\n            <td>\n                yes\n            </td>\n            <td>\n                定义&#39;width&#39;与&#39;height&#39;的比率\n            </td>\n        </tr>\n        <tr>\n            <td>\n                device-aspect-ratio\n            </td>\n            <td>\n                &lt;ratio&gt;\n            </td>\n            <td>\n                yes\n            </td>\n            <td>\n                定义&#39;device-width&#39;与&#39;device-height&#39;的比率。如常见的显示器比率：4/3, 16/9, 16/10\n            </td>\n        </tr>\n        <tr>\n            <td>\n                color\n            </td>\n            <td>\n                &lt;integer&gt;\n            </td>\n            <td>\n                yes\n            </td>\n            <td>\n                定义每一组输出设备的彩色原件个数。如果不是彩色设备，则值等于0\n            </td>\n        </tr>\n        <tr>\n            <td>\n                color-index\n            </td>\n            <td>\n                &lt;integer&gt;\n            </td>\n            <td>\n                yes\n            </td>\n            <td>\n                定义在输出设备的彩色查询表中的条目数。如果没有使用彩色查询表，则值等于0\n            </td>\n        </tr>\n        <tr>\n            <td>\n                monochrome\n            </td>\n            <td>\n                &lt;integer&gt;\n            </td>\n            <td>\n                yes\n            </td>\n            <td>\n                定义在一个单色框架缓冲区中每像素包含的单色原件个数。如果不是单色设备，则值等于0\n            </td>\n        </tr>\n        <tr>\n            <td>\n                resolution\n            </td>\n            <td>\n                &lt;resolution&gt;\n            </td>\n            <td>\n                yes\n            </td>\n            <td>\n                定义设备的分辨率。如：96dpi, 300dpi, 118dpcm\n            </td>\n        </tr>\n        <tr>\n            <td>\n                scan\n            </td>\n            <td>\n                progressive | interlace\n            </td>\n            <td>\n                no\n            </td>\n            <td>\n                定义电视类设备的扫描工序\n            </td>\n        </tr>\n        <tr>\n            <td>\n                grid\n            </td>\n            <td>\n                &lt;integer&gt;\n            </td>\n            <td>\n                no\n            </td>\n            <td style=\"word-break: break-all;\">\n                用来查询输出设备是否使用栅格或点阵。只有1和0才是有效值，1代表是，0代表否\n            </td>\n        </tr>\n    </tbody>\n</table>\n<p>\n    <br/>\n</p>\n<p>\n    <span class=\"Apple-tab-span\" style=\"white-space: pre;\"></span><span class=\"Apple-tab-span\" style=\"white-space: pre;\"></span>\n</p>\n<p>\n    <strong>常用的一些Media Queries代码片段</strong>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    Bootstrap3.0中的Media Queries片段\n</p>\n<p>\n    <br/>\n</p>\n<pre class=\"brush:css;toolbar:false\">/* Extra small devices (phones, less than 768px) */\n@media (max-width: 767px)\n\n/* Small devices (tablets, 768px and up) */\n@media (min-width: 768px) and (max-width: 991px)\n\n/* Medium devices (desktops, 992px and up) */\n@media (min-width: 992px) and (max-width: 1199px)\n\n/* Large devices (large desktops, 1200px and up) */\n@media (min-width: 1200px)</pre>\n<p>\n    <br/>\n</p>\n<p>\n    判断设备横竖屏\n</p>\n<p>\n    <br/>\n</p>\n<pre class=\"brush:css;toolbar:false\">/* portrait */\n@media screen and (orientation:portrait)\n/* landscape */\n@media screen and (orientation:landscape)</pre>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    <strong><span style=\"line-height: 1.5;\">Media Queries的兼容性</span></strong><span style=\"line-height: 1.5;\">：（来自</span><a href=\"http://caniuse.com/\" target=\"_blank\" style=\"line-height: 1.5;\">http://caniuse.com</a><span style=\"line-height: 1.5;\">），一片欣欣向荣的景象...</span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\"><br/></span>\n</p>\n<p style=\"white-space: normal;\">\n    <img src=\"http://www.mhbseal.com/upload/article/2013-12-12(15-51-07)\" title=\"QQ截图20131212154910.png\"/>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    参考资料：\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    MSDN &nbsp;https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2\n</p>\n<p>\n    w3cplus &nbsp;http://www.w3cplus.com/content/css3-media-queries\n</p>\n<p>\n    css3参考手册 &nbsp;http://css.doyoe.com/\n</p>",
+    "lastEditTime": "2015-06-05 15:32:45",
+    "createTime": "2013-12-12 15:29:27",
+    "__v": 0,
+    "tags": [
+      {
+        "_id": "556ffa1f991b07643735d4b9",
+        "name": "css",
+        "path": "css",
+        "__v": 0
+      },
+      {
+        "_id": "556ffa24991b07643735d4ba",
+        "name": "css3",
+        "path": "css3",
+        "__v": 0
+      }
+    ],
+    "visits": 815
+  },
+  {
+    "commentCount": 7,
+    "_id": "557138a14a817000279bb7fc",
+    "title": "CSS3属性之background",
+    "author": "陌",
+    "type": {
+      "_id": "556ffa6e991b07643735d4bd",
+      "name": "Web",
+      "path": "web",
+      "enabled": true,
+      "__v": 0
+    },
+    "enabled": true,
+    "introduction": "<p>继续CSS3属性之background系列，background-size，background-origin，background-clip...</p>",
+    "content": "<p>\n    <strong style=\"line-height: 1.5;\">background-size</strong><br/>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <span style=\"color: rgb(255, 0, 0);\">语法</span>：\n</p>\n<p>\n    background-size：&lt;bg-size&gt; [ , &lt;bg-size&gt; ]*\n</p>\n<p>\n    &lt;bg-size&gt; = [ &lt;length&gt; | &lt;percentage&gt; | auto ]{1,2} | cover | contain\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <span style=\"color: rgb(255, 0, 0);\">取值</span>：\n</p>\n<p>\n    auto 背景图像的真实大小，默认值\n</p>\n<p>\n    &lt;length&gt; 用长度值指定背景图像大小\n</p>\n<p>\n    &lt;percentage&gt; 用百分比指定背景图像大小\n</p>\n<p>\n    cover 将背景图像等比缩放到完全覆盖容器，背景图像有可能超出容器\n</p>\n<p>\n    contain 将背景图像等比缩放到宽度或高度与容器的宽度或高度相等，背景图像始终被包含在容器内\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <span style=\"color: rgb(255, 0, 0);\">说明</span>：\n</p>\n<p>\n    如果取值为2个，则第一个定义宽度，第二个定义高度，如果只提供一个，则只定义宽度，高度为auto。\n</p>\n<p>\n    <br/><span style=\"line-height: 1.5;\"></span>\n</p>\n<p>\n    <span style=\"color: rgb(255, 0, 0);\">兼容性</span>：<span style=\"line-height: 1.5;\">（来自</span><a href=\"http://css.doyoe.com/\" target=\"_blank\" textvalue=\"http://css.doyoe.com/\">http://css.doyoe.com/</a><span style=\"line-height: 1.5;\">）</span>\n</p>\n<p>\n    <span style=\"line-height: 1.5;\"><img src=\"http://www.mhbseal.com/upload/article/2013-12-11(14-27-37)\" title=\"QQ截图20131211142629.png\"/></span>\n</p>\n<p>\n    <span style=\"line-height: 1.5;\"><br/></span>\n</p>\n<p>\n    <span style=\"color: rgb(255, 0, 0);\">一些代码</span>：\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    css\n</p>\n<pre class=\"brush:css;toolbar:false\">div {\n   width: 200px;\n   height: 160px;\n   border: 5px dashed #ccc;\n   background: url(demo.png) no-repeat;\n   float: left;\n   margin: 10px;\n   text-align: center;\n   line-height: 160px;\n   font-size: 20px;\n}\n.cover {\n   background-size: cover;\n}\n.contain {\n   background-size: contain;\n}\n.percentage {\n   background-size: 80% 50%;\n}\n.length {\n   background-size: 50px 150px;\n}\n.auto_height {\n   background-size: 100px auto;\n}</pre>\n<p>\n    <br/>\n</p>\n<p>\n    html\n</p>\n<pre class=\"brush:html;toolbar:false\">&lt;div&gt;auto&lt;/div&gt;\n&lt;div class=&quot;cover&quot;&gt;cover&lt;/div&gt;\n&lt;div class=&quot;contain&quot;&gt;contain&lt;/div&gt;\n&lt;div class=&quot;percentage&quot;&gt;percentage&lt;/div&gt;\n&lt;div class=&quot;length&quot;&gt;length&lt;/div&gt;\n&lt;div class=&quot;auto_height&quot;&gt;auto_height&lt;/div&gt;</pre>\n<p>\n    <br/>\n</p>\n<p>\n    <span style=\"color: rgb(255, 0, 0);\">效果</span>：\n</p>\n<p>\n    <img src=\"/upload/article/2013-12-11(15-12-11)\" title=\"QQ截图20131211151144.jpg\"/>\n</p>\n<p>\n    <strong style=\"line-height: 1.5; white-space: normal;\"><br/></strong>\n</p>\n<p>\n    <strong style=\"line-height: 1.5; white-space: normal;\">background-origin</strong>\n</p>\n<p>\n    <strong style=\"line-height: 1.5; white-space: normal;\"><br/></strong>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"color: rgb(255, 0, 0);\">语法</span>：\n</p>\n<p>\n    background-origin：&lt;box&gt; [ , &lt;box&gt; ]*\n</p>\n<p>\n    &lt;box&gt; = border-box | padding-box | content-box\n</p>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"color: rgb(255, 0, 0);\">取值</span>：\n</p>\n<p>\n    padding-box 默认值，从padding区域（含padding）开始显示背景图像\n</p>\n<p>\n    border-box 从border区域（含border）开始显示背景图像\n</p>\n<p>\n    content-box 从content区域开始显示背景图像\n</p>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"color: rgb(255, 0, 0);\">说明</span>：\n</p>\n<p style=\"white-space: normal;\">\n    该属性计算<span style=\"line-height: 1.5;\">背景图像background-position的参考原点(位置)</span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\"><br/></span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\"></span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"color: rgb(255, 0, 0);\"></span><span style=\"color: rgb(255, 0, 0);\">兼容性</span>：<span style=\"line-height: 1.5;\">（来自</span><a href=\"http://css.doyoe.com/\" target=\"_blank\" textvalue=\"http://css.doyoe.com/\" style=\"white-space: normal;\">http://css.doyoe.com/</a><span style=\"line-height: 1.5;\">）</span><span style=\"line-height: 1.5;\"></span>\n</p>\n<p>\n    <img src=\"/upload/article/2013-12-11(15-36-25)\" title=\"QQ截图20131211153445.png\"/>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"color: rgb(255, 0, 0);\">一些代码</span>：\n</p>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    css\n</p>\n<pre class=\"brush:css;toolbar:false\">div {\n   width: 200px;\n   height: 160px;\n   padding: 20px;\n   border: 15px dashed #ccc;\n   background:green url(demo.png) no-repeat;\n   float: left;\n   margin: 10px;\n   text-align: center;\n   line-height: 160px;\n   font-size: 20px;\n}\n.padding_box {\n   background-origin: padding-box;\n}\n.border_box {\n   background-origin: border-box;\n}\n.content_box {\n   background-origin: content-box;\n}</pre>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    html\n</p>\n<pre class=\"brush:html;toolbar:false\">&lt;div class=&quot;padding_box&quot;&gt;padding-box&lt;/div&gt;\n&lt;div class=&quot;border_box&quot;&gt;border-box&lt;/div&gt;\n&lt;div class=&quot;content_box&quot;&gt;content-box&lt;/div&gt;</pre>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"color: rgb(255, 0, 0);\">效果</span>：\n</p>\n<p>\n    <img src=\"/upload/article/2013-12-11(15-41-33)\" title=\"QQ截图20131211154051.png\"/>\n</p>\n<p>\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    <strong style=\"line-height: 1.5;\"><span style=\"background-color: rgb(255, 255, 255);\">background-clip</span></strong>\n</p>\n<p style=\"white-space: normal;\">\n    <strong style=\"line-height: 1.5;\"><br/></strong>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"color: rgb(255, 0, 0);\">语法</span>：\n</p>\n<p>\n    background-clip：&lt;box&gt;&nbsp;[ ,&nbsp;&lt;box&gt;&nbsp;]*\n</p>\n<p>\n    &lt;box&gt;&nbsp;= border-box | padding-box | content-box | text\n</p>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"color: rgb(255, 0, 0);\">取值</span>：\n</p>\n<p style=\"white-space: normal;\">\n    border-box 默认值，<span style=\"line-height: 1.5;\">从border区域（不含border）开始向外裁剪背景</span>\n</p>\n<p>\n    padding-box&nbsp;<span style=\"line-height: 1.5;\">从padding区域（不含padding）开始向外裁剪背景</span>\n</p>\n<p>\n    content-box&nbsp;<span style=\"line-height: 1.5;\">从content区域开始向外裁剪背景</span>\n</p>\n<p>\n    <span style=\"line-height: 1.5;\"><br/></span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"color: rgb(255, 0, 0);\">说明</span>：\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\"></span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\">指定对象的背景向外裁剪的区域</span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\"><br/></span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\"></span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"color: rgb(255, 0, 0);\"></span><span style=\"color: rgb(255, 0, 0);\">兼容性</span>：<span style=\"line-height: 1.5;\">（来自</span><a href=\"http://css.doyoe.com/\" target=\"_blank\" textvalue=\"http://css.doyoe.com/\" style=\"white-space: normal;\">http://css.doyoe.com/</a><span style=\"line-height: 1.5;\">）</span><span style=\"line-height: 1.5;\"></span>\n</p>\n<p style=\"white-space: normal;\">\n    <img src=\"/upload/article/2013-12-11(15-53-02)\" title=\"QQ截图20131211155240.png\"/>\n</p>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"color: rgb(255, 0, 0);\"></span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"color: rgb(255, 0, 0);\">一些代码</span>：\n</p>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    css\n</p>\n<pre class=\"brush:css;toolbar:false\">div {\n   width: 200px;\n   height: 160px;\n   padding: 20px;\n   border: 15px dashed #ccc;\n   background:green url(demo.png) no-repeat;\n   float: left;\n   margin: 10px;\n   text-align: center;\n   line-height: 160px;\n   font-size: 20px;\n}\n.border_box {\n   background-clip: border-box;\n}\n.padding_box {\n   background-clip: padding-box;\n}\n.content_box {\n   background-clip: content-box;\n}</pre>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    html\n</p>\n<pre class=\"brush:html;toolbar:false\">&lt;div class=&quot;border_box&quot;&gt;border-box&lt;/div&gt;\n&lt;div class=&quot;padding_box&quot;&gt;padding-box&lt;/div&gt;\n&lt;div class=&quot;content_box&quot;&gt;content-box&lt;/div&gt;</pre>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"color: rgb(255, 0, 0);\">效果</span>：\n</p>\n<p>\n    <img src=\"/upload/article/2013-12-11(16-11-18)\" title=\"QQ截图20131211161057.png\"/>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <span style=\"color: rgb(255, 0, 0);\">注释：CSS3中，允许多背景图像，以上三个background属性均支持对多背景图像定义。</span>\n</p>",
+    "lastEditTime": "2015-06-05 15:51:15",
+    "createTime": "2013-12-11 15:15:25",
+    "__v": 0,
+    "tags": [
+      {
+        "_id": "556ffa1f991b07643735d4b9",
+        "name": "css",
+        "path": "css",
+        "__v": 0
+      },
+      {
+        "_id": "556ffa24991b07643735d4ba",
+        "name": "css3",
+        "path": "css3",
+        "__v": 0
+      }
+    ],
+    "visits": 763
+  },
+  {
+    "commentCount": 0,
+    "_id": "557138814a817000279bb7fb",
+    "title": "weinre -- 手机网页调试神器",
+    "author": "陌",
+    "type": {
+      "_id": "556ffa6e991b07643735d4bd",
+      "name": "Web",
+      "path": "web",
+      "enabled": true,
+      "__v": 0
+    },
+    "enabled": true,
+    "introduction": "<p>PC端调试前端页面，如今的工具很多，并且功能强大，例如 chrome 的 developer tools，firefox的firebug，就连IE（版本IE11）目前的F12也很强大，但是在手机端，一直没有称心如意的调试工具，直到发现了Weinre，一个远程即时调试工具...</p>",
+    "content": "<p><span style=\"line-height: 1.5;\">PC端调试前端页面，如今进的工具很多，并且功能强大，例如 chrome 的 developer tools，firefox 的 firebug，就连IE（版本IE11）目前的F12也很强大,但是在手机端，一直没有称心如意的调试工具，直到发现了 Weinre，一个远程即时调试工具...</span><br/></p><p><strong><br/></strong></p><p><strong>使用说明</strong>：</p><p><br/></p><p>（1）pc与mobile在同一个无线Wi-Fi网络。</p><p>（2）通过npm安装weinre（前提安装了Node.js和npm）。命令如下：</p><pre class=\"brush:js;toolbar:false\">npm -g install weinre</pre><p>（3）启动weinre。命令如下：</p><pre class=\"brush:js;toolbar:false\">weinre --boundHost 192.16.6.89 --httpPort 3000</pre><p>这里服务地址&nbsp;boundHost 设置为内网 IP（可以通过ipconfig查看自己的本地ip），端口 httpPort 设置为3000（随意设置），<span style=\"line-height: 1.5;\">然后访问 http://192.16.6.89:3000，如果访问正常说明服务已经配置成功。</span></p><p><span style=\"line-height: 1.5;\">（4）使用weinre。在浏览器（webkit内核）中打开http://192.16.6.89:3000/client#test，在要调试的</span><span style=\"line-height: 1.5;\">页面中加入脚本 &lt;script src=&quot;http://192.16.6.89:3000/target/target-</span><span style=\"line-height: 1.5;\">script-min.js#test&quot;&gt;&lt;/script&gt;，其中test</span><span style=\"line-height: 1.5;\">是一个标识id，电脑和要调试的页面中加入的脚本所指向的id需要一致。</span></p><p><span style=\"line-height: 1.5;\">（5）调试。用手机访问加入过脚本的</span><span style=\"line-height: 1.5;\">调试的</span><span style=\"line-height: 1.5;\">页面</span><span style=\"line-height: 1.5;\">，然后在PC端，访问在步骤（4）中浏览器</span><span style=\"line-height: 1.5;\">（webkit内核）</span><span style=\"line-height: 1.5;\">打开的地址就可以开始调试了。</span></p><p><br/></p><p><strong>其他相关应用</strong>：</p><p><br/></p><p>（1）mac下的safari可以远程连接iPhone或者ipad进行调试。</p><p>（2）chrome的最新版开发工具（截止2013-12-10），可以远程连接android手机进行远程调试，可以点击<a href=\"https://developers.google.com/chrome-developer-tools/docs/remote-debugging?hl=zh-CN\" target=\"_blank\" title=\"Remote Debugging Chrome on Android\" textvalue=\"这里\">这里</a>查看。</p>",
+    "lastEditTime": "2015-06-10 17:02:26",
+    "createTime": "2013-12-10 16:56:29",
+    "__v": 0,
+    "tags": [
+      {
+        "_id": "557151212c9aa72415669dc4",
+        "name": "工具",
+        "path": "tools",
+        "__v": 0
+      },
+      {
+        "_id": "5577fd14ce0598602f1b2a54",
+        "name": "mobile",
+        "path": "mobile",
+        "__v": 0
+      }
+    ],
+    "visits": 947
+  },
+  {
+    "commentCount": 0,
+    "_id": "557138564a817000279bb7fa",
+    "title": "CSS文字换行、裁剪",
+    "author": "陌",
+    "type": {
+      "_id": "556ffa6e991b07643735d4bd",
+      "name": "Web",
+      "path": "web",
+      "enabled": true,
+      "__v": 0
+    },
+    "enabled": true,
+    "introduction": "<p><span style=\"line-height: 1.5;\">word-wrap: normal | break-word</span><br/></p><p>word-break: normal | break-all | keep-all</p><p>white-space: normal | pre | nowrap | pre-line | pre-wrap | inherit</p>",
+    "content": "<p>\n    <strong><span style=\"line-height: 1.5;\">关于换行、裁剪的一些CSS属性</span></strong>\n</p>\n<p>\n    <span style=\"line-height: 1.5;\"><br/></span>\n</p>\n<p>\n    <span style=\"line-height: 1.5;\">word-wrap: normal | break-word</span><br/>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    normal 正常换行，<span style=\"line-height: 1.5;\">内容可以撑破容器，例如长单词或者长数字的情况</span>\n</p>\n<p>\n    <span style=\"line-height: 1.5;\">break-word 以单词作为换行依据，</span><span style=\"line-height: 1.5;\">如果需要，单词内部允许断行</span>\n</p>\n<p>\n    <span style=\"line-height: 1.5;\"><br/></span>\n</p>\n<p>\n    <span style=\"line-height: 1.5;\">word-break: normal | break-all | keep-all</span><br/>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    normal 正常换行，<span style=\"line-height: 1.5;\">内容可以撑破容器，例如长单词或者长数字的情况</span>\n</p>\n<p>\n    break-all 以字母作为换行依据\n</p>\n<p>\n    keep-all 中英文下和normal相同\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <span style=\"line-height: 1.5;\">white-space: normal || pre || nowrap || pre-line || pre-wrap || inherit</span><br/>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    normal<span class=\"Apple-tab-span\" style=\"white-space:pre\"></span>默认值，空白会被浏览器忽略\n</p>\n<p>\n    pre 空白会被浏览器保留，其行为方式类似 HTML 中的 &lt;pre&gt; 标签\n</p>\n<p>\n    nowrap 文本不会换行，文本会在在同一行上，直到遇到 &lt;br /&gt; 标签为止\n</p>\n<p>\n    pre-wrap 保留空白符序列，但是正常地进行换行(IE7-不支持)\n</p>\n<p>\n    pre-line 合并空白符序列，但保留换行符(IE7-不支持)\n</p>\n<p>\n    inherit<span class=\"Apple-tab-span\" style=\"white-space:pre\"></span>规定应该从父元素继承 white-space 属性的值(IE不支持)\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <strong>应用：</strong>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <span style=\"color: rgb(255, 0, 0);\">文字溢出显示省略标记（...）：</span>\n</p>\n<pre class=\"brush:css;toolbar:false\">text-overflow: ellipsis;\noverflow: hidden;\nwhite-space: nowrap;</pre>\n<p>\n    <br/>\n</p>\n<p>\n    <span style=\"color: rgb(255, 0, 0);\">文字换行：</span>\n</p>\n<pre class=\"brush:css;toolbar:false\">/* 以单词作为换行依据 */\n\nword-wrap: break-word;\nword-break: normal;</pre>\n<p>\n    <br/>\n</p>\n<pre class=\"brush:css;toolbar:false\">/* 以字母作为换行依据 */\n\nword-break: break-all;</pre>\n<p>\n    <br/>\n</p>\n<p>\n    <span style=\"color: rgb(255, 0, 0);\">文字强制不换行：</span>\n</p>\n<pre class=\"brush:css;toolbar:false\">white-space: nowrap;</pre>",
+    "lastEditTime": "2015-06-05 15:36:12",
+    "createTime": "2013-12-09 16:59:34",
+    "__v": 0,
+    "tags": [
+      {
+        "_id": "556ffa1f991b07643735d4b9",
+        "name": "css",
+        "path": "css",
+        "__v": 0
+      },
+      {
+        "_id": "556ffa24991b07643735d4ba",
+        "name": "css3",
+        "path": "css3",
+        "__v": 0
+      }
+    ],
+    "visits": 690
+  },
+  {
+    "commentCount": 0,
+    "_id": "557138304a817000279bb7f9",
+    "title": "CSS3属性之@font-face",
+    "author": "陌",
+    "type": {
+      "_id": "556ffa6e991b07643735d4bd",
+      "name": "Web",
+      "path": "web",
+      "enabled": true,
+      "__v": 0
+    },
+    "enabled": true,
+    "introduction": "<p>@font-face -- 超越Web安全字体，它可以让Web中出现本地计算机上没有的特定字体，即从服务端去读<span style=\"line-height: 1.5;\">取特殊的字体，没有@font-face的情况下，如果Web中需要一些特殊的字体，通常的做法是PS成图片搞</span><span style=\"line-height: 1.5;\">定，这样做的弊端有很多，例如：不能大范围使用该字体、图片形成后不已修改、不利于seo等等...</span></p>",
+    "content": "<p>\n    <strong>名称</strong>：@font-face\n</p>\n<p>\n    <strong>语法</strong>：@font-face {Font-Description}\n</p>\n<p>\n    Font-Description即字体描述包括以下参数：\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <span style=\"color: rgb(255, 0, 0);\">以下参数常用并且被大部分浏览器所支持</span>\n</p>\n<p>\n    font-family 必选，字体的名称\n</p>\n<p>\n    src 必选，定义字体文件的URL\n</p>\n<p>\n    font-weight 可选，字体的粗细\n</p>\n<p>\n    font-style 可选，字体的样式\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <span style=\"color: rgb(255, 0, 0);\">除了以上常用的参数外，W3C还提到了很多参数，但是目前很少浏览器支持或者说是支持的很不完善</span>\n</p>\n<p>\n    font-stretch 可选，字体如何伸缩变形\n</p>\n<p>\n    unicode-range 可选，定义字体支持的UNICODE字符范围\n</p>\n<p>\n    还有很多，可以访问<span style=\"text-decoration:underline;\"><a href=\"http://dev.w3.org/csswg/css-fonts/#font-face-rule\" target=\"_blank\" title=\"font-face\">这里</a></span>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <strong style=\"white-space: normal;\">兼容性</strong>：<span style=\"line-height: 1.5;\">（来自</span><a href=\"http://caniuse.com/\" target=\"_blank\" style=\"line-height: 1.5;\">http://caniuse.com</a><span style=\"line-height: 1.5;\">）</span>\n</p>\n<p>\n    <img src=\"http://www.mhbseal.com/upload/article/2013-12-05(16-46-15)\" title=\"QQ截图20131205164525.png\"/>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    上图是@font-face的兼容性，而@font-face不同于其他CSS3属性，不仅涉及@font-face的兼容性，还要涉及到其描述src参数中字体文件的兼容性，可以点击<a href=\"http://caniuse.com/#search=font\" target=\"_blank\" title=\"font-face\">这里</a>查看，于是乎<span style=\"line-height: 1.5;\">：@font-face被大部分浏览器所支持，经测试也包括IE67，但是各个浏览器对字体文件的支持有些分歧，所以通常的@font-face定义及其使用，sass代码(这里的scss和编译出来的css完全相同)如下：</span>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <span style=\"color: rgb(255, 0, 0);\">定义字体：</span>\n</p>\n<pre class=\"brush:css;toolbar:false\">@font-face {\n  font-family: &quot;mo&quot;;\n  src: url(&#39;../fonts/webfont.eot&#39;);  // IE9+\n  src: url(&#39;../fonts/webfont.eot?#iefix&#39;) format(&#39;embedded-opentype&#39;),  // IE6-IE8\n       url(&#39;../fonts/webfont.woff&#39;) format(&#39;woff&#39;),\n       url(&#39;../fonts/webfont.ttf&#39;) format(&#39;truetype&#39;),\n       url(&#39;../fonts/webfont.svg#mo&#39;) format(&#39;svg&#39;);\n  font-weight: normal;\n  font-style: normal;\n}</pre>\n<p>\n    <span style=\"color: rgb(255, 0, 0);\"><br/></span>\n</p>\n<p>\n    <span style=\"color: rgb(255, 0, 0);\">应用字体：</span><br/>\n</p>\n<pre class=\"brush:css;toolbar:false\">p {\n  font-size: 60px;\n  font-family: &#39;mo&#39;;  // 引入mo字体\n}</pre>\n<p>\n    <span style=\"color: rgb(255, 0, 0);\"><br/></span>\n</p>\n<p>\n    <span style=\"color: rgb(255, 0, 0);\">效果：</span><br/>\n</p>\n<p>\n    <img src=\"/upload/article/2013-12-09(13-04-21)\" title=\"QQ截图20131209130402.png\"/>\n</p>\n<p>\n    <span style=\"color: rgb(255, 0, 0);\">说明：</span>\n</p>\n<p>\n    1.url中为引入各种格式字体文件的路径，这里采用相对路径，当然也可以为绝对路径。\n</p>\n<p>\n    2.获取字体的途径：<a href=\"http://www.google.com/fonts/\" target=\"_blank\" title=\"Google Foots\">Google Fonts</a>&nbsp;、<a href=\"http://www.fontsquirrel.com/\" target=\"_blank\" title=\"Font Squirrel\">Font Squirrel</a> 等。\n</p>\n<p>\n    <span style=\"line-height: 1.5;\">3.生成各种字体格式的工具&nbsp;<a href=\"http://www.fontsquirrel.com/tools/webfont-generator\" target=\"_blank\" title=\"Font Squirrel\" textvalue=\"Font Squirrel\">Font Squirrel</a>&nbsp;等。</span>\n</p>\n<p>\n    4.url中不同格式字体的顺序请按照上面的顺序去引入（翻阅的各种@font-face资料几乎都是这么写），因为同样的字体，从上到下的文件大小依次变大，另外，当浏览器识别到它支持的字体并载入后，即使后面有支持的格式也不会再加载了。\n</p>\n<p>\n    5.中文对于@font-face目前还是可望而不可及，因为中文字实在是太多了，不像英文26个字母加一些标点符号完事，随便一种中文字体都是以M单位计算的，所以如果是中文，还是用图片吧。\n</p>\n<p>\n    6.虽然@font-face对于中文不适合，但是使用@font-face制作ICON变得很hot。\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <strong><span style=\"font-size: 16px;\">利用CSS3的@font-face属性及IcoMoon在线工具制作ICON</span></strong>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <span style=\"line-height: 1.5;\">1.获取ICON的web字体的两种途径，从互联网获取或者自己制作。</span>\n</p>\n<p>\n    <span style=\"line-height: 1.5;\">（1）例如</span><a href=\"http://icomoon.io/app/#/select\" target=\"_blank\" title=\"IcoMoon\" style=\"line-height: 1.5;\"><span style=\"line-height: 1.5;\">IcoMoon</span></a><span style=\"line-height: 1.5;\">这样的图标站，提供了大量的图标供使用。它不仅提供了ICON的web字体，还可以生成对应的css代码。</span><br/>\n</p>\n<p>\n    <span style=\"line-height: 1.5;\">（2）如果图标的需求，在互联网上搜索没法满足，可以通过AI制作矢量图，导出svg格式。</span>\n</p>\n<p>\n    2.去<span style=\"line-height: 1.5;\">IcoMoon获取或者导入已经做好的ICON的web字体。</span>\n</p>\n<p>\n    <span style=\"line-height: 1.5;\">（1）直接从<span style=\"line-height: 1.5;\">IcoMoon获取，则进入<a href=\"http://icomoon.io/app/#/select\" target=\"_blank\" title=\"IcoMoon\" textvalue=\"http://icomoon.io/app/#/select\">http://icomoon.io/app/#/select</a>，在页面中庞大的字体库中然后选中需要的一些图标，最后点击底部中间的font按钮，进入下载页面，点击底部中间的Download按钮进行下载。</span></span>\n</p>\n<p>\n    <span style=\"line-height: 1.5;\"><span style=\"line-height: 1.5;\">（2）自己通过AI制作web图标，然后到处svg格式，在进入IcoMoon，然后点击import icons按钮导入，然后你的web图标也会显示在字体库中，然后按照（1）中的方法，选择，下载。</span></span>\n</p>\n<p>\n    <span style=\"line-height: 1.5;\"><span style=\"line-height: 1.5;\"><br/></span></span>\n</p>\n<p>\n    <span style=\"line-height: 1.5;\"><span style=\"line-height: 1.5;\"><img src=\"/upload/article/2013-12-09(14-35-10)\" title=\"QQ截图20131209143431.png\"/></span></span>\n</p>\n<p>\n    <span style=\"line-height: 1.5;\"><span style=\"line-height: 1.5;\"><br/></span></span>\n</p>\n<p>\n    <span style=\"line-height: 1.5;\"><span style=\"line-height: 1.5;\">3.下载的压缩文件解压后，有个fonts文件夹，里面@font-face需要的4中字体格式，除此之外还有一个demo.html和style.css以及一些其他文件，然后参照demo.html和style.css来把字体图标应用到你的web中。</span></span>\n</p>\n<p>\n    <span style=\"line-height: 1.5;\"><span style=\"line-height: 1.5;\"><br/></span></span>\n</p>\n<p>\n    <span style=\"color: rgb(255, 0, 0);\">注意</span>：<span style=\"color: rgb(255, 0, 0);\"></span>IcoMoon目前生成的css中，有IE6不兼容的选择器写法[class^=&quot;&quot;]，所以如果要兼容IE6需要把这种写法转换为IE6兼容的相应写法。\n</p>\n<p>\n    <span style=\"color: rgb(255, 0, 0);\">优点</span>：可编辑性强，随意更改颜色，大小，并且保持不失真，还支持CSS3中文字的效果。\n</p>\n<p>\n    <span style=\"color: rgb(255, 0, 0);\">缺点</span>：颜色单一，不支持多色彩，如果网络不佳的情况下，字体图标加载的过程中，所有应用字体图标处都是X，极度影响体验。\n</p>",
+    "lastEditTime": "2015-06-05 15:37:12",
+    "createTime": "2013-12-05 16:46:20",
+    "__v": 0,
+    "tags": [
+      {
+        "_id": "556ffa1f991b07643735d4b9",
+        "name": "css",
+        "path": "css",
+        "__v": 0
+      },
+      {
+        "_id": "556ffa24991b07643735d4ba",
+        "name": "css3",
+        "path": "css3",
+        "__v": 0
+      }
+    ],
+    "visits": 722
+  },
+  {
+    "commentCount": 0,
+    "_id": "557138104a817000279bb7f8",
+    "title": "CSS3属性之color",
+    "author": "陌",
+    "type": {
+      "_id": "556ffa6e991b07643735d4bd",
+      "name": "Web",
+      "path": "web",
+      "enabled": true,
+      "__v": 0
+    },
+    "enabled": true,
+    "introduction": "<p><span style=\"color: rgb(255, 0, 0);\"></span>CSS2中常用color常用的为HEX色彩模式，即为十六进制颜色，如果要透明，则需要引入opcity或者IE自家的filter:alpha(opacity)，这样会带来一些不稳定因素，而在CSS3中引入了HSL和RGB两种色彩模式，均支持A(alpha透明度)，这样也就形成了CSS3中color的RGBA和HSLA...</p>",
+    "content": "<p>\n    <strong>CSS中color的三种模式</strong>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <span style=\"color: rgb(255, 0, 0);\">RGBA</span> 常用的色彩模式，红(R)、绿(G)、蓝(B)、透明度(A)\n</p>\n<p>\n    <span style=\"color: rgb(255, 0, 0);\">HSLA</span> 色相(H)、饱和度(S)、亮度(B)、透明度(A)\n</p>\n<p>\n    <span style=\"color: rgb(255, 0, 0);\">HEX</span> 十六进制颜色，例如#000000，不能设置透明度\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    在前端工作的过程中，一般都是从设计稿中提取颜色，例如我们要得到某个字体或者图片的颜色，我们会用PS打开设计稿，用拾色器得到它的颜色，然后把它应用到css中，对于它们的具体取值或者是语法我们不需要研究太多，下面为得到的某一个颜色：\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    HEX表示 #D256BB\n</p>\n<p>\n    RGBA表示 rgb(210, 86, 187) 或&nbsp;rgba(210, 86, 187)&nbsp;\n</p>\n<p>\n    HSLA表示 hsl(311, 58%, 58%)&nbsp;或&nbsp;hsla(311, 58%, 58%)&nbsp;\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    以上3中表示方法表示同一种颜色，再加上50%透明度的话，表示如下（HEX不能设置透明度）：\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    RGBA表示 rgba(210, 86, 187, 0.5)\n</p>\n<p>\n    HSLA表示 hsla(311, 58%, 58%, 0.5)\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    对于同一种颜色，各种颜色模式之间的转换，可以通过photoshop的拾色器或者是chrome的开发者工具得到。\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <span style=\"color: rgb(255, 0, 0);\">photoshop</span>中：\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <span style=\"line-height: 1.5;\"><img src=\"http://www.mhbseal.com/upload/article/2013-11-29(16-39-17)\" title=\"QQ截图20131129161810.png\"/></span><br/>\n</p>\n<p>\n    <span style=\"line-height: 1.5;\"><br/></span>\n</p>\n<p>\n    <span style=\"color: rgb(255, 0, 0);\">chrome开发者工具</span>中需要在computed下点击他的color来切换色彩模式：\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <img src=\"/upload/article/2013-11-29(16-37-07)\" title=\"QQ截图20131129162423.png\" style=\"white-space: normal; float: none;\"/>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <strong style=\"white-space: normal;\">兼容性</strong>：（来自<a href=\"http://caniuse.com/\" target=\"_blank\" style=\"white-space: normal;\">http://caniuse.com</a>）\n</p>\n<p>\n    <img src=\"/upload/article/2013-11-29(16-37-06)\" title=\"QQ截图20131129155417.png\" style=\"white-space: normal; float: none;\"/>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <span style=\"color: rgb(255, 0, 0);\">PS</span>：如果HEX模式下要设置透明度，可以借助opcity或者IE自家的filter:alpha(opacity)来解决，这也是没有css3之前通常的做法，但是这样会把当前使用opcity的元素和其子元素的color设置与background都设置为透明，而常用的hack方法是：\n</p>\n<p>\n    <span style=\"line-height: 1.5;\">1. 如果要设置color透明，给要设置透明度文字加外层标签，然后设置透明度。</span>\n</p>\n<p>\n    2. 如果要设置background透明，专门写一个div层，给其opcacity，然后用绝对定位固定其于容器中，充当假的background。\n</p>",
+    "lastEditTime": "2015-06-05 15:37:59",
+    "createTime": "2013-11-29 16:34:19",
+    "__v": 0,
+    "tags": [
+      {
+        "_id": "556ffa1f991b07643735d4b9",
+        "name": "css",
+        "path": "css",
+        "__v": 0
+      },
+      {
+        "_id": "556ffa24991b07643735d4ba",
+        "name": "css3",
+        "path": "css3",
+        "__v": 0
+      }
+    ],
+    "visits": 467
+  },
+  {
+    "commentCount": 0,
+    "_id": "557137de4a817000279bb7f7",
+    "title": "CSS3属性之text-shadow",
+    "author": "陌",
+    "type": {
+      "_id": "556ffa6e991b07643735d4bd",
+      "name": "Web",
+      "path": "web",
+      "enabled": true,
+      "__v": 0
+    },
+    "enabled": true,
+    "introduction": "<p>CSS3的text-shadow用来指定text的阴影效果，基本同border-shadow，包括用法及属性，这里简单的介绍下它的属性及如何使用，主要写一些DEMO，来看看一些特效文字的制作，另外，个人觉得，此属性也是CSS3中比较常用的属性之一。</p>",
+    "content": "<p style=\"white-space: normal;\">\n    CSS3的text-shadow用来指定text的阴影效果，基本同border-shadow，包括用法及属性，这里简单的介绍下它的属性及如何使用，主要写一些DEMO，来看看一些特效文字的制作，另外，个人觉得，此属性也是CSS3中比较常用的属性之一。\n</p>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    <strong>属性名称</strong>：text-shadow\n</p>\n<p style=\"white-space: normal;\">\n    <strong>取值</strong>：none | [ &lt;length&gt;{2,3} &amp;&amp; &lt;color&gt;? ]# &nbsp; 注：其中length分别为<span style=\"line-height: 1.5;\">horizontal offset、</span><span style=\"line-height: 1.5;\">vertical offset、</span><span style=\"line-height: 1.5;\">blur distance（可选）</span>\n</p>\n<p style=\"white-space: normal;\">\n    <strong>说明</strong>：\n</p>\n<p style=\"white-space: normal;\">\n    horizontal offset：阴影的水平偏移量。正值绘制的阴影向方框的右边偏移，负长度绘制的阴影向左边偏移。\n</p>\n<p style=\"white-space: normal;\">\n    vertical offset：垂直偏移量。正值将阴影向下偏移，负值将阴影向上偏移。\n</p>\n<p style=\"white-space: normal;\">\n    blur distance：模糊距离（可选）。不允许为负值。如果模糊值为 0，则阴影的边缘清晰。否则，值越大，阴影的边缘越模糊。\n</p>\n<p style=\"white-space: normal;\">\n    color：阴影的颜色，<span style=\"line-height: 1.5;\">如果没有指定，则由浏览器决定——通常是color的值，不过目前Safari取透明，所以建议不要省略次参数。</span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\"><br/></span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\"><strong style=\"white-space: normal;\">兼容性</strong>：（来自<a href=\"http://caniuse.com/\" target=\"_blank\" style=\"white-space: normal;\">http://caniuse.com</a>）</span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\"><img src=\"http://www.mhbseal.com/upload/article/2013-11-18(15-47-26)\" title=\"QQ截图20131118154545.png\"/></span>\n</p>\n<p>\n    从上图来看，此属性目前还是比较乐观的，除了ie8、9意外，现代基本都是支持的，并且不需要添加私有属性。\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <strong>一些DEMO</strong>：\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    代码：\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    html\n</p>\n<pre class=\"brush:html;toolbar:false\">&lt;div class=&quot;demo&quot;&gt;\n  &lt;p class=&quot;demo1&quot;&gt;TEXT-SHADOW&lt;/p&gt;\n  &lt;p class=&quot;demo2&quot;&gt;TEXT-SHADOW&lt;/p&gt;\n  &lt;p class=&quot;demo3&quot;&gt;TEXT-SHADOW&lt;/p&gt;\n  &lt;p class=&quot;demo4&quot;&gt;TEXT-SHADOW&lt;/p&gt;\n  &lt;p class=&quot;demo5&quot;&gt;TEXT-SHADOW&lt;/p&gt;\n  &lt;p class=&quot;demo6&quot;&gt;TEXT-SHADOW&lt;/p&gt;\n&lt;/div&gt;</pre>\n<p>\n    <br/>\n</p>\n<p>\n    sass\n</p>\n<pre class=\"brush:css;toolbar:false\">.demo\n  width: 500px\n  height: 500px\n  padding: 20px\n  background: blue\n  color: #fff\n  font-size: 60px\n  font-family: &quot;微软雅黑&quot;\n  font-weight: bold\n.demo1\n  text-shadow: 5px 5px 5px black\n.demo2\n  text-shadow: 5px 5px 0 blue, 7px 7px 0 #fff\n.demo3\n  color: transparent\n  text-shadow: 0 0 5px #fff\n.demo4\n  text-shadow: 1px 1px 0 red,-1px -1px 0 red\n.demo5\n  text-shadow: 1px 1px rgba(255, 255, 255, 0.5), 2px 2px rgba(255, 255, 255, 0.5), 3px 3px rgba(255, 255, 255, 0.5), 4px 4px rgba(255, 255, 255, 0.5), 5px 5px rgba(255, 255, 255, 0.5)\n.demo6\n  color: rgba(255, 255, 255, 0.3)\n  text-shadow: 3px 3px rgba(255, 255, 255, 0.5)</pre>\n<p>\n    <br/>\n</p>\n<p>\n    效果（从上到下DEMO1-DEMO6按顺序排列）：\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <img src=\"/upload/article/2013-11-18(16-58-48)\" title=\"QQ截图20131118165842.png\"/>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    总结：文字阴影这个属性，如果之前了解box-shadow，则会比较快的熟悉该属性，但是要制作出各种比较绚丽的字体，还需要多看实例，多写代码。\n</p>",
+    "lastEditTime": "2015-06-05 15:29:21",
+    "createTime": "2013-11-14 11:37:38",
+    "__v": 0,
+    "tags": [
+      {
+        "_id": "556ffa1f991b07643735d4b9",
+        "name": "css",
+        "path": "css",
+        "__v": 0
+      },
+      {
+        "_id": "556ffa24991b07643735d4ba",
+        "name": "css3",
+        "path": "css3",
+        "__v": 0
+      }
+    ],
+    "visits": 356
+  },
+  {
+    "commentCount": 0,
+    "_id": "557137a94a817000279bb7f6",
+    "title": "CSS3属性之border-image",
+    "author": "陌",
+    "type": {
+      "_id": "556ffa6e991b07643735d4bd",
+      "name": "Web",
+      "path": "web",
+      "enabled": true,
+      "__v": 0
+    },
+    "enabled": true,
+    "introduction": "<p>CSS3的border范围内有border-radius、box-shadow，border-image三个属性，另外网上有些资料把border-color属性的多边框色也归到css3，不过经测试只有firefox支持，并且要加-moz-私有属性，然后去w3.org，去翻阅资料，没发现有介绍这个多边框色的属性，总结下来，应该是火狐的自家产物，并非W3C标准。接下来，这篇文章介绍css3之border-image属性。</p>",
+    "content": "<p>\n    CSS3的border范围内有border-radius、box-shadow，border-image三个属性，另外网上有些资料把border-color属性的多边框色也归到css3，不过经测试只有firefox支持，并且要加-moz-私有属性，然后去w3.org，去翻阅资料，没发现有介绍这个多边框色的属性，总结下来，应该是火狐的自家产物，并非W3C标准。接下来，这篇文章介绍css3之border-image属性。\n</p>\n<p>\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<p>\n    <strong>语法</strong>：border-image: &lt;border-image-source&gt; || &lt;border-image-slice&gt; [ / &lt;border-image-width&gt; | / &lt;border-image-width&gt; ? /&lt;border-image-outset&gt; ] ? || &lt;border-image-repeat&gt;<span style=\"line-height: 1.5;\"></span>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <strong>相关说明</strong>：\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <strong>border-image-source</strong>: none | &lt;image&gt;\n</p>\n<p>\n    默认无背景图,如果设置背景图，则使用绝对或相对 url地址指定背景图像。\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <strong>border-image-slice</strong>: [&lt;number&gt; | &lt;percentage&gt;]{1,4} &amp;&amp; fill?\n</p>\n<p>\n    裁剪这块相对比较复杂，其中参数number表示边框宽度，没有单位，专指像素；percentage用<span style=\"line-height: 1.5;\">百分比设置表框的宽度，相对于背景图的大小，可以取1-4个值，遵循t-r-b-l的规则。</span><span style=\"line-height: 1.5;\">fill默认为空，如果存在，则图片裁剪完后，中间剩余的部分将会保留下来。另外，裁剪完成</span><span style=\"line-height: 1.5;\">后，背景图就成为9个部分，四个角、四个边和一个中心，俗称“九宫格”。下面结2张图，帮助理解下裁剪部分相关</span><span style=\"line-height: 1.5;\">内容。</span>\n</p>\n<p>\n    <span style=\"line-height: 1.5;\"><br/></span>\n</p>\n<p>\n    <span style=\"line-height: 1.5;\"></span>\n</p>\n<p>\n    <img src=\"http://www.mhbseal.com/upload/article/2013-11-14(16-57-49)\" title=\"groovy-border-image-slice.png\" style=\"line-height: 1.5; float: none;\"/>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    上面这幅图来自w3c，它按照上右下左的顺序，依次把背景图，切了4刀，形成了一个九宫格，而这里的border-image-slice取值为124；\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <img src=\"/upload/article/2013-11-14(16-57-48)\" style=\"float:none;\" title=\"border-image-slice.jpg\"/>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    上图（来自<a href=\"http://www.w3cplus.com\" target=\"_blank\">W3CPLUS</a>，下面有些图也是来自w3cplus、w3c及msdn，不再敖述）border-image-slice的取值为百分比，top/bottom相对于背景图的高，left/right相对于背景图的长。\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    背景图裁切完后，接下来就是要把裁切的图应用绘制了，裁剪完后背景图被分为9个部分，如下图所示，其中，四个角在应用时会分布在应用元素的4个角上，不会有拉伸、平铺或者是重复的效果。其他四个（除了中间5）会应用<span style=\"line-height: 1.5;\">border-image-repeat中设定的排列方式。</span>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <img src=\"/upload/article/2013-11-15(09-44-17)\" title=\"border-image-jugongtu-2.png\" style=\"line-height: 1.5;\"/>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    接下来，看排列方式的具体参数以及应用，来帮助理解裁剪后的背景图的应用绘制。\n</p>\n<p>\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    <strong style=\"line-height: 1.5;\">border-image-repeat</strong><span style=\"line-height: 1.5;\">: [ stretch | repeat | round | space ]{1,2}</span><br/>\n</p>\n<p style=\"white-space: normal;\">\n    该属性用来设置背景图的排列方式，分别为拉伸、重复、拉伸平铺、间隙平铺（其中stretch是默认值。），可以取1-2个值，第一个水平方向，第二个为垂直方向。<span style=\"line-height: 1.5;\">下面继续结合几张图来帮助理解边框背景图片的排列方式。</span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\"><br/></span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\">引用的背景图为（81px*81px，每个小圆为27px*27px）</span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\"><br/></span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\"><img src=\"/upload/article/2013-11-15(09-55-02)\" title=\"123.png\"/></span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\"><br/></span>\n</p>\n<p style=\"white-space: normal;\">\n    <strong><span style=\"line-height: 1.5;\">拉伸效果</span></strong><span style=\"line-height: 1.5;\">：</span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\"><br/></span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\">代码：</span>\n</p>\n<pre class=\"brush:css;toolbar:false\">.box\n  width: 200px;\n  height: 50px;\n  border: 15px solid;\n  -webkit-border-image: url(&quot;border.png&quot;) 27 stretch;\n  border-image: url(&quot;border.png&quot;) 27 stretch;</pre>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    图示：\n</p>\n<p style=\"white-space: normal;\">\n    <img src=\"/upload/article/2013-11-15(10-23-24)\" title=\"QQ截图20131115102306.png\"/><span style=\"line-height: 1.5;\"></span>\n</p>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    <strong><span style=\"line-height: 1.5;\">重复效果</span></strong><span style=\"line-height: 1.5;\">：</span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\"><br/></span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\"></span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\">代码：</span>\n</p>\n<pre class=\"brush:css;toolbar:false\">.box\n  width: 200px;\n  height: 50px;\n  border: 15px solid;\n  -webkit-border-image: url(&quot;border.png&quot;) 27 repeat;\n  border-image: url(&quot;border.png&quot;) 27 repeat;</pre>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\"><br/></span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\">图示：</span><br/>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\"><img src=\"/upload/article/2013-11-15(10-24-59)\" title=\"QQ截图20131115102441.png\"/></span>\n</p>\n<p style=\"white-space: normal;\">\n    <strong><span style=\"line-height: 1.5;\"><br/></span></strong>\n</p>\n<p style=\"white-space: normal;\">\n    <strong><span style=\"line-height: 1.5;\">拉伸平铺</span></strong><span style=\"line-height: 1.5;\">：(平铺，拉伸裁剪的背景图来试整个边框填充)</span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\"><br/></span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\">代码：</span>\n</p>\n<pre class=\"brush:css;toolbar:false\">.box\n  width: 200px;\n  height: 50px;\n  border: 15px solid;\n  -webkit-border-image: url(&quot;border.png&quot;) 27 round;\n  border-image: url(&quot;border.png&quot;) 27 round;</pre>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\"><br/></span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\">图示：</span>\n</p>\n<p style=\"white-space: normal;\">\n    <img src=\"/upload/article/2013-11-15(10-27-28)\" title=\"QQ截图20131115102710.png\"/>\n</p>\n<p style=\"white-space: normal;\">\n    <strong><span style=\"line-height: 1.5;\"><br/></span></strong>\n</p>\n<p style=\"white-space: normal;\">\n    <strong><span style=\"line-height: 1.5;\">间隙平铺</span></strong><span style=\"line-height: 1.5;\">：(平铺，用间隙填补剩余的部分)</span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\"><br/></span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\"></span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\">代码：</span>\n</p>\n<pre class=\"brush:css;toolbar:false\">.box\n  width: 200px;\n  height: 50px;\n  border: 15px solid;\n  -webkit-border-image: url(&quot;border.png&quot;) 27 space;\n  border-image: url(&quot;border.png&quot;) 27 space;</pre>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\"><br/></span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\">图示：</span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\"><img src=\"/upload/article/2013-11-15(10-28-21)\" title=\"QQ截图20131115102756.png\"/></span><br/>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\"><br/></span>\n</p>\n<p style=\"white-space: normal;\">\n    <strong><span style=\"line-height: 1.5;\">另外</span></strong><span style=\"line-height: 1.5;\">：</span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\">1. 没有指定裁剪的范围及排列方式</span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\"><br/></span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\"></span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\">代码：</span>\n</p>\n<pre class=\"brush:css;toolbar:false\">.box\n  width: 200px;\n  height: 50px;\n  background: #000;\n  border: 15px solid red;\n  -webkit-border-image: url(&quot;border.png&quot;);\n  border-image: url(&quot;border.png&quot;);</pre>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\"><br/></span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\">图示：</span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\"></span>\n</p>\n<p>\n    <img src=\"/upload/article/2013-11-15(10-39-29)\" style=\"float:none;\" title=\"QQ截图20131115103705.png\"/><span style=\"line-height: 1.5;\"></span>\n</p>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\">2. 垂直和水平排列方式不同的情况</span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\"><br/></span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\"></span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\">代码：</span>\n</p>\n<pre class=\"brush:css;toolbar:false\">.box\n  width: 200px;\n  height: 50px;\n  background: #000;\n  border: 15px solid red;\n  -webkit-border-image: url(&quot;border.png&quot;) 27 stretch round;\n  border-image: url(&quot;border.png&quot;) 27 stretch round;</pre>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\"><br/></span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\">图示：</span>\n</p>\n<p style=\"white-space: normal;\">\n    <img src=\"/upload/article/2013-11-15(10-39-30)\" title=\"QQ截图20131115103831.png\" style=\"float: none;\"/>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\"><br/></span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5; color: rgb(255, 0, 0);\">从另外两个例子还可以看出，虽然给border制定了颜色，但是用了border-image属性后，border的颜色不是border中设置的颜色，而是应用背景图片元素的背景色，这点需要注意。</span>\n</p>\n<p>\n    <span style=\"line-height: 1.5;\"><br/></span>\n</p>\n<p>\n    <strong>border-image-width</strong>: [ &lt;length&gt; | &lt;percentage&gt; | &lt;number&gt; | auto ]{1,4}\n</p>\n<p>\n    通过定义距离边框图像区域边缘的向内偏移量，从而指定边框图像的宽度/高度，注意此属性和border-width的区别。\n</p>\n<p>\n    <span style=\"line-height: 1.5;\"><br/></span>\n</p>\n<p>\n    <span style=\"line-height: 1.5;\"></span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\">代码：</span>\n</p>\n<pre class=\"brush:css;toolbar:false\">.box\n  width: 200px;\n  height: 50px;\n  border: 54px solid red;\n  border-image: url(&quot;border.png&quot;) 27/27px round;</pre>\n<p>\n    <span style=\"line-height: 1.5;\"><br/></span>图示：\n</p>\n<p>\n    <img src=\"/upload/article/2013-11-15(11-18-08)\" title=\"QQ截图20131115111356.jpg\"/>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <strong>border-image-outset</strong>: [ &lt;length&gt; | &lt;number&gt; ]{1,4}\n</p>\n<p>\n    指定边框图像区域超出边框的量。\n</p>\n<p>\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\">代码：</span>\n</p>\n<pre class=\"brush:css;toolbar:false\">.box\n  width: 200px;\n  height: 50px;\n  border: 54px solid red;\n  border-image: url(&quot;border.png&quot;) 27/15px/10px round;</pre>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\"><br/></span>图示：\n</p>\n<p>\n    <img src=\"/upload/article/2013-11-15(11-37-02)\" title=\"QQ截图20131115113003.jpg\"/>\n</p>\n<p>\n    边框宽度为54px，偏移量为10px，边框背景宽度为15px。\n</p>\n<p>\n    <span style=\"color:#ff0000\">偏移量是建立在边框背景宽度的基础上的，所以设置偏移量的时候边框背景宽度不能为0。</span>\n</p>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    <strong style=\"white-space: normal;\">兼容性</strong>：（来自<a href=\"http://caniuse.com/\" target=\"_blank\" style=\"white-space: normal;\">http://caniuse.com</a>）\n</p>\n<p>\n    <img src=\"/upload/article/2013-11-14(16-47-38)\" title=\"QQ截图20131114164722.png\"/>\n</p>\n<p>\n    <span style=\"color: rgb(255, 0, 0);\"><br/></span>\n</p>\n<p>\n    <span style=\"color: rgb(255, 0, 0);\">ie依旧是让人捉急，不过最新版的ie11经测试，支持的比较好。在做demo的时候发现几个问题，这里说下：</span>\n</p>\n<p>\n    1. safari回把border-image-repeat中的space识别为repeat。\n</p>\n<p>\n    2. 除了ie11，其他浏览器目前对于border-image-repeat:&nbsp;space支持不是很好，会把space按照其他的排列方式去解析。\n</p>\n<p>\n    3.&nbsp;-webkit-私有属性下border-image-width无效，对应的对<span style=\"line-height: 1.5;\">border-image-outset应该也是不支持的。</span>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    总结：CSS3的<span style=\"line-height: 1.5;\">border-image确实很强大，除了几个属性浏览器不完善外，该属性还是属于css3的应用比较广泛的属性之一，当然目前如果要做一些兼容，要避过border-image-width、border-image-outset一些属性的使用。</span>\n</p>",
+    "lastEditTime": "2015-06-05 15:28:43",
+    "createTime": "2013-11-14 11:37:38",
+    "__v": 0,
+    "tags": [
+      {
+        "_id": "556ffa1f991b07643735d4b9",
+        "name": "css",
+        "path": "css",
+        "__v": 0
+      },
+      {
+        "_id": "556ffa24991b07643735d4ba",
+        "name": "css3",
+        "path": "css3",
+        "__v": 0
+      }
+    ],
+    "visits": 589
+  },
+  {
+    "commentCount": 0,
+    "_id": "557137904a817000279bb7f5",
+    "title": "通往自由门之GoAgent",
+    "author": "陌",
+    "type": {
+      "_id": "556ffa6e991b07643735d4bd",
+      "name": "Web",
+      "path": "web",
+      "enabled": true,
+      "__v": 0
+    },
+    "enabled": true,
+    "introduction": "<p><img src=\"http://www.mhbseal.com/upload/article/2013-11-12(14-48-45)\" title=\"未标题-1.jpg\"/></p><p style=\"white-space: normal;\"><span style=\"line-height: 1.5;\"><br/></span></p><p style=\"white-space: normal;\"><span style=\"line-height: 1.5;\">之前用过的各种翻墙软件，各种不爽（网速慢如牛，抽风性的不能用），直到有一天遇见了goagent，翻墙变得更easy一点，不过这几天goagent不能用了，具体原因不晓得，于是乎去code.google更新goagent，小折腾一番，又ok了，如果访问twitter等站出现&quot;该网站的安全证书不受信任&quot;的提示，需要导入证书哦，</span><a href=\"https://code.google.com/p/goagent/\" target=\"_blank\" style=\"line-height: 1.5;\">goagent</a><span style=\"line-height: 1.5;\">地址。</span></p>",
+    "content": "<p><img src=\"http://www.mhbseal.com/upload/article/2013-11-12(14-48-45)\" title=\"未标题-1.jpg\" style=\"white-space: normal;\"/></p><p><br/></p><p><span style=\"line-height: 1.5;\"></span><span style=\"line-height: 1.5;\">之前用过的各种翻墙软件，各种不爽（网速慢如牛，抽风性的不能用），直到有一天遇见了goagent，翻墙变得更easy一点，不过这几天goagent不能用了，具体原因不晓得，于是乎去code.google更新goagent，小折腾一番，又ok了，如果访问twitter等站出现&quot;该网站的安全证书不受信任&quot;的提示，需要导入证书哦，</span><a href=\"https://code.google.com/p/goagent/\" target=\"_blank\" style=\"line-height: 1.5; white-space: normal;\">goagent</a><span style=\"line-height: 1.5;\">地址。</span><span style=\"line-height: 1.5;\"></span></p>",
+    "lastEditTime": "2015-06-10 17:01:44",
+    "createTime": "2013-11-12 14:51:32",
+    "__v": 0,
+    "tags": [
+      {
+        "_id": "557145334a817000279bb802",
+        "name": "web",
+        "path": "web",
+        "__v": 0
+      },
+      {
+        "_id": "557151212c9aa72415669dc4",
+        "name": "工具",
+        "path": "tools",
+        "__v": 0
+      }
+    ],
+    "visits": 489
+  },
+  {
+    "commentCount": 0,
+    "_id": "557137734a817000279bb7f4",
+    "title": "HTML5之Web存储",
+    "author": "陌",
+    "type": {
+      "_id": "556ffa6e991b07643735d4bd",
+      "name": "Web",
+      "path": "web",
+      "enabled": true,
+      "__v": 0
+    },
+    "enabled": true,
+    "introduction": "<p>今天有点赖床，精神不振，9：30刚就坐，一同事过来找我，曰：同窗口，搜索内容后，查看详细页面之后要返回之前的搜索结果页面，怎么搞？虽然觉得这个需求有点不合常理，不过在他给我看了具体场景之后，还是觉得有这个必要，于是小思一下回答：用HTML5的web&nbsp;Storage吧。就此，精神一震，查阅资料，速写html5之web存储。</p>",
+    "content": "<p style=\"white-space: normal;\"><span style=\"line-height: 1.5;\">Web存储数据并不是个新概念，在早期，我们使用Cookies来保存数据，而Cookies也是从 JavaScript出现之初就一直存在。但是，Cookies不适合大量数据的存储，因为它由每个对服务器的请求来传递，而且一个Cookies只有4kb的存储量，这使得 cookie 速度很慢而且效率也不高，针对这一问题，HTML5提供了两种在客户端存储数据的对象：</span></p><p>1. <strong>localStorage</strong> - 同域的任何页面都可以访问该存储数据，该数据可以一直访问，除非手动删除。</p><p>2. <strong>sessionStorage</strong> - 同域同窗口的任何页面都可以访问该存储数据，如果关闭该窗口，则该数据销毁。</p><p><br/></p><p><strong>方法</strong>：</p><p>length 获得当前web storage中key的数目。</p><p>key(n) 返回web storage中的第N个key</p><p>getItem(key) 返回指定key的存储内容，如果不存在则返回null。注意，返回的类型是String字符串类型。</p><p>setItem(key, value) 设置指定key的内容的值为value</p><p>removeItem(key) 根据指定的key。</p><p>clear 清空web storage的内容。</p><p style=\"white-space: normal;\"><br/></p><p style=\"white-space: normal;\"><strong>兼容性</strong>：（来自<a href=\"http://caniuse.com/\" target=\"_blank\">http://caniuse.com</a>）</p><p style=\"white-space: normal;\"><img src=\"http://www.mhbseal.com/upload/article/2013-11-06(14-09-34)\" title=\"QQ截图20131106140903.png\"/></p><p style=\"white-space: normal;\">从上面的一片绿的数据来看，此h5的兼容性还是比较好的，就连ie8也出人意料的支持,如果要兼容IE6/7请用IE自有的userdate。</p><p style=\"white-space: normal;\"><br/></p><p style=\"white-space: normal;\"><strong>一些代码</strong>：</p><p style=\"white-space: normal;\"><br/></p><p style=\"white-space: normal;\">1.设置key</p><pre class=\"brush:js;toolbar:false\">localStorage.setItem(&#39;myKey&#39;, &#39;myValue&#39;);\nlocalStorage.myKey = &#39;myValue&#39;;</pre><p><br/></p><p>2.检索key</p><pre class=\"brush:js;toolbar:false\">localStorage.getItem(&#39;myKey&#39;);\nlocalStorage.myKey;</pre><p><br/></p><p>3.删除key</p><pre class=\"brush:js;toolbar:false\">localStorage.removeItem(&#39;myKey&#39;); // 删除指定key\nlocalStorage.clear(); // 删除所有key</pre><p><br/></p><p><strong>一个计数器</strong>：</p><p><br/></p><p>javascript：<br/></p><pre class=\"brush:js;toolbar:false\">localStorage.pagecount = localStorage.pagecount ? Number(localStorage.pagecount) + 1 : 1;\nconsole.log(localStorage.pagecount);</pre><p><br/></p><p>说明：运行以上代码后，每次访问该页面，访问次数会加1，如果关掉页面下次打开，还能看到访问次数在并且增加，除非用removeItem()或者clear()清空存储的数据。</p><p><br/></p><p><strong>实际应用的场景很多，这里列举一些：</strong>&nbsp;</p><p><br/></p><p>1.tab选项卡的记录；</p><p>2.购物车清单的记录；</p><p>3.文章开始我同事提出的：返回搜索结果页面等。</p><p><br/></p><p>WEB存储就介绍这么多了，开始敲代码了。。。。</p>",
+    "lastEditTime": "2015-06-05 15:29:56",
+    "createTime": "2013-11-06 10:42:47",
+    "__v": 0,
+    "tags": [
+      {
+        "_id": "556ffa2d991b07643735d4bb",
+        "name": "html5",
+        "path": "html5",
+        "__v": 0
+      }
+    ],
+    "visits": 490
+  },
+  {
+    "commentCount": 0,
+    "_id": "557137594a817000279bb7f3",
+    "title": "HTML5之视频音频(再见，答案)",
+    "author": "陌",
+    "type": {
+      "_id": "556ffa6e991b07643735d4bd",
+      "name": "Web",
+      "path": "web",
+      "enabled": true,
+      "__v": 0
+    },
+    "enabled": true,
+    "introduction": "<p><img src=\"http://www.mhbseal.com/upload/article/2013-11-04(13-23-07)\" title=\"1472_1806837_8cd503cdbbd3789.jpg\"/></p><p><br/></p><p>阿伦艾弗森前几天退役了，看了NBA这么些年，作为一个NBA球迷，只想说：再见，永远的“答案”！刚好这几天在看html5的视频音频这块，然后就周末花了一天的时间，收集一些图片，视频，然后ps处理，视频处理，敲代码，测试，做了一个DEMO,猛击&nbsp;<a href=\"/demo/html5/video&audio.html\" target=\"_blank\"><strong>这里</strong></a>&nbsp;查看(推荐chrome观看，由于资源问题，不支持IE)，感谢AI那些年带给我们的快乐！题外话不多说，接下来，看看h5中视频音频的具体用法。</p>",
+    "content": "<p>\n    阿伦艾弗森前几天退役了，看了NBA这么些年，作为一个NBA球迷，只想说：再见，永远的“答案”！刚好这几天在看html5的视频音频这块，然后就周末花了一天的时间，收集一些图片，视频，然后ps处理，视频处理，敲代码，测试，做了一个DEMO,猛击&nbsp;<a href=\"/demo/html5/video&audio.html\" target=\"_blank\"><strong>这里</strong></a>&nbsp;查看(推荐chrome观看，由于资源问题，不支持IE)，感谢AI那些年带给我们的快乐！题外话不多说，接下来，看看h5中视频音频的具体用法。\n</p>\n<p>\n    <span style=\"line-height: 1.5;\"><br/></span>\n</p>\n<p>\n    <span style=\"line-height: 1.5;\"></span>\n</p>\n<p>\n    <strong>名称</strong>：Audio/Video（介绍时只以视频文件为例）\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <strong>属性</strong>：\n</p>\n<p>\n    src 视频文件的url地址\n</p>\n<p>\n    controls 视频的播放控件（包括播放、暂停、定位以及设置音量等）\n</p>\n<p>\n    poster&nbsp;视频未响应或者缓冲不足时播放器显示的图片\n</p>\n<p>\n    loop 视频是否重复播放\n</p>\n<p>\n    muted&nbsp;视频是否静音\n</p>\n<p>\n    autoplay 是否自动播放\n</p>\n<p>\n    preload&nbsp;视频是否应该在页面加载后进行加载，如果同时设置autoplay，则忽略该属性\n</p>\n<p>\n    height&nbsp;视频播放器的高度\n</p>\n<p>\n    width&nbsp;视频播放器的宽度\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <strong>媒介属性</strong>（一般用于js操作）：\n</p>\n<p>\n    duration 视频的播放时长\n</p>\n<p>\n    ended 视频是否播放完毕\n</p>\n<p>\n    startTime 视频文件播放的开始时间\n</p>\n<p>\n    currentTime &nbsp;视频的播放位置startTime\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <strong>方法</strong>：\n</p>\n<p>\n    load()<span class=\"Apple-tab-span\" style=\"white-space:pre\"></span>重新加载视频\n</p>\n<p>\n    play()<span class=\"Apple-tab-span\" style=\"white-space:pre\"></span>开始播放视频\n</p>\n<p>\n    pause()<span class=\"Apple-tab-span\" style=\"white-space:pre\"></span>暂停当前播放的视频\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <strong>说明</strong>：上面的属性和方法仅列出一些做demo时用到及看着比较常用的，要看更全面的资料，点<a href=\"http://www.w3.org\" target=\"_blank\">这里</a>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <strong style=\"white-space: normal;\">兼容性</strong>：（来自<a href=\"http://caniuse.com/\" target=\"_blank\" style=\"white-space: normal;\">http://caniuse.com</a>）\n</p>\n<p>\n    <img src=\"http://www.mhbseal.com/upload/article/2013-11-04(16-08-15)\" title=\"QQ截图20131104160740.png\"/>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <strong>一个简单的例子</strong>：\n</p>\n<pre class=\"brush:html;toolbar:false\">&lt;video src=&quot;demo.ogv&quot; controls autoplay loop muted poster=&quot;demo.jpg&quot; &gt;\n  HTML5 Video is required for this example\n&lt;/video&gt;</pre>\n<p>\n    这里设置了视频的属性，显示视频控制器，自动播放、循环，并且静音，预加载，以及视频未响应或者缓冲不足时播放器显示的图片。<span style=\"line-height: 1.5;\"></span>\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <strong>如果要更多的资源</strong>：\n</p>\n<pre class=\"brush:html;toolbar:false\">&lt;video controls&gt;\n  &lt;source src=&quot;demo.ogv&quot; type=&quot;video/ogg&quot;/&gt;\n  &lt;source src=&quot;demo.webm&quot; type=&quot;video/webm&quot;/&gt;\n  &lt;source src=&quot;demo.mp4&quot; type=&quot;video/mp4&quot; /&gt;\n  &lt;p&gt;对不起, 你的浏览器不支持html5的video标签！&lt;/p&gt;\n&lt;/video&gt;</pre>\n<p>\n    浏览器会自动从上到下，识别自己认识的资源，如果找到支持的资源格式，则下面的资源会直接忽略，另外，在艾佛森那个DEMO的时候，需要把网上的视频转换成h5的几种格式，于是乎网上找视频转换器，但是发现网上ogg格式的转化器比较少，这里奉上一个<a href=\"http://pan.baidu.com/s/13ls5S\" target=\"_blank\"><strong>下载地址</strong></a>。\n</p>\n<p>\n    <br/>\n</p>\n<p>\n    <strong>说明</strong>：html5的视频音频，现代浏览器基本都支持，不过对其资源的格式支持不一，不过可以通过引入多个格式的资源，带几行代码可以解决，它不会加载多余资源；在做demo的时候，发布的时候发现，ie中程序和视频资源不再同一域的情况下，直接不加载资源，目前次问题，尚未找到解决办法；h5中video自带的控制器，各浏览器，差距甚大，如果要统一，可以用html、css、js去做一个；关于那个DEMO，由于其中用了h5原生的拖拽， safari直接支持拖拽（我测试的版本，windows最新版5.17），firefox拖拽有新打开窗口的问题（体验不好），还有前面说的ie资源问题，所以建议用神器chrome，再一次奉上&nbsp;<a href=\"/demo/html5/video&audio.html\" target=\"_blank\"><strong>DEMO</strong></a>，AI，再见！\n</p>",
+    "lastEditTime": "2015-06-05 17:31:34",
+    "createTime": "2013-10-31 14:00:23",
+    "__v": 0,
+    "tags": [
+      {
+        "_id": "556ffa2d991b07643735d4bb",
+        "name": "html5",
+        "path": "html5",
+        "__v": 0
+      }
+    ],
+    "visits": 810
+  },
+  {
+    "commentCount": 0,
+    "_id": "557137384a817000279bb7f2",
+    "title": "HTML5之拖放",
+    "author": "陌",
+    "type": {
+      "_id": "556ffa6e991b07643735d4bd",
+      "name": "Web",
+      "path": "web",
+      "enabled": true,
+      "__v": 0
+    },
+    "enabled": true,
+    "introduction": "<p>\n    过去我们在web中想实现拖拽效果，基本上都是使用DOM事件模型中的mousedown、mousemove、mouseup的事件监听来模拟拖拽效果，为了实现实时的拖拽移动效果，还要不停地获取鼠标的坐标，还要不停的修改元素的位置，代码要堆很多，而且性能上也很不是很好，现在有了html5原生的Drag &amp; Drop，小伙伴们再一次惊呆了，接着来看下html5拖放的具体使用方法，猛击&nbsp;<strong><a href=\"http://localhost:3000/demo/html5/drag&drop.html\" target=\"_blank\" textvalue=\"这里查看DEMO\">这里查看DEMO</a></strong>\n</p>",
+    "content": "<p>\n    过去我们在web中想实现拖拽效果，基本上都是使用DOM事件模型中的mousedown、mousemove、mouseup的事件监听来模拟拖拽效果，为了实现实时的拖拽移动效果，还要不停地获取鼠标的坐标，还要不停的修改元素的位置，代码要堆很多，而且性能上也很不是很好，现在有了html5原生的Drag &amp; Drop，小伙伴们再一次惊呆了，接着来看下html5拖放的具体使用方法，猛击&nbsp;<strong><a href=\"http://localhost:3000/demo/html5/drag&drop.html\" target=\"_blank\" textvalue=\"这里查看DEMO\">这里查看DEMO</a></strong>\n</p>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    <strong>事件描述</strong><span style=\"line-height: 1.5;\">：</span>\n</p>\n<p style=\"white-space: normal;\">\n    dragstart：<span style=\"line-height: 1.5;\">开始移动被拖拽元素时触发（主体是被拖拽元素）。</span>\n</p>\n<p style=\"white-space: normal;\">\n    dragenter：被拖拽元素进入目标元素时触发（主体是目标元素）。\n</p>\n<p style=\"white-space: normal;\">\n    dragover：<span style=\"line-height: 1.5;\">被拖拽元素在目标元素内移动时触发（主体是目标元素）。</span>\n</p>\n<p style=\"white-space: normal;\">\n    dragleave：<span style=\"line-height: 1.5;\">被拖拽元素离开目标元素时触发（主体是目标元素）。</span>\n</p>\n<p style=\"white-space: normal;\">\n    drag：<span style=\"line-height: 1.5;\">移动被拖拽元素时触发（主体是被拖拽元素）。</span>\n</p>\n<p style=\"white-space: normal;\">\n    drop：目标元素完全接受被拖拽元素时触发（主体是目标元素）。\n</p>\n<p style=\"white-space: normal;\">\n    dragend：整个拖放操作结束时触发（主体是被拖拽元素）。\n</p>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    <strong>事件中的对象</strong>：\n</p>\n<p style=\"white-space: normal;\">\n    拖拽事件中，HTML5定义了dataTransfer对象，它包含了一些方法及属性。包括了setData()、getData()、clearData()方法来操作拖拽过程中传递的数据，setDragImage(）方法来设置拖拽时鼠标的下面的图片（默认为被拖拽元素），<span style=\"line-height: 1.5;\">effectAllowed 和 dropEffect 属性来设置拖放效果。</span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\"><br/></span>\n</p>\n<p style=\"white-space: normal;\">\n    <strong><span style=\"line-height: 1.5;\">说明</span></strong><span style=\"line-height: 1.5;\">：</span><br/>\n</p>\n<p style=\"white-space: normal;\">\n    setData(format, data) 设置拖拽事件中传递的数据，format参数为数据类型\n</p>\n<p style=\"white-space: normal;\">\n    getData(format) 获拖拽事件中传递的数据，format参数为数据类型\n</p>\n<p style=\"white-space: normal;\">\n    clearData() 清除拖拽事件中传递的数据\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\">setDragImage(element,&nbsp;x,&nbsp;y)&nbsp;</span><span style=\"line-height: 1.5;\">其中element</span><span style=\"line-height: 1.5;\">表示拖拽时鼠标下面的图片，x 表示图标距离鼠标指针的x轴方向的偏移值，y表示图标距离鼠标指针y轴方向的偏移值。</span>\n</p>\n<p style=\"white-space: normal;\">\n    <span style=\"line-height: 1.5;\">effectAllowed属性设置被拖放元素拖放效果，dropEffect属性设置目标元素拖放效果。</span>\n</p>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    <strong>注释</strong>： 以上属性的具体参数可以去w3.org去查看，这里就不一一列举。\n</p>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    <strong style=\"line-height: 1.5;\">注意</strong><span style=\"line-height: 1.5;\">：在整个拖拽过程中，一定要在dragover中执行preventDefault()，否则拖拽事件不会被触发，另外在拖拽的时候只会触发拖拽的相关事件，鼠标事件，例如mousemove，是不会触发的。</span>\n</p>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    <strong>兼容性</strong>：（来自<a href=\"http://caniuse.com/\" target=\"_blank\">http://caniuse.com</a>）\n</p>\n<p style=\"white-space: normal;\">\n    <img src=\"http://www.mhbseal.com/upload/article/2013-10-31(13-57-50)\" title=\"QQ截图20131031135717.png\"/>\n</p>\n<p style=\"white-space: normal;\">\n    从上面的数据来看，除了手机端，和ie 8 9外，支持情况还是蛮好的， 但是几经周折测试后，发现该属性，碎片化严重，firefox下拖拽会新打开一个标签页来显示被拖拽元素的url，而safari有些版本直接就不支持，另外ie10中测试setDragImage直接是undefined，这是一些发现的问题，未发现的坑还不晓得有多少。\n</p>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    效果示例：\n</p>\n<p style=\"white-space: normal;\">\n    <img src=\"/upload/article/2013-11-01(16-30-56)\" title=\"QQ截图20131101162837.png\"/>\n</p>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    html代码：\n</p>\n<pre class=\"brush:html;toolbar:false\">&lt;div class=&quot;box&quot; id=&quot;left_box&quot;&gt;\n  &lt;div draggable=&quot;true&quot; class=&quot;drag&quot; id=&quot;drag1&quot;&gt;A&lt;/div&gt;\n  &lt;div draggable=&quot;true&quot; class=&quot;drag&quot; id=&quot;drag2&quot;&gt;B&lt;/div&gt;\n  &lt;div draggable=&quot;true&quot; class=&quot;drag&quot; id=&quot;drag3&quot;&gt;C&lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=&quot;box&quot; id=&quot;right_box&quot;&gt;&lt;/div&gt;</pre>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    &nbsp;css代码：\n</p>\n<pre class=\"brush:css;toolbar:false\">* {\n  margin: 0;\n  padding: 0;\n}\nbody {\n  width: 500px;\n  margin:20px auto;\n}\n.box {\n  width: 180px;\n  min-height: 320px;\n  padding: 0 10px 10px;\n  border: 2px dashed #ccc;\n  text-align: center;\n}\n#left_box {\n  float: left;\n}\n#right_box {\n  float: right;\n}\n.drag {\n  width: 180px;\n  height: 100px;\n  margin-top: 10px;\n  line-height: 100px;\n  color: #fff;\n  background: #428BCA;\n  text-align: center;\n  cursor: move;\n}</pre>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    javascript代码：\n</p>\n<pre class=\"brush:js;toolbar:false\">$(function(){\n  var dragElement = $(&#39;.drag&#39;) // 被拖拽元素\n  , targetElement = $(&#39;.box&#39;); // 目标元素\n\n  dragElement.on(&#39;dragstart&#39;, function(e){\n    e.originalEvent.dataTransfer.setData(&quot;Text&quot;, e.target.id); // 设置拖拽事件中的传递数据\n  })\n\n  targetElement.on(&#39;dragover&#39;, function(e){\n    e.preventDefault(); // 阻止默认行为\n  }).on(&#39;dragenter&#39;, function(e){\n    e.target.style.borderColor = &#39;red&#39;;  // 进入目标元素，目标元素样式改变\n  }).on(&#39;dragleave&#39;, function(e){\n    e.target.style.borderColor = &#39;#ccc&#39;;  // 离开目标元素，目标元素样式改变\n  }).on(&#39;drop&#39;, function(e){\n    // 把拖拽事件中的传递数据取出并插入到目标元素中\n    var data = e.originalEvent.dataTransfer.getData(&quot;Text&quot;);\n    $(this).append(document.getElementById(data));\n    // 目标元素样式改变\n    this.style.borderColor = &#39;#ccc&#39;;\n  })\n  \n});</pre>\n<p style=\"white-space: normal;\">\n    <br/>\n</p>\n<p style=\"white-space: normal;\">\n    结束语：该属性固然很吸引人，但就目前阶段，碎片化严重，所以该属性目前来说，还是处于试玩阶段(神器chrome支持较好)。。。\n</p>",
+    "lastEditTime": "2015-06-05 17:37:36",
+    "createTime": "2013-10-31 14:00:23",
+    "__v": 0,
+    "tags": [
+      {
+        "_id": "556ffa2d991b07643735d4bb",
+        "name": "html5",
+        "path": "html5",
+        "__v": 0
+      }
+    ],
+    "visits": 712
+  },
+  {
+    "commentCount": 0,
+    "_id": "557134d74a817000279bb7f1",
+    "title": "HTML5之地理位置",
+    "author": "陌",
+    "type": {
+      "_id": "556ffa6e991b07643735d4bd",
+      "name": "Web",
+      "path": "web",
+      "enabled": true,
+      "__v": 0
+    },
+    "enabled": true,
+    "introduction": "<p><img src=\"http://www.mhbseal.com/upload/article/2013-10-30(20-04-36)\" title=\"QQ截图20131030195007.jpg\"/></p><p><br/></p><p>HTML5 中的 Geolocation 用于获得用户的地理位置，Web应用程序获取到用户的地理位置后，可以根据该位置定制用户体验，接下来我看看具体是怎么获取用户的地理位置。</p>",
+    "content": "<p><img src=\"http://www.mhbseal.com/upload/article/2013-10-30(20-04-36)\" title=\"QQ截图20131030195007.jpg\"/></p><p><br/></p><p>HTML5 中的 Geolocation 用于获得用户的地理位置，Web应用程序获取到用户的地理位置后，可以根据该位置定制用户体验，接下来我看看具体是怎么获取用户的地理位置。</p><p style=\"white-space: normal;\"><span style=\"line-height: 1.5;\"><br/></span></p><p style=\"white-space: normal;\"><strong>对象名称</strong>：Geolocation</p><p style=\"white-space: normal;\"><br/></p><p style=\"white-space: normal;\"><strong>方法</strong>：</p><p style=\"white-space: normal;\">1. getCurrentPosition(successCallback, errorCallback,&nbsp;options) 获取当前的地理位置。</p><p style=\"white-space: normal;\">2.&nbsp;watchPosition(successCallback, errorCallback,&nbsp;options) 监视位置随时间变化的情况。</p><p style=\"white-space: normal;\">3.&nbsp;clearWatch(watchId) 清除watchPosition()的监视。</p><p style=\"white-space: normal;\"><br/></p><p style=\"white-space: normal;\"><strong>其中successCallback()返回的属性</strong>：</p><p style=\"white-space: normal;\">1. coords.latitude&nbsp;纬度</p><p style=\"white-space: normal;\">2. coords.longitude&nbsp;经度</p><p style=\"white-space: normal;\">3. coords.accuracy&nbsp;精度</p><p style=\"white-space: normal;\">4. coords.altitude&nbsp;<span class=\"Apple-tab-span\" style=\"white-space: pre;\"></span>海拔</p><p style=\"white-space: normal;\">5. coords.altitudeAccuracy&nbsp;海拔精度</p><p style=\"white-space: normal;\">6. coords.heading&nbsp;<span class=\"Apple-tab-span\" style=\"white-space: pre;\"></span>方向</p><p style=\"white-space: normal;\">7. coords.speed&nbsp;<span class=\"Apple-tab-span\" style=\"white-space: pre;\"></span>速度</p><p style=\"white-space: normal;\">8. timestamp&nbsp;<span class=\"Apple-tab-span\" style=\"white-space: pre;\"></span>响应时间</p><p style=\"white-space: normal;\"><br/></p><p style=\"white-space: normal;\"><strong>其中options包含的属性</strong>：</p><p style=\"white-space: normal;\">1. enableHighAccuracy 是否启用高精度，默认为false</p><p style=\"white-space: normal;\">2. maximumAge&nbsp;在重复获取地理位置时，指定获取位置信息的时间间隔，默认为0</p><p style=\"white-space: normal;\">3. timeout&nbsp;获取地理位置的超时时间，默认不限时</p><p style=\"white-space: normal;\"><br/></p><p style=\"white-space: normal;\"><strong>兼容性</strong>：（来自<a href=\"http://caniuse.com/\" target=\"_blank\">http://caniuse.com</a>）</p><p style=\"white-space: normal;\"><img src=\"/upload/article/2013-10-30(10-52-29)\" title=\"123.png\"/></p><p style=\"white-space: normal;\"><br/></p><p style=\"white-space: normal;\"><strong>一个实时监控地理位置的<strong>demo</strong>（实时监控比较消耗资源，如果没有该需求，则用getCurrentPosition获取当前位置）</strong>：</p><p style=\"white-space: normal;\"><br/></p><p style=\"white-space: normal;\">html代码：</p><pre class=\"brush:html;toolbar:false\">&lt;div id=&quot;demo&quot;&gt;&lt;/div&gt;</pre><p style=\"white-space: normal;\"><span style=\"line-height: 1.5; background-color: rgb(248, 248, 248);\">&nbsp;&nbsp;</span><br/></p><p style=\"white-space: normal;\">javascript代码：</p><pre class=\"brush:js;toolbar:false\">var demo = document.getElementById(&quot;demo&quot;);\nif(navigator.geolocation) { // 判断是否支持geolocation，如果支持，则获取地理位置\n  navigator.geolocation.watchPosition(success, error);\n}else {\n  demo.innerHTML = &#39;sorry，浏览器不支持 geolocation！&#39;\n};\nfunction success(position) { // 获取地理位置成功并输出相应参数\n  demo.innerHTML = &#39;纬度：&#39; + position.coords.latitude + &#39;&lt;br /&gt;&#39; +\n                   &#39;经度：&#39; + position.coords.longitude + &#39;&lt;br /&gt;&#39; +\n                   &#39;位置精度：&#39; + position.coords.accuracy + &#39;&lt;br /&gt;&#39; +\n                   &#39;海拔：&#39; + position.coords.altitude + &#39;&lt;br /&gt;&#39; +\n                   &#39;海拔精度：&#39; + position.coords.altitudeAccuracy + &#39;&lt;br /&gt;&#39; +\n                   &#39;方向：&#39; + position.coords.heading + &#39;&lt;br /&gt;&#39; +\n                   &#39;速度：&#39; + position.coords.speed + &#39;&lt;br /&gt;&#39; +\n                   &#39;响应时间：&#39; + position.timestamp\t\n};\nfunction error() { // 获取地理位置失败\n  demo.innerHTML = &#39;sorry，无法检索你的位置！&#39;\n};</pre><p style=\"white-space: normal;\"><br/></p><p style=\"white-space: normal;\">注释：Geolocation API 的数据来源可能是 GPS、IP 地址、RFID、WiFi、蓝牙 MAC 地址、GSM/CDMA 卡 ID 等，所以如果是非移动端，数据可能通过IP等其他方式获得，偏差可能会有点大。</p><p style=\"white-space: normal;\"><br/></p><p style=\"white-space: normal;\"><strong>some Known issues</strong>（来自<a href=\"http://caniuse.com/\" target=\"_blank\">http://caniuse.com</a>）</p><p style=\"white-space: normal;\"><br/></p><p style=\"white-space: normal;\">1. IE9 appears to have some issues in correctly determining longitude/latitude.</p><p style=\"white-space: normal;\">2. iOS6 has problems with returning high accuracy data.</p>",
+    "lastEditTime": "2015-06-05 18:12:59",
+    "createTime": "2013-10-29 21:46:00",
+    "__v": 0,
+    "tags": [
+      {
+        "_id": "556ffa2d991b07643735d4bb",
+        "name": "html5",
+        "path": "html5",
+        "__v": 0
+      }
+    ],
+    "visits": 645
+  }
+]

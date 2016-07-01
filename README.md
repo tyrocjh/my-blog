@@ -4,7 +4,7 @@ https://github.com/mhbseal/blog
 https://github.com/tyrocjh/my-blog-demo
 
 technology:
-gulp, react, react-router, fetch, express, mooogoose, ckeditor, jwt, bcrypt, passport 
+gulp, react, react-router, fetch, express, mooogoose, ckeditor, jwt, bcrypt, passport, spider
 
 gulp:
 http://www.dbpoo.com/getting-started-with-gulp/
@@ -12,8 +12,12 @@ http://www.dbpoo.com/getting-started-with-gulp/
 ckeditor:
 http://sdk.ckeditor.com/samples/fileupload.html
 
+spider:
+http://www.cnblogs.com/coco1s/p/4954063.html?utm_source=tuicool&utm_medium=referral
 
 --------------------------------------
+spider data: comment, user
+
 comment model why use this struct?
 article: {
   id: Schema.Types.ObjectId,
