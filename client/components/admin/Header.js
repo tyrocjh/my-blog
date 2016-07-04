@@ -7,7 +7,7 @@ var	Link = ReactRouter.Link;
 var Header = React.createClass({
 	render: function() {
 		return (
-			<header>
+			<header id="header">
 				<div className="container">
 				  <h1>
 				  	<Link to={ADMINPATH}></Link>

@@ -46,6 +46,8 @@ node task -> spider
 
 font-end style improve
 
+前后台应该分开2个入口文件（这样可以分开加载不同的js、css文件）
+
 --------------------------------------
 next prj:
 front-end first(data mock): es6 react-redux(redux-devtools, reducer?), ant-design, webpack+gulp, docker, comment plugin react-boilerplate?  front-back-end-seperate-use-nginx

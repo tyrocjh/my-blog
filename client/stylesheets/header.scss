@@ -1,6 +1,6 @@
-@import "variables";
+@import 'variables';
 
-header {
+header#header {
   height: 60px;
   line-height: 60px;
 	border-bottom: 2px solid $blue;
@@ -8,6 +8,7 @@ header {
 		h1 {
 			float: left;
 			margin: 0;
+			height: 60px;
 			a {
 				padding: 0 35px;
 		    display: inline-block;

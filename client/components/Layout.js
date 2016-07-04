@@ -7,7 +7,9 @@ var Layout = React.createClass({
 		return (
 			<div>
 				<Header />
-				{this.props.children}
+				<div id="main-content">
+					{this.props.children}
+				</div>
 				<Footer />
 			</div>
 		);

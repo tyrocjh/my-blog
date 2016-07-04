@@ -1,0 +1,72 @@
+@import 'variables';
+
+#main-content {
+
+	.article-list {
+		margin-top: 50px;
+		article {
+			margin-bottom: 50px;
+
+			header {
+			  border: none;
+			  margin-bottom: 20px;
+			}
+
+			h2 {
+				font-size: 20px;
+				margin: 0;
+				a {
+					color: $blue;
+					line-height: 1.5;
+				}
+			}
+
+			span.glyphicon-pencil {
+		    float: left;
+		    margin-right: 15px;
+		    font-size: 30px;
+		    color: $white;
+		    background: #5bc0de;
+		    width: 50px;
+		    height: 50px;
+		    line-height: 50px;
+		    text-align: center;
+			}
+
+			.info {
+				> i {
+					margin-right: 5px;
+				}
+				> span {
+					margin-right: 20px;
+				}
+			}
+
+			.more-link {
+				float: right;
+			}
+		}
+	}
+
+	.sidebar {
+		h3 {
+			font-size: 18px;
+		}
+
+		#search {
+			> input {
+				width: 200px;
+    		float: left;
+    		border-top-right-radius: 0;
+    		border-bottom-right-radius: 0;
+			}
+
+			> a {
+				border-left: 0;
+				border-top-left-radius: 0;
+		    border-bottom-left-radius: 0;
+			}
+		}
+	}
+
+}
