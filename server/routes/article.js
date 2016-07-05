@@ -2,7 +2,8 @@ var express = require('express'),
 		router = express.Router(),
 		Article = require('../models/article'),
 		ArticleType = require('../models/articleType'),
-		ArticleTag = require('../models/articleTag');
+		ArticleTag = require('../models/articleTag'),
+		_ = require('lodash');
 
 /*
 	{
@@ -16,16 +17,35 @@ var express = require('express'),
 */
 
 router.get('/', function(req, res, next) {
-	var tags = req.tags;
-	var condition = req.query;
+	var tags = req.tags,
+			links = req.links,
+			query = req.query;
+
+	var page = query.page,
+			tagPath = query.tagPath,
+			keyword = query.keyword;
+
+	var conditions = {};
+			articleTags = [];
+	
 	var pageList = {
-		currentPage: +condition.page || 1,
+		currentPage: +page || 1,
 		pageSize: 10,
 		pageRange: 2
 	};
 
+	if(tagPath) {
+		var tag = _.find(tags, {path: tagPath});
+		conditions['tags'] = {$all: tag._id};
+		pageList.query = {tagPath: tagPath};
+	} else if(keyword) {
+		var rKeyword = new RegExp(keyword, 'i');
+		conditions['$or'] = [{'title': rKeyword}, {'introduction': rKeyword}, {'content': rKeyword}, {'type.name': rKeyword}, {'tags.name': rKeyword}];
+		pageList.query = {keyword: keyword};
+	}
+
 	Article
-		.find()
+		.find(conditions)
 		.populate('_type', 'name path')
 		.populate('tags', 'name path')
 		.skip((pageList.currentPage - 1) * pageList.pageSize)
@@ -33,7 +53,7 @@ router.get('/', function(req, res, next) {
 		.sort({updatedAt: 'desc'})
 		.exec(function(err, models) {
 			Article
-				.count({})
+				.count(conditions)
 				.exec(function(err, count) {
 					pageList.rowCount = count;
 					pageList.pageCount = Math.ceil(pageList.rowCount / pageList.pageSize);
@@ -44,7 +64,8 @@ router.get('/', function(req, res, next) {
 						data: {
 							dataList: models,
 							pageList: pageList,
-							tags: tags
+							tags: tags,
+							links: links
 						}
 					});
 				});

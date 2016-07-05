@@ -2,7 +2,8 @@ var React = require('react'),
 		ReactRouter = require('react-router'),
 		Link = ReactRouter.Link,
 		PageList = require('./PageList'),
-		Sidebar = require('./Sidebar');
+		Sidebar = require('./Sidebar'),
+		moment = require('moment');
 
 var ArticleList = React.createClass({
 	componentDidMount: function() {
@@ -18,7 +19,8 @@ var ArticleList = React.createClass({
 			url: 'api/article',
 			dataList: [],
 			pageList: {},
-			tags: []
+			tags: [],
+			links: []
 		}
 	},
 
@@ -35,9 +37,9 @@ var ArticleList = React.createClass({
 			this.setState({
 				dataList: json.data.dataList,
 				pageList: json.data.pageList,
-				tags: json.data.tags
+				tags: json.data.tags,
+				links: json.data.links
 			});
-			console.info(this);
 		}.bind(this)).catch(function(ex) {
 			console.log('parsing failed', ex);
 		});
@@ -48,7 +50,10 @@ var ArticleList = React.createClass({
 				currentPage = this.state.pageList.currentPage,
 				pageCount = this.state.pageList.pageCount,
 				pageRange = this.state.pageList.pageRange,
-				pageSize = this.state.pageList.pageSize;
+				pageSize = this.state.pageList.pageSize,
+				queryParams = this.state.pageList.query || {},
+				tags = this.state.tags,
+				links = this.state.links;
 
 		var articleList = this.state.dataList.map(function(article, index) {
 			var num = (currentPage - 1) * pageSize + index + 1;
@@ -61,7 +66,7 @@ var ArticleList = React.createClass({
 							<i className="glyphicon glyphicon-user"></i>
 							<span>{article.author}</span>
 							<i className="glyphicon glyphicon-time"></i>
-							<span>{article.updatedAt}</span>
+							<span>{moment(article.updatedAt).format('YYYY-MM-DD')}</span>
 							<i className="glyphicon glyphicon-eye-open"></i>
 							<span>{article.visits}</span>
 							<i className="glyphicon glyphicon-comment"></i>
@@ -74,7 +79,7 @@ var ArticleList = React.createClass({
 							<i className="glyphicon glyphicon-tag"></i>
 							{article.tags.map(function(tag, index) {
 								return (
-									<a key={index} href="#"> {tag.name}</a>
+									<Link key={index} to="/" query={{tagPath: tag.path}}> {tag.name}</Link>
 								);
 							})}
 							<a href="#" className="more-link"><i className="glyphicon glyphicon-share-alt"></i><span> more</span></a>
@@ -89,9 +94,9 @@ var ArticleList = React.createClass({
 				<div className="row">
 					<div className="col-sm-9">
 						{articleList}
-						<PageList rowCount={rowCount} currentPage={currentPage} pageCount={pageCount} pageRange={pageRange} path={'/articleList'} />
+						<PageList rowCount={rowCount} currentPage={currentPage} pageCount={pageCount} pageRange={pageRange} queryParams={queryParams} path={'/'} />
 					</div>
-					<Sidebar />
+					<Sidebar tags={tags} links={links} history={this.props.history} />
 				</div>
 			</div>
 		);

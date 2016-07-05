@@ -49,22 +49,39 @@
 	}
 
 	.sidebar {
-		h3 {
-			font-size: 18px;
-		}
+		section {
+			margin-bottom: 30px;
 
-		#search {
-			> input {
-				width: 200px;
-    		float: left;
-    		border-top-right-radius: 0;
-    		border-bottom-right-radius: 0;
+			h3 {
+				font-size: 18px;
 			}
 
-			> a {
-				border-left: 0;
-				border-top-left-radius: 0;
-		    border-bottom-left-radius: 0;
+			#search {
+				> input {
+					width: 200px;
+	    		float: left;
+	    		border-top-right-radius: 0;
+	    		border-bottom-right-radius: 0;
+				}
+
+				> a {
+					border-left: 0;
+					border-top-left-radius: 0;
+			    border-bottom-left-radius: 0;
+				}
+			}
+
+			a.label {
+				padding: .5em .6em .3em;
+				margin: 0 5px 5px 0;
+	    	float: left;
+	    	font-size: 100%;
+			}
+
+			ul.link {
+				li {
+					margin-bottom: 5px;
+				}
 			}
 		}
 	}

@@ -44,7 +44,7 @@ redis??
 
 node task -> spider
 
-font-end style improve
+desktop and mobile style improve
 
 前后台应该分开2个入口文件（这样可以分开加载不同的js、css文件）
 
