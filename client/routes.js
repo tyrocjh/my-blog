@@ -3,6 +3,7 @@ var React = require('react'),
 		ReactRouter = require('react-router'),
 		Layout = require('./components/Layout'),
 		ArticleList = require('./components/ArticleList'),
+		SinglePage = require('./components/SinglePage'),
 		AdminLayout = require('./components/admin/Layout'),
 		AdminWelcome = require('./components/admin/Welcome'),
 		AdminLogin = require('./components/admin/Login'),
@@ -38,6 +39,7 @@ module.exports = (
 	<Router>
 		<Route path="/" component={Layout}>
 			<IndexRoute component={ArticleList} />
+			<Route path="singlePage" component={SinglePage} />
 		</Route>
 		<Route path={ADMINPATH} component={AdminLayout}>
 			<IndexRoute component={AdminWelcome} />

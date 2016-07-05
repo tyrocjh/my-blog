@@ -7,11 +7,9 @@ var Header = React.createClass({
 				<div className="container">
 				  <h1><a href="#"></a></h1>
 				  <nav>
-				  	<a href="#">主页</a>
-				  	<a href="#">Web</a>
-				  	<a href="#">杂谈</a>
-				  	<a href="#">API</a>
-				  	<a href="#">关于</a>
+				  	<Link to="/">主页</Link>
+				  	<Link to="/singlePage" query={{path: 'api'}}>API</Link>
+				  	<Link to="/singlePage" query={{path: 'about'}}>关于</Link>
 				  </nav>
 				</div>
 			</header>
