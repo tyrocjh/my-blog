@@ -16,6 +16,9 @@ spider:
 http://www.cnblogs.com/coco1s/p/4954063.html?utm_source=tuicool&utm_medium=referral
 
 --------------------------------------
+http://www.cnblogs.com/dudeyouth/p/5462711.html
+http://liximomo.github.io/redux-how-to
+
 spider data: comment, user
 
 comment model why use this struct?
