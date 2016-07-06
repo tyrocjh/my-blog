@@ -15,7 +15,7 @@ var SinglePage = React.createClass({
 		this.fetchArticle();
 	},
 
-	componentDidUpdate: function() {
+	componentWillReceiveProps: function() {
 		this.fetchArticle();
 	},
 
