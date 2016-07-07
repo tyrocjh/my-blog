@@ -72,36 +72,25 @@ router.get('/', function(req, res, next) {
 		});
 });
 
-// router.get('/:id', function(req, res) {
-// 	var id = req.params['id'];
+router.get('/:id', function(req, res) {
+	var id = req.params['id'],
+			tags = req.tags,
+			links = req.links;
 
-// 	ArticleType.find({ enabled: true }, function(err, types) {
-// 		ArticleTag.find({}, function(err, tags) {
-// 			if(id !== 'undefined') {
-// 				Article.findOne({ _id: id }, function(err, model) {
-// 					res.json({
-// 						status: 'success',
-// 						msg: '查询成功！',
-// 						data: {
-// 							model: model,
-// 							types: types,
-// 							tags: tags
-// 						}
-// 					});
-// 				});
-// 			} else {
-// 				res.json({
-// 					status: 'success',
-// 					msg: '查询成功！',
-// 					data: {
-// 						model: {},
-// 						types: types,
-// 						tags: tags
-// 					}
-// 				});
-// 			}
-// 		});
-// 	});
-// });
+	Article
+		.findOne({_id: id})
+		.populate('tags', 'name path')
+		.exec(function(err, model) {
+			res.json({
+				status: 'success',
+				msg: '查询成功！',
+				data: {
+					model: model,
+					tags: tags,
+					links: links
+				}
+			});
+		});
+});
 
 module.exports = router;

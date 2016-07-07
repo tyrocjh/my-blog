@@ -2,6 +2,7 @@ var React = require('react'),
 		ReactDOM = require('react-dom'),
 		ReactRouter = require('react-router'),
 		Layout = require('./components/Layout'),
+		Article = require('./components/Article'),
 		ArticleList = require('./components/ArticleList'),
 		SinglePage = require('./components/SinglePage'),
 		AdminLayout = require('./components/admin/Layout'),
@@ -39,6 +40,7 @@ module.exports = (
 	<Router>
 		<Route path="/" component={Layout}>
 			<IndexRoute component={ArticleList} />
+			<Route path="article" component={Article} />
 			<Route path="singlePage" component={SinglePage} />
 		</Route>
 		<Route path={ADMINPATH} component={AdminLayout}>

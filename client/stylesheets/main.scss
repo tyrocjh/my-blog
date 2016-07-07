@@ -2,7 +2,7 @@
 
 #main-content {
 
-	.article-list {
+	.article-list, .article {
 		margin-top: 50px;
 		article {
 			margin-bottom: 50px;
@@ -44,6 +44,19 @@
 
 			.more-link {
 				float: right;
+			}
+		}
+	}
+
+	.article {
+		article {
+			h2 {
+				font-size: 28px;
+				margin-bottom: 10px;
+			}
+
+			> section {
+				margin-bottom: 20px;
 			}
 		}
 	}

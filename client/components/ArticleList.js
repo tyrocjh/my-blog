@@ -6,14 +6,6 @@ var React = require('react'),
 		moment = require('moment');
 
 var ArticleList = React.createClass({
-	componentDidMount: function() {
-		this.listFetch();
-	},
-
-	componentWillReceiveProps: function() {
-		this.listFetch();
-	},
-
 	getInitialState: function() {
 		return {
 			url: 'api/article',
@@ -22,6 +14,14 @@ var ArticleList = React.createClass({
 			tags: [],
 			links: []
 		}
+	},
+	
+	componentDidMount: function() {
+		this.listFetch();
+	},
+
+	componentWillReceiveProps: function() {
+		this.listFetch();
 	},
 
 	listFetch: function() {
@@ -61,7 +61,9 @@ var ArticleList = React.createClass({
 				<article key={num}>
 					<header>
 						<span className="glyphicon glyphicon-pencil"></span>
-						<h2><a href="#">{article.title}</a></h2>
+						<h2>
+							<Link to='/article' query={{id: article._id}}>{article.title}</Link>
+						</h2>
 						<div className="info">
 							<i className="glyphicon glyphicon-user"></i>
 							<span>{article.author}</span>
@@ -82,7 +84,7 @@ var ArticleList = React.createClass({
 									<Link key={index} to="/" query={{tagPath: tag.path}}> {tag.name}</Link>
 								);
 							})}
-							<a href="#" className="more-link"><i className="glyphicon glyphicon-share-alt"></i><span> more</span></a>
+							<Link to='/article' query={{id: article._id}} className="more-link"><i className="glyphicon glyphicon-share-alt"></i><span> more</span></Link>
 						</span>
 					</footer>
 				</article>
