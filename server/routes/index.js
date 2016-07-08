@@ -11,5 +11,6 @@ module.exports = function (app, config) {
   app.use('/admin/api/upload', require('./admin/upload'));
 
   app.use('/api/article', require('./sidebar')(), require('./article'));
+  app.use('/api/comment', require('./comment'));
   app.use('/api/single_page', require('./sidebar')(), require('./singlePage'));
 };

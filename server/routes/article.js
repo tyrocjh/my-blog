@@ -79,6 +79,7 @@ router.get('/:id', function(req, res) {
 
 	Article
 		.findOne({_id: id})
+		.populate('_type', 'name path')
 		.populate('tags', 'name path')
 		.exec(function(err, model) {
 			res.json({

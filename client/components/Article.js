@@ -1,5 +1,6 @@
 var React = require('react'),
 		Sidebar = require('./Sidebar'),
+		FormValidation = require('./utils/formValidation'),
 		moment = require('moment');
 
 var Article = React.createClass({
@@ -33,10 +34,44 @@ var Article = React.createClass({
 		});
 	},
 
+	handleComment: function(article) {
+		data = FormValidation(this, [{
+			name: 'name',
+			rules: ['isRequired'],
+			msg: '昵称不能为空！'
+		}, {
+			name: 'email',
+			rules: ['isEmail'],
+			msg: '邮箱格式不正确！'
+		}, {
+			name: 'content',
+			rules: ['isRequired'],
+			msg: '内容不能为空！'
+		}]);
+
+		if(data) {
+			fetch('/api/comment', {
+			  method: 'POST',
+			  headers: {
+			    'Accept': 'application/json',
+			    'Content-Type': 'application/json'
+			  },
+			  body: JSON.stringify(_.extend(data, {article: article}))
+			}).then(function(response) {
+				return response.json();
+			}).then(function(json) {
+				this.setState({
+					validateMsg: json.msg
+				});
+			}.bind(this));
+		}
+	},
+
 	render: function() {
 		var article = this.state.model,
 				tags = this.state.tags,
-				links = this.state.links;
+				links = this.state.links,
+				typePath = article._type && article._type.path;
 
 		return (
 			<div className="container article">
@@ -83,24 +118,27 @@ var Article = React.createClass({
 							</div>
 							<table>
 								<caption>发表评论</caption>
-								<tr>
-									<td>昵称：</td>
-									<td><input type="text" ref="name" className="form-control" /></td>
-								</tr>
-								<tr>
-									<td>邮箱：</td>
-									<td><input type="email" ref="email" className="form-control" /></td>
-								</tr>
-								<tr>
-									<td>内容：</td>
-									<td><textarea ref="content" className="form-control"></textarea></td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>
-										<a href="javascript:void(0);" className="btn">发表评论</a>
-									</td>
-								</tr>
+								<tbody>
+									<tr>
+										<td>昵称：</td>
+										<td><input type="text" ref="name" className="form-control" /></td>
+									</tr>
+									<tr>
+										<td>邮箱：</td>
+										<td><input type="email" ref="email" className="form-control" /></td>
+									</tr>
+									<tr>
+										<td>内容：</td>
+										<td><textarea ref="content" className="form-control"></textarea></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>
+											<a href="javascript:void(0);" className="btn btn-default" onClick={this.handleComment.bind(this, {id: article._id, typePath: typePath})}>发表评论</a>
+											<span className="validateMsg">{this.state.validateMsg}</span>
+										</td>
+									</tr>
+								</tbody>
 							</table>
 						</section>
 					</div>
